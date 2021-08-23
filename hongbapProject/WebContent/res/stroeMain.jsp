@@ -26,7 +26,7 @@
     	<input type="submit" value="평점주기">
     </form> --%>
     <p><a href="#">뒤로가기</a></p>
-    
+   
 
 
 </body>
