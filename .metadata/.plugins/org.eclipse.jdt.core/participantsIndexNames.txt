@@ -1,7 +1,5 @@
 INDEX VERSION 1.131
 C:\work3\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1867461889.index
 \hongbapProject\src
-C:\work3\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3945659125.index
-\hongbapProject\src
 C:\work3\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1698580056.index
 \hongbapProject\src
