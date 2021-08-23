@@ -16,4 +16,5 @@
 <fullyQualifiedTypeName name="hongbapProject.board.service.BoardDetailService"/>
 <fullyQualifiedTypeName name="hongbapProject.board.service.BoardDeleteService"/>
 <fullyQualifiedTypeName name="hongbapProject.board.service.BoardUpdateService"/>
+<fullyQualifiedTypeName name="hongbapProject.restaurant.service.ResInfoService"/>
 </qualifiedTypeNameHistroy>

@@ -308,4 +308,36 @@ public int getResCount() {
 	}
 		return countNum;
 	} // count end
+
+public int insertRes () {
+	Connection con = null;
+	PreparedStatement pstmt = null;
+	int resultCode = 0;
+	try {
+		con=ds.getConnection();
+		String sql = "INSERT INTO restaurant (resName, resAddr, resPnum, resTime, resHoliday, resHomepage, resCategory) "
+				+ "VALUES(?, ?, ?, ?, ?, ?, ?)";
+		
+		pstmt=con.prepareStatement(sql);
+		pstmt.executeUpdate();
+		
+		resultCode=1;
+		
+	} catch(Exception e) {
+		e.printStackTrace();
+	} finally {
+		try {
+			if(con!=null&&!con.isClosed()) {
+				con.close();
+			}
+			if(pstmt!=null&&!pstmt.isClosed()) {
+				pstmt.close();
+			}
+			
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
+	}
+	return resultCode;
+}
 }
