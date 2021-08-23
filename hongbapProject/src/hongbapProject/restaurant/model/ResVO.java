@@ -38,12 +38,17 @@ public class ResVO {
 		this.resCategory = resCategory;
 	}
 
+
+	
+	
 	@Override
 	public String toString() {
 		return "ResVO [resId=" + resId + ", resName=" + resName + ", resAddr=" + resAddr + ", resPnum=" + resPnum
-				+ ", resTime=" + resTime + ", resHoliday=" + resHoliday + ", resHomepage=" + resHomepage + "]";
+				+ ", resTime=" + resTime + ", resHoliday=" + resHoliday + ", resHomepage=" + resHomepage
+				+ ", resCategory=" + resCategory + "]";
 	}
-	
+
+
 	public int getResId() {
 		return resId;
 	}

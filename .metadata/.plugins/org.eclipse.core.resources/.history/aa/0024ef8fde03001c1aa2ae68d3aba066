@@ -1,0 +1,5 @@
+package hongbapProject.board.service;
+
+public class BoardUpdateService {
+
+}
