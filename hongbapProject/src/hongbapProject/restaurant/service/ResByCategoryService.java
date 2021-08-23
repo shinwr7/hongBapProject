@@ -14,7 +14,9 @@ public class ResByCategoryService implements IResService {
 	public void excute(HttpServletRequest request, HttpServletResponse response) {
 		
 		String resCategory = request.getParameter("resCategory");
+		System.out.println("resCategory 값 : "+resCategory);
 		String strPage = request.getParameter("page");
+		System.out.println("strPage값 : "+strPage);
 		int page = 1;
 		if(strPage != null) {
 			page = Integer.parseInt(strPage);
@@ -22,14 +24,16 @@ public class ResByCategoryService implements IResService {
 		
 		ResDAO dao = ResDAO.getInstance();
 		
-		List<ResVO> ResList = dao.getAllResByCategory(resCategory , page -1 * 10);
+		List<ResVO> ResList = dao.getAllResByCategory(resCategory , (page-1) * 10);
 		
+		System.out.println("ResList값" + ResList);
 		int countNum = dao.getResCount();
 		
 		ResDTO ResDTO = new ResDTO(countNum, page, ResList);
 		
 		request.setAttribute("ResList", ResList);
 		request.setAttribute("ResDTO", ResDTO);
+		request.setAttribute("resCategory", resCategory);
 	}
 
 }

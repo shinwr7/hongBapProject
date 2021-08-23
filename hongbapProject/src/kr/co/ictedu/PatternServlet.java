@@ -21,6 +21,7 @@ import hongbapProject.board.service.BoardWriteService;
 import hongbapProject.board.service.IBoardService;
 import hongbapProject.restaurant.service.IResService;
 import hongbapProject.restaurant.service.ResByCategoryService;
+import hongbapProject.restaurant.service.ResInfoService;
 import hongbapProject.restaurant.service.ResRandomService;
 import kr.co.ictedu.service.IUserService;
 import kr.co.ictedu.service.UserDeletService;
@@ -145,7 +146,7 @@ public class PatternServlet extends HttpServlet {
 		} else if(uri.equals("/hongbapProject/hongbapMain/resList.do")) {
 				rsv = new ResByCategoryService();
 				rsv.excute(request, response);
-				ui="res/foodList.jsp";
+				ui="/res/resList.jsp";
 			
 			
 		} else if(uri.equals("/hongbapProject/user/userUpdate.do")) {
@@ -172,6 +173,11 @@ public class PatternServlet extends HttpServlet {
 				ui = "/res/randomPick.jsp";
 				
 			//野껊슣�뻻占쎈솇
+		} else if(uri.equals("/hongbapProject/resDetail.do")) {
+				rsv = new ResInfoService();
+				rsv.excute(request, response);
+				ui = "/res/stroeMain.jsp";
+				
 		} else if(uri.equals("/hongbapProject/boardWrite.do")) {
 
 			bsv = new BoardWriteService();
