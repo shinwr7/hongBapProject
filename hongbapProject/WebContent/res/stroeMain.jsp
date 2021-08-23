@@ -92,27 +92,13 @@
             </div>
 
 
-  <!--<form action="상의필요" method="post">
-    	<p>식당 만족도</p>
-    	<div>
-    		<input type="radio" name="" value="상">
-    		<input type="radio"  name="" value="중">
-    		<input type="radio" name="" value="하">
-    	</div>
-    	<input type="submit" value="평점주기">
-<<<<<<< HEAD
-    </form> --%>
-    <p><a href="#">뒤로가기</a></p>
-   
-=======
-    </form> -->
 
 
 <br>
 <a href="http://localhost:8181/hongbapProject/hongbapMain/hongbapMain.jsp"><button type="button" class="btn btn-info buttonMain" >메인화면으로 가기</button></a>
     <a href="#"><button type="button" class="btn btn-warning" style="color: white;">위로올리기</button></a>
 
->>>>>>> 55b7e8cd4e937da92669d215852363300a8df3ab
+
 
 
 </div>
