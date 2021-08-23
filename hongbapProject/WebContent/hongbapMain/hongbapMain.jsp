@@ -16,7 +16,7 @@
 <body>
 <h1>HongBap</h1><h2>SELCET * FROM Menu </h2>
 <h3>${id_session}님 오신것을 환영합니다~!</h3>
-	<form action ="메인.do" method="post">
+		<form>
 		<a href="http://localhost:8181/hongbapProject/logout.do"><input type=button value="로그아웃"></a>
 		<a href="http://localhost:8181/hongbapProject/userinfo.do"><input type=button value="회원정보"></a>
 		<table border="1">
@@ -26,21 +26,21 @@
 				<th>양식</th>
 			</tr>
 			<tr>
-				<td><a href ="한식.do">이미지</a></td>
-				<td><a href ="중식.do">이미지</a></td>
-				<td><a href ="일식.do">이미지</a></td>
+				<td><a href ="http://localhost:8181/hongbapProject/hongbapMain/resList.do?resCategory=중식&page=1">이미지</a></td>
+				<td><a href ="http://localhost:8181/hongbapProject/hongbapMain/resList.do?resCategory=한식&page=1">이미지</a></td>
+				<td><a href ="http://localhost:8181/hongbapProject/hongbapMain/resList.do?resCategory=양식&page=1">이미지</a></td>
 			</tr>
 		</table ></br>
 		<table border="1">
 			<tr>
-				<th>양식</th>
+				<th>일식</th>
 				<th>분식</th>
 				<th>패스트푸드</th>
 			</tr>
 			<tr>
-				<td><a href ="중식.do">이미지</a></td>
-				<td><a href ="한식.do">이미지</a></td>
-				<td><a href ="양식.do">이미지</a></td>
+				<td><a href ="http://localhost:8181/hongbapProject/hongbapMain/resList.do?resCategory=일식&page=1">이미지</a></td>
+				<td><a href ="http://localhost:8181/hongbapProject/hongbapMain/resList.do?resCategory=분식&page=1">이미지</a></td>
+				<td><a href ="http://localhost:8181/hongbapProject/hongbapMain/resList.do?resCategory=패스트푸드&page=1">이미지</a></td>
 			</tr>
 		</table ><br/>
 		<table class="randomTable" border="1">
@@ -54,7 +54,6 @@
 			
 		</table>
 	</form>
-	
 	
 </body>
 </html>
