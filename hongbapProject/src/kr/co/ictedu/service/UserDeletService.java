@@ -17,15 +17,16 @@ public class UserDeletService implements IUserService {
 		
 		HttpSession session = null;
 		session = request.getSession();
-		String idSession = (String)session.getAttribute("id_session");
-		String pwSession = (String)session.getAttribute("pw_session");
-		
 		try {
 			request.setCharacterEncoding("utf-8");
 		} catch (UnsupportedEncodingException e1) {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
 		}
+		
+		String idSession = (String)session.getAttribute("id_session");
+		String pwSession = (String)session.getAttribute("pw_session");
+		
 		
 		response.setCharacterEncoding("utf-8");
 		
@@ -40,7 +41,7 @@ public class UserDeletService implements IUserService {
 			}
 		}
 		String UserPw = request.getParameter("UserPw");
-		System.out.println("UserPw 값:" + UserPw);
+		System.out.println("UserPw 媛�:" + UserPw);
 		
 		UserDAO Userdao = UserDAO.getInstance();
 		
