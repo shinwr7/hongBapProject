@@ -21,8 +21,10 @@ import hongbapProject.board.service.BoardWriteService;
 import hongbapProject.board.service.IBoardService;
 import hongbapProject.restaurant.service.IResService;
 import hongbapProject.restaurant.service.ResByCategoryService;
+import hongbapProject.restaurant.service.ResDeleteService;
 import hongbapProject.restaurant.service.ResInfoService;
 import hongbapProject.restaurant.service.ResRandomService;
+import hongbapProject.restaurant.service.ResUpdateService;
 import kr.co.ictedu.service.IUserService;
 import kr.co.ictedu.service.UserDeletService;
 import kr.co.ictedu.service.UserInfoService;
@@ -142,29 +144,36 @@ public class PatternServlet extends HttpServlet {
 			} else {
 				ui="/hongbapMain/hongbapMain.jsp";
 			}
-		
-		} else if(uri.equals("/hongbapProject/hongbapMain/resList.do")) {
-				rsv = new ResByCategoryService();
-				rsv.excute(request, response);
-				ui="/res/resList.jsp";
 			
-			
-		} else if(uri.equals("/hongbapProject/user/userUpdate.do")) {
+			} else if(uri.equals("/hongbapProject/user/userUpdate.do")) {
 				usv = new UserUpdateService();
 				usv.execute(request, response);
 				ui = "/userinfo.do";
 				
-			
-		} else if(uri.equals("/hongbapProject/user/userDelete.do")) {
+				
+			} else if(uri.equals("/hongbapProject/user/userDelete.do")) {
 				usv = new UserDeletService();
 				usv.execute(request, response);
 				session.invalidate();
 				ui = "/user/userLogin.jsp";
-			
-		} else if(uri.equals("/hongbapProject/userinfo.do")) {
+				
+			} else if(uri.equals("/hongbapProject/userinfo.do")) {
 				usv = new UserInfoService();
 				usv.execute(request, response);
 				ui = "/user/userStatus.jsp";
+				
+				
+			// user 컨트롤러 끝
+		
+				
+		} else if(uri.equals("/hongbapProject/hongbapMain/resList.do")) {
+				rsv = new ResByCategoryService();
+				rsv.excute(request, response);
+				
+				// 레스토랑 상세 페이지에서 발급됐던 세션 지워주는 로직 필요
+				session.removeAttribute("resId");
+				ui="/res/resList.jsp";
+			
 				
 				
 		} else if(uri.equals("/hongbapProject/randompick.do")) {
@@ -177,6 +186,20 @@ public class PatternServlet extends HttpServlet {
 				rsv = new ResInfoService();
 				rsv.excute(request, response);
 				ui = "/res/stroeMain.jsp";
+				
+		} else if(uri.contentEquals("/hongbapProject/resDelete.do")) {
+				rsv = new ResDeleteService();
+				rsv.excute(request, response);
+				ui= "/hongbapProject/hongbapMain/resList.do";
+		
+		} else if(uri.contentEquals("/hongbapProject/resUpdate.do")) {
+				rsv = new ResUpdateService();
+				rsv.excute(request, response);
+				ui = "/hongbapProject/resDetail.do";
+				
+				
+		// res 컨트롤러 끝	
+				
 				
 		} else if(uri.equals("/hongbapProject/boardWrite.do")) {
 

@@ -340,4 +340,134 @@ public int insertRes () {
 	}
 	return resultCode;
 }
+
+public int getResID(String resName) {
+	Connection con = null;
+	PreparedStatement pstmt = null;
+	ResultSet rs = null;
+	
+	int resId =0;
+	
+	String sql ="SELECT resId FROM restaurant WHERE resName=?";
+	
+	try {
+		con=ds.getConnection();
+		pstmt=con.prepareStatement(sql);
+		pstmt.setString(1, resName);
+		rs = pstmt.executeQuery();
+		
+		if(rs.next()) {
+			resId = rs.getInt(1);
+			return resId;
+		}else {
+			System.out.println("resId 불러오기 실패");
+			return resId;
+		}
+			
+		} catch(Exception e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				if(con!=null&&!con.isClosed()) {
+					con.close();
+				}
+				if(pstmt!=null&&!pstmt.isClosed()) {
+					pstmt.close();
+				}
+				if(rs!=null&&!rs.isClosed()) {
+					rs.close();
+				}
+			} catch(Exception e) {
+				e.printStackTrace();
+			}
+		}
+		return resId;
+	
+}
+
+public int resDelete(int resId) {
+	Connection con = null;
+	PreparedStatement pstmt = null;
+	
+	String sql = "DELETE FROM restaurant WHERE resId=?";
+	int resultCode = 0;
+	try {
+		con = ds.getConnection();
+		pstmt = con.prepareStatement(sql);
+		pstmt.setInt(1, resId);
+		pstmt.executeUpdate();
+		resultCode = 1;
+		
+	} catch(Exception e) {
+		e.printStackTrace();
+	} finally {
+		try {
+			if(con!=null&&!con.isClosed()) {
+				con.close();
+			}
+			if(pstmt!=null&&!pstmt.isClosed()) {
+				pstmt.close();
+			}
+	
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
+		}
+	return resultCode;
+}
+
+public int resUpdate(ResVO res) {
+	Connection con = null;
+	PreparedStatement pstmt = null;
+	
+	int resultCode = 0;
+	int resId = res.getResId();
+	String resName = res.getResName();
+	String resAddr = res.getResAddr();
+	String resPnum = res.getResPnum();
+	String resTime = res.getResTime();
+	String resHoliday = res.getResHoliday();
+	String resHomepage = res.getResHomepage();
+	String resCategory = res.getResCategory();
+	
+	
+	
+	String sql = "UPDATE restaurant SET resName=?, resAddr=?, resPnum=?, resTime=?, "
+			+ "resHoliday=?, resHomepage=?, resCategory=? WHERE resId=?";
+	
+	try {
+		
+		con= ds.getConnection();
+		pstmt=con.prepareStatement(sql);
+		pstmt.setString(1, resName);
+		pstmt.setString(2, resAddr);
+		pstmt.setString(3, resPnum);
+		pstmt.setString(4, resTime);
+		pstmt.setString(5, resHoliday);
+		pstmt.setString(6, resHomepage);
+		pstmt.setString(7, resCategory);
+		pstmt.setInt(8, resId);
+		pstmt.executeUpdate();
+		resultCode = 1;
+		
+		
+	} catch(Exception e) {
+		e.printStackTrace();
+	} finally {
+		try {
+			if(con!=null&&!con.isClosed()) {
+				con.close();
+			}
+			if(pstmt!=null&&!pstmt.isClosed()) {
+				pstmt.close();
+			}
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+	}
+		return resultCode;	
+}
+
+
+
 }
