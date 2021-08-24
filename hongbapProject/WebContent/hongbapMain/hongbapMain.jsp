@@ -20,6 +20,7 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 </head>
 <body>
+<<<<<<< HEAD
     <div class="container">
         <div class="mainTitle">
         <div class="row">
@@ -87,6 +88,50 @@
         <br/>
         <br/>
     </div>
+=======
+<h1>HongBap</h1><h2>SELCET * FROM Menu </h2>
+
+<h3>${nick_session}(${id_session})님 오신것을 환영합니다~!</h3>
+
+		<form>
+		<a href="http://localhost:8181/hongbapProject/logout.do"><input type=button value="로그아웃"></a>
+		<a href="http://localhost:8181/hongbapProject/userinfo.do"><input type=button value="회원정보"></a>
+		<table border="1">
+			<tr>
+				<th>중식</th>
+				<th>한식</th>
+				<th>양식</th>
+			</tr>
+			<tr>
+				<td><a href ="http://localhost:8181/hongbapProject/hongbapMain/resList.do?resCategory=중식&page=1">이미지</a></td>
+				<td><a href ="http://localhost:8181/hongbapProject/hongbapMain/resList.do?resCategory=한식&page=1">이미지</a></td>
+				<td><a href ="http://localhost:8181/hongbapProject/hongbapMain/resList.do?resCategory=양식&page=1">이미지</a></td>
+			</tr>
+		</table ></br>
+		<table border="1">
+			<tr>
+				<th>일식</th>
+				<th>분식</th>
+				<th>패스트푸드</th>
+			</tr>
+			<tr>
+				<td><a href ="http://localhost:8181/hongbapProject/hongbapMain/resList.do?resCategory=일식&page=1">이미지</a></td>
+				<td><a href ="http://localhost:8181/hongbapProject/hongbapMain/resList.do?resCategory=분식&page=1">이미지</a></td>
+				<td><a href ="http://localhost:8181/hongbapProject/hongbapMain/resList.do?resCategory=패스트푸드&page=1">이미지</a></td>
+			</tr>
+		</table ><br/>
+		<table class="randomTable" border="1">
+			<tr>
+				<th class="random">
+				<a href="http://localhost:8181/hongbapProject/randompick.do">
+				<input type="button" value="Hongbap Random Pick">
+				</a>
+				</th>
+			</tr>
+			
+		</table>
+	</form>
+>>>>>>> ca91f301833d78fb3ad628f09cce5ecb0c78093d
 	
 </body>
 </html>
