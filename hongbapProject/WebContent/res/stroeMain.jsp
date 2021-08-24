@@ -76,6 +76,7 @@
             </div>
 
 
+<<<<<<< HEAD
   <!--<form action="상의필요" method="post">
     	<p>식당 만족도</p>
     	<div>
@@ -94,6 +95,15 @@
 <a href="http://localhost:8181/hongbapProject/board/boardList.jsp"><button type="button" class="btn btn-warning buttonMain" >요청게시판</button></a>
 <a href="#"><button type="button" class="btn btn-success" style="color: white;">위로올리기</button></a>
 </p>
+=======
+
+
+<br>
+<a href="http://localhost:8181/hongbapProject/hongbapMain/hongbapMain.jsp"><button type="button" class="btn btn-info buttonMain" >메인화면으로 가기</button></a>
+    <a href="#"><button type="button" class="btn btn-warning" style="color: white;">위로올리기</button></a>
+
+
+>>>>>>> 1d882cf683480a1095f56fb89e0a590650a6537e
 
 
 </div>
