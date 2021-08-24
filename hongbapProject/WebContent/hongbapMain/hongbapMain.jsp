@@ -15,11 +15,9 @@
 </head>
 <body>
 <h1>HongBap</h1><h2>SELCET * FROM Menu </h2>
-<<<<<<< HEAD
-<h3>${id_session}님 오신것을 환영합니다~!</h3>
-=======
+
 <h3>${nick_session}(${id_session})님 오신것을 환영합니다~!</h3>
->>>>>>> 55b7e8cd4e937da92669d215852363300a8df3ab
+
 		<form>
 		<a href="http://localhost:8181/hongbapProject/logout.do"><input type=button value="로그아웃"></a>
 		<a href="http://localhost:8181/hongbapProject/userinfo.do"><input type=button value="회원정보"></a>
