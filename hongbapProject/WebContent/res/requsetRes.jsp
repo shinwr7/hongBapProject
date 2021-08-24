@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,7 +10,6 @@
 <body>
 <h2>관리자용 음식점 추가폼</h2>
 	<form action="가게추가.do" method="post">
-	<div> 가게 이미지 : <img src="이미지파일위치"></div>
 		<table>
 		<tr>
 	 			<td>음식카테고리</td>
@@ -29,6 +29,9 @@
 		<input type="text" name="resHoliday" value="가게 휴무일"><br/>
 		<input type="text" name="resHomepage" value="가게홈페이지"><br/>
 	</form>
+		<input type="text" name="menuName" value="메뉴이름"><br/>
+		<input type="text" name="menuBook" value="메뉴설명"><br/>
+		<input type="text" name="menuPrice" value="메뉴가격"><br/>
 	<div><input type="submit" value="제출"><input type="reset" value="초기화"><br/></div>
 	<div>
 		<a href="메인게시판.do"><input type="button" value="메인홈"></a>

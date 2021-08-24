@@ -1,10 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<<<<<<< HEAD
-    
-=======
+
  <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
->>>>>>> f90bab330fd12af3eacb781502af3b2719b011a5
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -32,40 +30,31 @@
 			</c:forEach>
 		</tbody>
 	</table>
-	<%-- 페이징 버튼 만들기 --%>
-
-	 
-	<c:if test="${ResDTO.hasBoard()}">
-		<%-- 뒤로가기 버튼을 표시할지 말지 결정하는 부분 --%>
-		<c:if test="${ResDTO.startPage>10 }">
-		<%-- 1보다 크기만 해도 상관은없지만 직관적으로 표현하기위해 뒤로가기 링크를 10이상 으로 해놧음--%>
-			<a href="/hongbapProject/resList.do?page=${ResDTO.startPage-10 }">[prev]</a>
-		</c:if>
-		<%--페이지 번호 10개 묶음을 깔아주는 부분 --%>
-		<c:forEach var="pNo" begin="${ResDTO.startPage}" end="${ResDTO.endPage}">
-			<a href="/hongbapProject/hongbapMain/resList.do?resCategory=${resCategory}&page=${pNo}">[${pNo}]</a>
-		</c:forEach>
-		<%-- 다음으로 가기 버튼을 표시할지 말지 결정하는 부분 --%>
-		<c:if test="${ResDTO.endPage<ResDTO.totalPages }">
-			<a href="/hongbapProject/resList.do?page=${ResDTO.startPage+10}">[next]</a>
-		</c:if>
-	</c:if>
-	 
-
+<%-- 페이징 버튼 만들기 --%>
 	<c:if test="${pageDTO.hasBoard()}">
+	<%-- 표현할 글이 있다면 부트스트랩 페이징처리적용. --%>
+	<ul class="pagination justify-content-center">
 		<%-- 뒤로가기 버튼을 표시할지 말지 결정하는 부분 --%>
 		<c:if test="${pageDTO.startPage>10 }">
 		<%-- 1보다 크기만 해도 상관은없지만 직관적으로 표현하기위해 뒤로가기 링크를 10이상 으로 해놧음--%>
-			<a href="/MyFirstWeb/boardselect.do?page=${pageDTO.startPage-10 }">[prev]</a>
+			<li class="page-item"><a class="page-link" href="/MyFirstWeb/boardselect.do?page=${pageDTO.startPage-10 }">«</a></li>
 		</c:if>
+		
 		<%--페이지 번호 10개 묶음을 깔아주는 부분 --%>
 		<c:forEach var="pNo" begin="${pageDTO.startPage}" end="${pageDTO.endPage}">
-			<a href="/MyFirstWeb/boardselect.do?page=${pNo}">[${pNo}]</a>
+			<li class="page-item"><a class="page-link" href="/MyFirstWeb/boardselect.do?page=${pNo}">${pNo}</a></li>
 		</c:forEach>
+		
 		<%-- 다음으로 가기 버튼을 표시할지 말지 결정하는 부분 --%>
 		<c:if test="${pageDTO.endPage<pageDTO.totalPages }">
-			<a href="/MyFirstWeb/boardselect.do?page=${pageDTO.startPage+10}">[next]</a>
+			<li class="page-item"><a class="page-link" href="/MyFirstWeb/boardselect.do?page=${pageDTO.startPage+10 }">»</a></li>
 		</c:if>
+		
+		</ul><%--페이징네이션 종료 --%>
 	</c:if>
+	<%-- 페이징 버튼 부분 끝 --%>
+	<br/>
+	<a href ="http://localhost:8181/hongbapProject/board/boardWrite.jsp"><input type="button"value="글쓰기"></a>
+	<a href="/hongbapProject/logout.do"><input type="button" value="로그아웃"></a>
 </body>
 </html>

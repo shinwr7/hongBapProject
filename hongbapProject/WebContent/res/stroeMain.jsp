@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>    
 <!DOCTYPE html>
 <html>
     <head>
@@ -12,11 +12,12 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
         <script src="../js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
         <style>
             *{padding: 10px; margin: 10px;}
             .resName{font: small-caps bold 24px/1 sans-serif;}
-            span{font: small-caps bold 19px/1 sans-serif;}
+             span{font: small-caps bold 19px/1 sans-serif;}
 
         </style>
         <title>${res.resName }</title>
@@ -32,7 +33,7 @@
                     <a class="nav-link" data-toggle="pill" href="#menu1_p">추천메뉴~!</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" data-toggle="pill" href="#menu2_p">이벤트정보</a>
+                    <a class="nav-link" data-toggle="pill" href="#menu2_p">미정</a>
                 </li>
             </ul>
             
@@ -46,49 +47,31 @@
                         <li><span>주소</span> : ${res.resAddr}</li>
                         <li><span>영업시간</span> : ${res.resTime}</li>
                         <li><span>휴무일</span> : ${res.resHoliday}</li>
-                        <li><a href="${res.resHomepage }">홈페이지</a></li>
+                        <li><button type="button" class="btn btn-link" data-toggle="modal" data-target="${res.resHomepage }">
+                            홈페이지</button></li>
                     </ul>
                 </div>
                 
                 <div id="menu1_p" class="container tab-pane fade"><br>
                     <h3>Best Menu</h3><hr/>
-                    <h5>메뉴이름</h5>
+                    <c:forEach var="bestMenu" items="${menuList }">
+                    <h5>${menu.menuName }</h5>
                     <div class="row row1">
                         <div class="col-md-3">
                     <img width="300px" height="300px" src="https://d1cua0vf0mkpiy.cloudfront.net/images/menu/normal/d8809d14-c01a-4291-b51d-8f5f450e4d58.png"></div>
                     <div class="col-md-7">
                         <ul>
-                    <li>메뉴설명</li>
-                     <li>메뉴가격</li>
-                </ul>
+                    <li>${menu.menuBook }</li>
+                     <li>${menu.menuPrice }</li>
+                </ul></c:forEach>
                     </div>
                 </div>
-                    <h5>메뉴이름</h5>
-                    <div class="row row2">
-                       <div class="col-md-3">
-                    <img width="300px" height="300px" src="https://d1cua0vf0mkpiy.cloudfront.net/images/menu/normal/13acca9d-d92b-4432-b76f-7b495f8b49b3.png"></div>
-                    <div class="col-md-7 " >
-                        <ul>
-                    <li>메뉴설명</li>
-                    <li>메뉴가격</li>
-                        </ul>
-                    </div></div>
-                    <h5>메뉴이름</h5>
-                    <div class="row row2">
-                        <div class="col-md-3">
-                    <img width="300px" height="300px" src="추천메뉴3"></div>
-                    <div class="col-md-7">
-                    <ul>
-                    <li>메뉴설명</li>
-                    <li>메뉴가격</li>
-                </ul>
-            </div></div>
+                   
                 </div>
                 
                 <div id="menu2_p" class="container tab-pane fade"><br>
-                  <h3>이벤트~!</h3>
-                  <p>이벤트제목</p>
-                  <p>이벤트 내용</p>
+                  <h3>미정</h3>
+                  
                 </div>
             </div>
 
@@ -101,19 +84,16 @@
     		<input type="radio" name="" value="하">
     	</div>
     	<input type="submit" value="평점주기">
-<<<<<<< HEAD
-    </form> --%>
-    <p><a href="#">뒤로가기</a></p>
-   
-=======
     </form> -->
 
 
 <br>
-<a href="http://localhost:8181/hongbapProject/hongbapMain/hongbapMain.jsp"><button type="button" class="btn btn-info buttonMain" >메인화면으로 가기</button></a>
-    <a href="#"><button type="button" class="btn btn-warning" style="color: white;">위로올리기</button></a>
-
->>>>>>> 55b7e8cd4e937da92669d215852363300a8df3ab
+<p style="text-align: center;">
+<a href="http://localhost:8181/hongbapProject/hongbapMain/hongbapMain.jsp"><button type="button" class="btn btn-warning buttonMain" >메인화면으로 가기</button></a>
+<a href="http://localhost:8181/hongbapProject/board/boardWrite.jsp"><button type="button" class="btn btn-warning buttonMain" >요청글쓰기창</button></a>
+<a href="http://localhost:8181/hongbapProject/board/boardList.jsp"><button type="button" class="btn btn-warning buttonMain" >요청게시판</button></a>
+<a href="#"><button type="button" class="btn btn-success" style="color: white;">위로올리기</button></a>
+</p>
 
 
 </div>
