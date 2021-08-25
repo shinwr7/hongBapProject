@@ -468,6 +468,79 @@ public int resUpdate(ResVO res) {
 		return resultCode;	
 }
 
+public ResVO getResJoin(int idNum) {
+	Connection con = null;
+	PreparedStatement pstmt = null;
+	ResultSet rs = null;
+	
+	ResVO randomRes = new ResVO();
+	String sql = "SELECT * FROM restaurant WHERE resId=?";
+	
+	
+	try {
+		con = ds.getConnection();
+		
+		
+		System.out.println("idNum값 : "+idNum);
+		pstmt = con.prepareStatement(sql);
+		pstmt.setInt(1, idNum);
+		rs = pstmt.executeQuery();
+		
+		if (rs.next()) {
+			
+		int resId = rs.getInt("resId");
+		String resName = rs.getString("resName");
+		String resAddr = rs.getString("resAddr");
+		String resPnum = rs.getString("resPnum");
+		String resTime = rs.getString("resTime");
+		String resHoliday = rs.getString("resHoliday");
+		String resHomepage = rs.getString("resHomePage");
+		String resCategory = rs.getString("resCategory");
+		
+		System.out.println("resName : "+resName);
+		System.out.println("resAddr : "+resAddr);
+		System.out.println("resPnum : "+resPnum);
+		System.out.println("resTime : "+resTime);
+		System.out.println("resHoliday : "+resHoliday);
+		System.out.println("resHomepage : "+resHomepage);
+		System.out.println("resCategory : "+resCategory);
+		
+		
+		randomRes.setResId(resId);
+		randomRes.setResName(resName);
+		randomRes.setResAddr(resAddr);
+		randomRes.setResPnum(resPnum);
+		randomRes.setResTime(resTime);
+		randomRes.setResHoliday(resHoliday);
+		randomRes.setResHomepage(resHomepage);
+		randomRes.setResCategory(resCategory);
+		
+		}
+		
+			
+		
+	} catch(SQLException e) {
+		e.printStackTrace();
+		
+	}  finally{
+		try {
+		if(con != null && !con.isClosed()){
+		con.close();
+		}
+		if(pstmt != null && !pstmt.isClosed()) {
+			pstmt.close();
+		}
+		if(rs != null && !rs.isClosed()) {
+			rs.close();
+		}
+	} catch(SQLException e) {
+		e.printStackTrace();
+	}
+}
+	return randomRes;
+
+}// GetResInfo 끝
+
 
 
 }
