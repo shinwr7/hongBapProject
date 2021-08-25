@@ -45,7 +45,17 @@
             <div class="row">&nbsp;</div>
             <div class="row">&nbsp;</div>
             <div class="row">&nbsp;</div>
+            <hr/>
+		
+		<footer>
             <div class="row">&nbsp;</div>
+		
+		<div class="row">
+		<h6 class="text-primary text-center">홈페이지 : <strong>www.hongbap.com</strong></h6>
+		<h6 class="text-primary text-center">만든이 : <strong>신우람 조훈현 서성현</strong></h6>
+		</div>
+		
+		</footer>
         </div>
     </body>
 </html>
