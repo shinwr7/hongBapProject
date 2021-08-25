@@ -83,16 +83,6 @@
 
 <hr>
 
-<!--  
-	<form>
-		아이디<input type="text" value="${userInfo.userId}"><br/>
-		패스워드<input type="password" value="${userInfo.userPw}"><br/>
-		이름<input type="text" value="${userInfo.userName}"><br/>
-		이메일<input type="text" value="${userInfo.userEmail}"><br/>
-		전화번호<input type="text" value="${userInfo.userPnum}">
-		
-	</form>
-	 -->
 	 
 <footer>
 
