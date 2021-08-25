@@ -189,14 +189,14 @@ public class PatternServlet extends HttpServlet {
 				ui = "/res/randomPick.jsp";
 				
 			//野껊슣�뻻占쎈솇
-		} else if(uri.equals("/hongbapProject/resDetail.do")) {
+		} else if(uri.equals("/hongbapProject/res/resDetail.do")) {
 				rsv = new ResInfoService();
 				rsv.excute(request, response);
 				
 				asv = new AttachPagingService();
 				asv.execute(request, response);
 				
-				ui = "res/stroeMain.jsp";
+				ui = "/res/stroeMain.jsp";
 				
 		} else if(uri.contentEquals("/hongbapProject/resDelete.do")) {
 				rsv = new ResDeleteService();
@@ -259,7 +259,7 @@ public class PatternServlet extends HttpServlet {
 			
 			
 			
-		} else if(uri.equals("/hongbapProject/boardSelect.do")) {
+		} else if(uri.equals("/hongbapProject/board/boardSelect.do")) {
 			
 			bsv = new BoardPagingService();
 			bsv.execute(request, response);

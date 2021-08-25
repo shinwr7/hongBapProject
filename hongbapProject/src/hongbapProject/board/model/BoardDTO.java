@@ -2,6 +2,7 @@ package hongbapProject.board.model;
 
 import java.util.List;
 
+
 public class BoardDTO {
 	private int total;
 	private int currentPage;
@@ -35,5 +36,46 @@ public class BoardDTO {
 			this.totalPages +=1; 
 		}
 	}
+	
 	}
+	
+	public int getTotal() {
+		return total; // 총 글 개수 리턴
+	}
+	
+	public boolean hasNoBoard() {
+		return total == 0; // 게시물 표기가 불가능할때 true 리턴
+	}
+	
+	public boolean hasBoard() {
+		return total > 0; // 게시물이 있을때 true 리턴
+	}
+	
+	public int getTotalPages() {
+		return totalPages; // 페이지의 총 개수 리턴
+	}
+	
+	public List<BoardVO> boardList() {
+		return boardList; // 해당 페이지에 표기할 글 목록 리턴
+	}
+	
+	public int getStartPage() {
+		return startPage; // 해당 페이지 그룹의 시작번호 리턴
+	}
+	
+	public int getEndPage() {
+		return endPage; // 해당 페이지 그룹의 끝번호 리턴
+	}
+
+
+
+	@Override
+	public String toString() {
+		return "ResDTO [total=" + total + ", currentPage=" + currentPage + ", boardList=" + boardList
+				+ ", totalPages=" + totalPages + ", startPage=" + startPage + ", endPage=" + endPage + "]";
+	}
+	
+	
+	
+	
 }

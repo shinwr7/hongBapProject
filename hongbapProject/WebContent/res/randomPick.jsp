@@ -64,7 +64,7 @@
 		</p>
 		<div class="row">
 			<div class="col-md-12 buttonGo">
-				<a href="가게리스트.do?page=${randomResult.resId}"><button type="button" class="btn btn-warning">${randomResult.resName} 으로 이동~!</button></a>
+				<a href="http://localhost:8181/hongbapProject/res/resDetail.do?resId=${randomResult.resId}&page=1"><button type="button" class="btn btn-warning">${randomResult.resName} 으로 이동~!</button></a>
 			</div>
 		</div>
 		<div class="row" style="font-size:50%;">&nbsp;</div>
