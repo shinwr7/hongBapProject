@@ -6,21 +6,56 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Insert title here</title>
-<link
-	href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
-	rel="stylesheet"
-	integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
-	crossorigin="anonymous">
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    
+    h1 {
+        
+        font: small-caps bold 30px/1 sans-serif;
+    }
+    
+    .imgH {
+        float: left;
+        object-fit: cover;
+        width: 10%;
+        margin: 10px;
+    }
+    
+    .resBoard {
+        position: relative;
+    }
+    
+    .button {
+        position: absolute;
+        top: 570px;
+        left: 130px;
+    }
+    </style>
+    
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/kfonts2.css" rel="stylesheet">
+    <script
+        src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 </head>
 <body>
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-				<img
+				<img 
 					src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuLNT1HhvwBWW7uliRR4GQ6rNIz-j3xMWcDeCvYsAxQ2hZYLUEit9LyxI8WxBentF-Gvg&usqp=CAU"
 					class="imgH">
-				<h1>${resCategory }게시판목록</h1>
+                    <div class="row" style="font-size: 25%;">&nbsp;</div>
+				<h1>요청게시판목록</h1>
 			</div>
 		</div>
 		<table class="table table-striped resBoard">
@@ -37,13 +72,13 @@
 				<tr>
 					<td>${board.bId }</td>
 					<td><a href="/hongbapProject/boardDetail.do?bId=${board.bId}">${board.bTitle }</a></td>
-					<td>${board.bName }</td>
+					<td>${board.bWriter }</td>
 					<td>${board.bDate }</td>
 					<td>${board.bHit }</td>
 				</tr>
 			</c:forEach>
 		</table>
-	</div>
+	
 
 	<%-- 페이징 버튼 만들기 --%>
 	<c:if test="${pageDTO.hasBoard()}">
@@ -85,7 +120,7 @@
 				type="button" class="btn btn-warning buttonMain">메인화면으로 가기</button></a>
 	</div>
 
-
+</div>
 
 </body>
 </html>

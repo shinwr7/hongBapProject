@@ -19,7 +19,7 @@
 	.bro{border-radius: 14px; background-color:#228B22; margin: 0 0 5px 0;}
 	.buttonGo{margin:15px 0 5px 0; border-radius: 15px; text-align: center; background-color: #FACC2E;}
 	.redW{color: brown;}
- 	.randomimg{border-radius: 35px; height: 250px; text-align: center; font: small-caps bold 30px/1 sans-serif; color: black; background-image: url("https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAxMTBfMjY1%2FMDAxNjEwMjE0OTcwNTEx.XK7MST1z9whArzIlYg4KnDn7-_puGiN3Kz1NAaPY6XAg.l3sitVfjvAJjV8gtIW3wZJ93LrzsdHhMX5LMUNoudasg.JPEG.ra4754%2FScreenshot%25A3%25DF20210110%25A3%25AD024340%25A3%25DFKakaoTalk.jpg&type=a340");}
+ 	.randomimg{border-radius: 35px; height: 250px; text-align: center; font: small-caps bold 30px/1 sans-serif; color: black;  background-image: url("https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAxMTBfMjY1%2FMDAxNjEwMjE0OTcwNTEx.XK7MST1z9whArzIlYg4KnDn7-_puGiN3Kz1NAaPY6XAg.l3sitVfjvAJjV8gtIW3wZJ93LrzsdHhMX5LMUNoudasg.JPEG.ra4754%2FScreenshot%25A3%25DF20210110%25A3%25AD024340%25A3%25DFKakaoTalk.jpg&type=a340");}
 </style>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 </head>

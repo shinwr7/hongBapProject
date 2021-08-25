@@ -49,7 +49,7 @@ h1 {
 				<img
 					src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuLNT1HhvwBWW7uliRR4GQ6rNIz-j3xMWcDeCvYsAxQ2hZYLUEit9LyxI8WxBentF-Gvg&usqp=CAU"
 					class="imgH">
-					<div class="row" style="font-size: 25%;">&nbsp;</div>
+					<div class="row" style="font-size: 50%;">&nbsp;</div>
 				<h1>${resCategory }게시판목록</h1>
 			</div>
 		</div>
