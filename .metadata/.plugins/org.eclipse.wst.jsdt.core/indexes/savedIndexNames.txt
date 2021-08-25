@@ -1,13 +1,8 @@
-<<<<<<< HEAD
 INDEX VERSION 1.4+C:\eclipse\workspace2\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-2097941214.index
-=======
-INDEX VERSION 1.4+C:\work3\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-2872854588.index
-2097941214.index
-807251039.index
-9049359.index
-2860682422.index
+3239948104.index
+1468563917.index
+2754361637.index
+2347898108.index
+1370479667.index
 1698580056.index
-459390958.index
->>>>>>> 5a018edb899d37191d6675af0dd9be65ad21aa2a
+2097941214.index

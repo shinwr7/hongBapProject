@@ -1,5 +1,6 @@
 package hongbapProject.attach.service;
 
+import java.io.UnsupportedEncodingException;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
@@ -21,14 +22,18 @@ public class AttachPagingService implements IAttachService{
 		HttpSession session = null;
 		session = request.getSession();
 		
+		try {
+			request.setCharacterEncoding("utf-8");
+			response.setCharacterEncoding("utf-8");
+		} catch (UnsupportedEncodingException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		// page 파라미터에 있던 값을 가져옵니다.(get방식)
-				String strPage = request.getParameter("page");
-				String strResid = (String)session.getAttribute("resId");
+				String strPage = (String)request.getParameter("page");
+				int resId = (int)session.getAttribute("resId");
+				System.out.println("strResid 값"+resId);
 				
-				int resId = 1;
-				if(strResid!=null) {
-					resId=Integer.parseInt(strResid);
-				}
 				
 				// 가져온 데이터는 String 타입이므로 int 타입으로 전환
 				// null이 저장된 상황에는 int로 바꿔줄 수없음

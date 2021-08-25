@@ -21,7 +21,8 @@ public class ResInfoService implements IResService {
 			session = request.getSession();
 			
 			
-			String strid = request.getParameter("resId");
+			String strid = (String)request.getParameter("resId");
+			System.out.println("strid값 : "+strid);
 			int resId = Integer.parseInt(strid);
 		
 			ResDAO dao = ResDAO.getInstance();

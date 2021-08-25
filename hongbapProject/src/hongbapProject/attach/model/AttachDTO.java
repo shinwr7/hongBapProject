@@ -38,5 +38,11 @@ public class AttachDTO {
 			}
 		}
 		}
+
+		@Override
+		public String toString() {
+			return "AttachDTO [total=" + total + ", currentPage=" + currentPage + ", attachList=" + attachList
+					+ ", startPage=" + startPage + ", endPage=" + endPage + ", totalPages=" + totalPages + "]";
+		}
 	}
 

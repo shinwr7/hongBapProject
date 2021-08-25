@@ -196,7 +196,7 @@ public class PatternServlet extends HttpServlet {
 				asv = new AttachPagingService();
 				asv.execute(request, response);
 				
-				ui = "/res/stroeMain.jsp";
+				ui = "res/stroeMain.jsp";
 				
 		} else if(uri.contentEquals("/hongbapProject/resDelete.do")) {
 				rsv = new ResDeleteService();
