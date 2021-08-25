@@ -5,7 +5,6 @@
 <fullyQualifiedTypeName name="hongbapProject.board.service.IBoardService"/>
 <fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
 <fullyQualifiedTypeName name="com.mysql.cj.Session"/>
-<fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
 <fullyQualifiedTypeName name="hongbapProject.board.model.BoardDAO"/>
 <fullyQualifiedTypeName name="hongbapProject.board.model.BoardVO"/>
 <fullyQualifiedTypeName name="java.security.Timestamp"/>
@@ -16,13 +15,21 @@
 <fullyQualifiedTypeName name="hongbapProject.board.service.BoardDeleteService"/>
 <fullyQualifiedTypeName name="hongbapProject.board.service.BoardUpdateService"/>
 <fullyQualifiedTypeName name="hongbapProject.restaurant.service.ResInfoService"/>
+<fullyQualifiedTypeName name="com.sun.corba.se.pept.transport.Connection"/>
+<fullyQualifiedTypeName name="hongbapProject.menu.service.IMenuService"/>
+<fullyQualifiedTypeName name="java.sql.ResultSet"/>
+<fullyQualifiedTypeName name="hongbapProject.menu.model.MenuVO"/>
+<fullyQualifiedTypeName name="hongbapProject.menu.model.MenuDAO"/>
+<fullyQualifiedTypeName name="hongbapProject.restaurant.service.ResDeleteService"/>
+<fullyQualifiedTypeName name="java.sql.Connection"/>
+<fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+<fullyQualifiedTypeName name="java.lang.Exception"/>
 <fullyQualifiedTypeName name="hongbapProject.restaurant.service.IResService"/>
 <fullyQualifiedTypeName name="hongbapProject.restaurant.model.ResDAO"/>
-<fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
-<fullyQualifiedTypeName name="com.sun.corba.se.pept.transport.Connection"/>
-<fullyQualifiedTypeName name="java.sql.Connection"/>
-<fullyQualifiedTypeName name="java.lang.Exception"/>
-<fullyQualifiedTypeName name="hongbapProject.menu.service.IMenuService"/>
+<fullyQualifiedTypeName name="hongbapProject.restaurant.model.ResVO"/>
+<fullyQualifiedTypeName name="hongbapProject.restaurant.service.ResUpdateService"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="com.mysql.cj.x.protobuf.MysqlxPrepare.Execute"/>
-<fullyQualifiedTypeName name="hongbapProject.menu.model.MenuDAO"/>
 </qualifiedTypeNameHistroy>
