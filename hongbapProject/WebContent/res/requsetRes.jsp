@@ -136,9 +136,9 @@
 
 	<div class="row">
 	  
-        <input type="submit" name="제출" class="btn buttonReq btn-primary col-md-1" >
-        <input type="reset" name="초기화"class="btn buttonReset btn-danger col-md-1" >
-        <a href="http://localhost:8181/hongbapProject/hongbapMain/hongbapMain.jsp" class="btn btn-info col-md-3" >메인화면으로 가기</a>
+        <button type="submit" class="btn btn-danger">제출</button>
+        <button type="reset"class="btn btn-green">초기화</button>
+        <a href="http://localhost:8181/hongbapProject/hongbapMain/hongbapMain.jsp" ><button type="button" class="btn btn-waring">메인화면으로 가기</button></a>
    	  
         
    </div>
