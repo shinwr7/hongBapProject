@@ -7,3 +7,5 @@ C:\eclipse\workspace2\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3945
 \hongbapProject\src
 C:\eclipse\workspace2\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2419608241.index
 \hongbapProject\src
+C:\work3\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2419608241.index
+\hongbapProject\src
