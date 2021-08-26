@@ -70,7 +70,7 @@ private DataSource ds;
 		ResultSet rs = null;
 		
 		MenuVO menu = new MenuVO();
-		String sql = "SELECT FROM resMenu WHERE id=?";
+		String sql = "SELECT * FROM resMenu WHERE id=?";
 		
 		try {
 			con=ds.getConnection();

@@ -55,15 +55,15 @@ span {
 		<div class="tab-content">
 			<div id="home_p" class="container tab-pane active">
 				<br>
-				<h1 id="resName">${res.resName }</h1>
+				<h1 id="resName">${resResult.resName }</h1>
 				<img width="300px" height="300px" src="캐러샐효과!">
 				<ul>
-					<li><span>전화번호</span> : ${res.resPnum}</li>
-					<li><span>주소</span> : ${res.resAddr}</li>
-					<li><span>영업시간</span> : ${res.resTime}</li>
-					<li><span>휴무일</span> : ${res.resHoliday}</li>
+					<li><span>전화번호</span> : ${resResult.resPnum}</li>
+					<li><span>주소</span> : ${resResult.resAddr}</li>
+					<li><span>영업시간</span> : ${resResult.resTime}</li>
+					<li><span>휴무일</span> : ${resResult.resHoliday}</li>
 					<li><button type="button" class="btn btn-link"
-							data-toggle="modal" data-target="${res.resHomepage }">
+							data-toggle="modal" data-target="${resResult.resHomepage }">
 							홈페이지</button></li>
 				</ul>
 			</div>
@@ -117,7 +117,7 @@ span {
 					type="button" class="btn btn-warning buttonMain">메인화면으로 가기</button></a>
 			<a href="http://localhost:8181/hongbapProject/board/boardWrite.jsp"><button
 					type="button" class="btn btn-warning buttonMain">요청글쓰기창</button></a> <a
-				href="http://localhost:8181/hongbapProject/board/boardList.jsp"><button
+				href="http://localhost:8181/hongbapProject/board/boardSelect.do?page=1"><button
 					type="button" class="btn btn-warning buttonMain">요청게시판</button></a> <a
 				href="#"><button type="button" class="btn btn-success"
 					style="color: white;">위로올리기</button></a>

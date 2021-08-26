@@ -13,6 +13,12 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import com.sun.org.apache.bcel.internal.generic.NEWARRAY;
+
+import hongbapProject.attach.service.AttachDeleteService;
+import hongbapProject.attach.service.AttachPagingService;
+import hongbapProject.attach.service.AttachWriteService;
+import hongbapProject.attach.service.IAttachService;
 import hongbapProject.board.service.BoardDeleteService;
 import hongbapProject.board.service.BoardDetailService;
 import hongbapProject.board.service.BoardPagingService;
@@ -90,6 +96,7 @@ public class PatternServlet extends HttpServlet {
 		IUserService usv = null;
 		IResService rsv = null;
 		IBoardService bsv = null;
+		IAttachService asv = null;
 		
 		// 占쎈퉸占쎈뼣 嚥≪뮇彛낉옙�뱽 占쎈뼄占쎈뻬占쎈립 占쎈츟占쎈퓠 占쎄퐜占쎈선揶쏉옙 .jsp 占쎈솁占쎌뵬 筌뤿굞臾�/野껋럥以� 筌욑옙占쎌젟
 		String ui = null;
@@ -182,9 +189,13 @@ public class PatternServlet extends HttpServlet {
 				ui = "/res/randomPick.jsp";
 				
 			//野껊슣�뻻占쎈솇
-		} else if(uri.equals("/hongbapProject/resDetail.do")) {
+		} else if(uri.equals("/hongbapProject/res/resDetail.do")) {
 				rsv = new ResInfoService();
 				rsv.excute(request, response);
+				
+				asv = new AttachPagingService();
+				asv.execute(request, response);
+				
 				ui = "/res/stroeMain.jsp";
 				
 		} else if(uri.contentEquals("/hongbapProject/resDelete.do")) {
@@ -199,7 +210,24 @@ public class PatternServlet extends HttpServlet {
 				
 				
 		// res 컨트롤러 끝	
+		
+		
 				
+				
+		} else if(uri.contentEquals("/hongbapProject/attachWrite.do")) {
+				asv = new AttachWriteService();
+				asv.execute(request, response);
+				ui = "/hongbapProject/resDetail.do";
+				
+				
+		} else if(uri.contentEquals("/hongbapProject/attachDelete.do")) {
+				asv = new AttachDeleteService();
+				asv.execute(request, response);
+				ui = "/hongbapProject/resDetail.do";
+				
+				
+				
+		// attach 컨트롤러 끝
 				
 		} else if(uri.equals("/hongbapProject/boardWrite.do")) {
 
@@ -231,7 +259,7 @@ public class PatternServlet extends HttpServlet {
 			
 			
 			
-		} else if(uri.equals("/hongbapProject/boardSelect.do")) {
+		} else if(uri.equals("/hongbapProject/board/boardSelect.do")) {
 			
 			bsv = new BoardPagingService();
 			bsv.execute(request, response);
