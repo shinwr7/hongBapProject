@@ -9,7 +9,7 @@
 <style>
     *{padding: 0%; margin: 0; text-align: center; }
 	h1,h2{ margin:0; text-indent: 35px; font: small-caps bold 24px/1 sans-serif; text-align: center; float: left;}
-	.random{width: 180px; padding: 25px;
+    .random{width: 180px; padding: 25px;
                text-align: justify;}
     .randomTable{ background-image:url();
         			}
@@ -32,9 +32,9 @@
             </div>
             <div class="col-lg-8 offset-lg-2"><br/>
                 <div class="imgg">
-                    <h1>HongBap</h1><br/>
-                    <h2>SELECT * FROM Menu </h2><br/><br/>
-                    <h5 style ="text-align: right"><span class="lead">${nick_session}</span>님 오신것을 환영합니다~!</h5>
+                    <h1><b><span class="wordR">H</span>ong<span class="wordR">B</span>ap</b></h1><br/>
+                    <h2><b><span class="wordR">S</span>ELEC<span class="wordG">T</span> * <span class="wordR">F</span>RO<span class="wordG">M</span> <span class="wordR">M</span>en<span class="wordG">u</span></b></h2><br/><br/>
+                    <h5 style ="text-align: right"><b><span class="lead">${nick_session}</span>님 오신것을 환영합니다~!</b></h5>
              </div>
             </div>
         </div>

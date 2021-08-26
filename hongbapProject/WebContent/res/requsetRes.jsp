@@ -7,7 +7,7 @@
     <style>
             *{padding: 0; margin: 0;}
             .a{font: small-caps bold 22px/1 sans-serif;}
-<<<<<<< HEAD
+
 
 .imgA{float: left;
 	object-fit: cover;
@@ -19,11 +19,7 @@ h1 { margin : 15px}
 .br{color:#A0522D;}
 .wordR{color:red;}
 .wordG{color:green;}
-=======
-            	.br{color:#A0522D;}
-	.wordR{color:red;}
-	.wordG{color:green;}
->>>>>>> df7d2db8d27331aef65ce2f5088c26fa8c23a471
+
 
     </style>
 <meta charset="UTF-8">
