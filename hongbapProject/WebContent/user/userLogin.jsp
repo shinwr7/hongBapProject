@@ -65,10 +65,8 @@ h1 { margin : 15px}
 <br>
 
 <div class="row">
-<div class="col-md-1">
+<div class="co-md-1">
 <input type ="submit" value="로그인" class = "btn btn-success">
-</div>
-<div class="col-md-2">
 <a href="http://localhost:8181/hongbapProject/user/userJoin.jsp" class = "btn btn-danger">회원가입</a>
 </div>
 </div>
