@@ -7,7 +7,17 @@
     <style>
             *{padding: 0; margin: 0;}
             .a{font: small-caps bold 22px/1 sans-serif;}
-            
+
+.imgA{float: left;
+	object-fit: cover;
+	width: 10%;
+	margin: 10px;}
+	
+h1 { margin : 15px}	
+
+.br{color:#A0522D;}
+.wordR{color:red;}
+.wordG{color:green;}
 
     </style>
 <meta charset="UTF-8">
@@ -21,15 +31,17 @@
     <form action="가게추가.do" method="post">
 		
             <div class="row">
-            <h1 class="text-center text-primary">관리자용 식당 추가 페이지</h1>
+            <div class="col-md-12">
+            <img class="imgA" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuLNT1HhvwBWW7uliRR4GQ6rNIz-j3xMWcDeCvYsAxQ2hZYLUEit9LyxI8WxBentF-Gvg&usqp=CAU">
+            <h1>관리자용 식당 추가 페이지</h1>
             </div>
-            
+            </div>
             <hr/>
             
             <div class="row">
                 <div class="input-group">
                     <div class="input-group-prepend">
-                          <span class="input-group-text a text-primary ">음식카테고리</span>
+                          <span class="input-group-text a  ">음식카테고리</span>
                       </div>
                       <select name="resCategory">
                         <option value="한식">한식</option>
@@ -46,9 +58,9 @@
 <div class="row">
                 <div class="input-group input-group-sm ">
                     <div class="input-group-prepend">
-                          <span class="input-group-text text-primary ">가게이름</span>
+                          <span class="input-group-text ">가게이름</span>
                       </div>
-                    <input type="text" class="form-control" name="resName" ><br/>
+                    <input type="text" class="form-control" name="resName" >
                 </div>
                 </div>
                 
@@ -57,9 +69,9 @@
                 <div class="row">
                 <div class="input-group input-group-sm ">
                     <div class="input-group-prepend">
-                          <span class="input-group-text text-primary ">가게주소</span>
+                          <span class="input-group-text  ">가게주소</span>
                       </div>
-                    <input type="text" class="form-control" name="resAddr" placeholder="00시00구00동"><br/>
+                    <input type="text" class="form-control" name="resAddr" placeholder="00시00구00동">
                 </div>
                 </div>
                 
@@ -68,9 +80,9 @@
                 <div class="row">
                 <div class="input-group input-group-sm">
                     <div class="input-group-prepend">
-                          <span class="input-group-text text-primary ">전화번호</span>
+                          <span class="input-group-text  ">전화번호</span>
                       </div>
-                    <input type="tel" class="form-control" name="resPnum" placeholder="000-0000-0000"><br/>
+                    <input type="tel" class="form-control" name="resPnum" placeholder="000-0000-0000">
                 </div>
                 </div>
                 
@@ -79,9 +91,9 @@
                 <div class="row">
                 <div class="input-group input-group-sm">
                     <div class="input-group-prepend">
-                          <span class="input-group-text text-primary ">영업시간</span>
+                          <span class="input-group-text  ">영업시간</span>
                       </div>
-                    <input type="text" class="form-control" name="resTime" placeholder="00~24"><br/>
+                    <input type="text" class="form-control" name="resTime" placeholder="00~24">
                 </div>
                 </div>
                 
@@ -90,9 +102,9 @@
                 <div class="row">
                 <div class="input-group input-group-sm">
                     <div class="input-group-prepend">
-                          <span class="input-group-text text-primary ">휴무정보</span>
+                          <span class="input-group-text  ">휴무정보</span>
                       </div>
-                      <input type="text" class="form-control" name="resHoliday" placeholder="휴무일"><br/>
+                      <input type="text" class="form-control" name="resHoliday" placeholder="휴무일">
                 </div>
                 </div>
                 
@@ -101,9 +113,9 @@
                 <div class="row">
                 <div class="input-group input-group-sm">
                     <div class="input-group-prepend">
-                          <span class="input-group-text text-primary ">홈페이지</span>
+                          <span class="input-group-text  ">홈페이지</span>
                       </div>
-                      <input type="text" class="form-control" name="resHomepage" placeholder="홈페이지"><br/>
+                      <input type="text" class="form-control" name="resHomepage" placeholder="홈페이지">
                 </div>
                 </div>
                 
@@ -112,9 +124,9 @@
                 <div class="row">
                 <div class="input-group input-group-sm">
                     <div class="input-group-prepend">
-                          <span class="input-group-text text-primary ">메뉴이름</span>
+                          <span class="input-group-text ">메뉴이름</span>
                       </div>
-                      <input type="text" class="form-control" name="menuName" placeholder="메뉴이름"><br/>
+                      <input type="text" class="form-control" name="menuName" placeholder="메뉴이름">
                 </div>
                 </div>
                 
@@ -123,9 +135,9 @@
                 <div class="row">
                 <div class="input-group input-group-sm">
                     <div class="input-group-prepend">
-                          <span class="input-group-text text-primary ">메뉴가격</span>
+                          <span class="input-group-text ">메뉴가격</span>
                       </div>
-                      <input type="text" class="form-control" name="menuPrice" placeholder="메뉴가격"><br/>
+                      <input type="text" class="form-control" name="menuPrice" placeholder="메뉴가격">
                 </div>
                 </div>
                 
@@ -135,12 +147,9 @@
     
 
 	<div class="row">
-	  
-        <button type="submit" class="btn btn-danger">제출</button>
-        <button type="reset"class="btn btn-green">초기화</button>
-        <a href="http://localhost:8181/hongbapProject/hongbapMain/hongbapMain.jsp" ><button type="button" class="btn btn-waring">메인화면으로 가기</button></a>
-   	  
-        
+	  <input type = "submit" name = "제출" class="btn btn-warning">
+	  <input type = "reset" name = "초기화" class="btn btn-danger">
+	  <a href="http://localhost:8181/hongbapProject/hongbapMain/hongbapMain.jsp" class="btn btn-success">메인화면으로 가기</a>  
    </div>
    
    <hr/>
@@ -148,8 +157,8 @@
    <footer>
    
 <div class="row">
-<h6 class="text-primary text-center">홈페이지 : <strong>www.hongbap.com</strong></h6>
-<h6 class="text-primary text-center">만든이 : <strong>신우람 조훈현 서성현</strong></h6>
+<h6 class="text-primary text-center"><span class="br">홈페이지</span> : <strong>www.hongbap.com</strong></h6>
+<h6 class="text-primary text-center"><span class="br">만든이</span> : <strong><span class="wordR">신우람</span> <span class="wordG">조훈현</span> 서성현</strong></h6>
 </div>
 
 </footer>	
