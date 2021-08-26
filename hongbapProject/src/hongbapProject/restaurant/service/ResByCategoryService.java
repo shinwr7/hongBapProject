@@ -13,6 +13,7 @@ public class ResByCategoryService implements IResService {
 	@Override
 	public void excute(HttpServletRequest request, HttpServletResponse response) {
 		
+		
 		String resCategory = request.getParameter("resCategory");
 		System.out.println("resCategory 값 : "+resCategory);
 		String strPage = request.getParameter("page");
