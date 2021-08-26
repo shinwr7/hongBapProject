@@ -19,6 +19,9 @@
         
         font: small-caps bold 30px/1 sans-serif;
     }
+    	.br{color:#A0522D;}
+	.wordR{color:red;}
+	.wordG{color:green;}
     
     .imgH {
         float: left;
@@ -119,6 +122,16 @@
 			href="http://localhost:8181/hongbapProject/hongbapMain/hongbapMain.jsp"><button
 				type="button" class="btn btn-warning buttonMain">메인화면으로 가기</button></a>
 	</div>
+	<hr/>
+		
+		<footer>
+		
+		<div class="row">
+		<h6 class="text-primary text-center"><span class="br"><b>홈페이지</b> :</span> <strong>www.hongbap.com</strong></h6>
+		<h6 class="text-primary text-center"><span class="br"><b>만든이</b> :</span> <strong><span class="wordR">신우람</span> <span class="wordG">조훈현</span> 서성현</strong></h6>
+		</div>
+		
+		</footer>
 
 </div>
 

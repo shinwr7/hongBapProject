@@ -7,7 +7,9 @@
     <style>
             *{padding: 0; margin: 0;}
             .a{font: small-caps bold 22px/1 sans-serif;}
-            
+            	.br{color:#A0522D;}
+	.wordR{color:red;}
+	.wordG{color:green;}
 
     </style>
 <meta charset="UTF-8">
