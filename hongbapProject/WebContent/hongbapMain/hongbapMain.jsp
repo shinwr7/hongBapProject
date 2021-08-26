@@ -9,16 +9,16 @@
 <style>
     *{padding: 0%; margin: 0; text-align: center; }
 	h1,h2{ margin:0; text-indent: 35px; font: small-caps bold 24px/1 sans-serif; text-align: center; float: left;}
-	.random{width: 180px; padding: 25px;
+    .random{width: 180px; padding: 25px;
                text-align: justify;}
     .randomTable{ background-image:url();
         			}
-        				.br{color:#A0522D;}
+                    .br{color:#A0522D;}
+                    .iconH{float: left; }
 	.wordR{color:red;}
 	.wordG{color:green;}
     .img{ object-fit: none;}
-    .mainTitle{position: relative;}
-    .iconH{position: absolute;float: left; }
+    .imgg{background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUnOX9-nUZYnDWWiMfWzdWVZ1f8oUdQcbAaqkdfOBVqtfAxnFyLppHFQRkx_XH6yXOWIA&usqp=CAU");}
 </style>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 </head>
@@ -30,12 +30,16 @@
             <div class="col-lg-2">
                 <img class="iconH" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuLNT1HhvwBWW7uliRR4GQ6rNIz-j3xMWcDeCvYsAxQ2hZYLUEit9LyxI8WxBentF-Gvg&usqp=CAU">
             </div>
-            <div class="col-lg-7 offset-lg-3"><br/>
-<h1>HongBap</h1><br/><h2>SELECT * FROM Menu </h2></div>
-</div>
+            <div class="col-lg-8 offset-lg-2"><br/>
+                <div class="imgg">
+                    <h1><b><span class="wordR">H</span>ong<span class="wordR">B</span>ap</b></h1><br/>
+                    <h2><b><span class="wordR">S</span>ELEC<span class="wordG">T</span> * <span class="wordR">F</span>RO<span class="wordG">M</span> <span class="wordR">M</span>en<span class="wordG">u</span></b></h2><br/><br/>
+                    <h5 style ="text-align: right"><b><span class="lead">${nick_session}</span>님 오신것을 환영합니다~!</b></h5>
+             </div>
+            </div>
+        </div>
 
 </div>
-<h5 style ="text-align: right"><span class="lead">${nick_session}</span>님 오신것을 환영합니다~!</h5>
 		<br>
 		<br>
 		<br>
@@ -86,6 +90,9 @@
             </div>
         <a href="http://localhost:8181/hongbapProject/logout.do" class="btn btn-danger btn-lg" role="button">logOut</a>
         <a href="http://localhost:8181/hongbapProject/userinfo.do" class="btn btn-success btn-lg" role="button">회원정보</a>
+        <br/>
+        <a href="http://localhost:8181/hongbapProject/board/boardSelect.do?page=1"><button
+					type="button" class="btn btn-warning buttonMain">요청게시판</button></a>
     </div>
     <hr/>
 		

@@ -29,13 +29,10 @@ h1 {
 	margin: 10px;
 }
 
-.resBoard {
-	position: relative;
-}
+
 
 .button {
-	position: absolute;
-	top: 570px;
+	top: 270px;
 	left: 130px;
 }
 </style>
@@ -56,7 +53,7 @@ h1 {
 				<h1>${resCategory }게시판목록</h1>
 			</div>
 		</div>
-		<table class="table table-striped resBoard">
+		<table class="table table-striped">
 			<thead>
 				<tr>
 					<th>식당no</th>
@@ -74,6 +71,8 @@ h1 {
 				</tr>
 			</c:forEach>
 		</table>
+		
+	<div class="row">&nbsp;</div>
 
 	<%-- 페이징 버튼 만들기 --%>
 	<c:if test="${ResDTO.hasBoard()}">
@@ -104,10 +103,10 @@ h1 {
 	</c:if>
 	<%-- 페이징 버튼 부분 끝 --%>
 	<br />
-	
+	<div class="row">&nbsp;</div>
 		
 		<div class="button">
-			<a href="http://localhost:8181/hongbapProject/board/boardWrite.jsp"><button
+			<a href="/hongbapProject/boardWrite.do"><button
 					type="button" class="btn btn-danger">요청하기</button></a> <a
 				href="/hongbapProject/logout.do"><button type="button"
 					class="btn btn-success">로그아웃</button></a> <a

@@ -28,6 +28,7 @@
 
     <div>
     <header>
+    <div class="row">&nbsp;</div>
       <div class="row">
 
         <div class="col-xs-12"  style="background-color: wheat; border-radius: 15px;">
@@ -61,6 +62,7 @@
         <button type="submit" class="btn btn-danger buttonReq" >요청하기</button>
         <button type="reset" class="btn btn-success buttonReset" >글다시쓰기</button>
 
+        <a href="/hongbapProject/board/boardSelect.do"><button type="button" class="btn " >요청게시판으로가기</button></a>
         <a href="http://localhost:8181/hongbapProject/hongbapMain/hongbapMain.jsp"><button type="button" class="btn btn-warning buttonMain" >메인화면으로 가기</button></a>
 
       </div>
