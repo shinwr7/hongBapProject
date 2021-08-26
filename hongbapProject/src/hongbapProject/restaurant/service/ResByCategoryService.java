@@ -28,7 +28,7 @@ public class ResByCategoryService implements IResService {
 		List<ResVO> ResList = dao.getAllResByCategory(resCategory , (page-1) * 10);
 		
 		System.out.println("ResList값" + ResList);
-		int countNum = dao.getResCount();
+		int countNum = dao.getResCount(resCategory);
 		
 		ResDTO ResDTO = new ResDTO(countNum, page, ResList);
 		
