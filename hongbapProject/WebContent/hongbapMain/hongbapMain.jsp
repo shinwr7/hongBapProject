@@ -13,12 +13,12 @@
                text-align: justify;}
     .randomTable{ background-image:url();
         			}
-        				.br{color:#A0522D;}
+                    .br{color:#A0522D;}
+                    .iconH{float: left; }
 	.wordR{color:red;}
 	.wordG{color:green;}
     .img{ object-fit: none;}
-    .mainTitle{position: relative;}
-    .iconH{position: absolute;float: left; }
+    .imgg{background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUnOX9-nUZYnDWWiMfWzdWVZ1f8oUdQcbAaqkdfOBVqtfAxnFyLppHFQRkx_XH6yXOWIA&usqp=CAU");}
 </style>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 </head>
@@ -30,12 +30,16 @@
             <div class="col-lg-2">
                 <img class="iconH" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuLNT1HhvwBWW7uliRR4GQ6rNIz-j3xMWcDeCvYsAxQ2hZYLUEit9LyxI8WxBentF-Gvg&usqp=CAU">
             </div>
-            <div class="col-lg-7 offset-lg-3"><br/>
-<h1>HongBap</h1><br/><h2>SELECT * FROM Menu </h2></div>
-</div>
+            <div class="col-lg-8 offset-lg-2"><br/>
+                <div class="imgg">
+                    <h1>HongBap</h1><br/>
+                    <h2>SELECT * FROM Menu </h2><br/><br/>
+                    <h5 style ="text-align: right"><span class="lead">${nick_session}</span>님 오신것을 환영합니다~!</h5>
+             </div>
+            </div>
+        </div>
 
 </div>
-<h5 style ="text-align: right"><span class="lead">${nick_session}</span>님 오신것을 환영합니다~!</h5>
 		<br>
 		<br>
 		<br>
