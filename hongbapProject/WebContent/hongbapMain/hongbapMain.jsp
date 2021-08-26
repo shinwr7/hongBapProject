@@ -13,6 +13,9 @@
                text-align: justify;}
     .randomTable{ background-image:url();
         			}
+        				.br{color:#A0522D;}
+	.wordR{color:red;}
+	.wordG{color:green;}
     .img{ object-fit: none;}
     .mainTitle{position: relative;}
     .iconH{position: absolute;float: left; }
@@ -32,7 +35,7 @@
 </div>
 
 </div>
-<h5 style ="text-align: right"><span class="lead">${nick_session}(${id_session})</span>님 오신것을 환영합니다~!</h5>
+<h5 style ="text-align: right"><span class="lead">${nick_session}</span>님 오신것을 환영합니다~!</h5>
 		<br>
 		<br>
 		<br>
@@ -83,11 +86,17 @@
             </div>
         <a href="http://localhost:8181/hongbapProject/logout.do" class="btn btn-danger btn-lg" role="button">logOut</a>
         <a href="http://localhost:8181/hongbapProject/userinfo.do" class="btn btn-success btn-lg" role="button">회원정보</a>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
     </div>
+    <hr/>
+		
+		<footer>
+		
+		<div class="row">
+		<h6 class="text-primary text-center"><span class="br"><b>홈페이지</b> :</span> <strong>www.hongbap.com</strong></h6>
+		<h6 class="text-primary text-center"><span class="br"><b>만든이</b> :</span> <strong><span class="wordR">신우람</span> <span class="wordG">조훈현</span> 서성현</strong></h6>
+		</div>
+		
+		</footer>
 
 	
 </body>

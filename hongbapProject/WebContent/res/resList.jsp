@@ -18,6 +18,9 @@ h1 {
 	margin: 15px;
 	font: small-caps bold 30px/1 sans-serif;
 }
+	.br{color:#A0522D;}
+	.wordR{color:red;}
+	.wordG{color:green;}
 
 .imgH {
 	float: left;
@@ -64,35 +67,34 @@ h1 {
 			<c:forEach var="res" items="${ResList}">
 				<tr>
 					<td>${res.resId }</td>
-					<td><a href="/hongbapProject/resDetail.do?page=1&resId=${res.resId}">${res.resName}</a></td>
+					<td><a href="http://localhost:8181/hongbapProject/res/resDetail.do?resId=${res.resId}">${res.resName}</a></td>
 					<td>${res.resCategory }</td>
 				</tr>
 			</c:forEach>
 		</table>
-	</div>
 
 	<%-- 페이징 버튼 만들기 --%>
-	<c:if test="${pageDTO.hasBoard()}">
+	<c:if test="${ResDTO.hasBoard()}">
 		<%-- 표현할 글이 있다면 부트스트랩 페이징처리적용. --%>
 		<ul class="pagination justify-content-center">
 			<%-- 뒤로가기 버튼을 표시할지 말지 결정하는 부분 --%>
-			<c:if test="${pageDTO.startPage>10 }">
+			<c:if test="${ResDTO.startPage>10 }">
 				<%-- 1보다 크기만 해도 상관은없지만 직관적으로 표현하기위해 뒤로가기 링크를 10이상 으로 해놧음--%>
 				<li class="page-item"><a class="page-link"
-					href="/hongbapProject/boardSelect.do?page=${pageDTO.startPage-10 }">«</a></li>
+					href="http://localhost:8181/hongbapProject/hongbapMain/resList.do?resCategory=${resCategory }&page=${ResDTO.startPage-10 }">«</a></li>
 			</c:if>
 
 			<%--페이지 번호 10개 묶음을 깔아주는 부분 --%>
-			<c:forEach var="pNo" begin="${pageDTO.startPage}"
-				end="${pageDTO.endPage}">
+			<c:forEach var="pNo" begin="${ResDTO.startPage}"
+				end="${ResDTO.endPage}">
 				<li class="page-item"><a class="page-link"
-					href="//hongbapProject/boardSelect.do?page=${pNo}">${pNo}</a></li>
+					href="http://localhost:8181/hongbapProject/hongbapMain/resList.do?resCategory=${resCategory }&page=${pNo}">${pNo}</a></li>
 			</c:forEach>
 
 			<%-- 다음으로 가기 버튼을 표시할지 말지 결정하는 부분 --%>
-			<c:if test="${pageDTO.endPage<pageDTO.totalPages }">
+			<c:if test="${ResDTO.endPage<ResDTO.totalPages }">
 				<li class="page-item"><a class="page-link"
-					href="/hongbapProject/boardSelect.do?page=${pageDTO.startPage+10 }">»</a></li>
+					href="http://localhost:8181/hongbapProject/hongbapMain/resList.do?resCategory=${resCategory }&page=${ResDTO.startPage+10 }">»</a></li>
 			</c:if>
 
 		</ul>
@@ -111,6 +113,16 @@ h1 {
 					type="button" class="btn btn-warning buttonMain">메인화면으로
 					가기</button></a>
 		</div>
-	
+<hr/>
+		
+		<footer>
+		
+		<div class="row">
+		<h6 class="text-primary text-center"><span class="br"><b>홈페이지</b> :</span> <strong>www.hongbap.com</strong></h6>
+		<h6 class="text-primary text-center"><span class="br"><b>만든이</b> :</span> <strong><span class="wordR">신우람</span> <span class="wordG">조훈현</span> 서성현</strong></h6>
+		</div>
+		
+		</footer>	
+	</div>
 </body>
 </html>
