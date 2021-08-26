@@ -27,9 +27,13 @@ public class AttachWriteService implements IAttachService{
 		// 댓글 글쓴이가 현재 로그인되어 있는 유저로 표기하기 위해 로그인된 세션을 불러온다. 
 		String awriter = (String)session.getAttribute("id_session");
 		
-		String strResid = (String)session.getAttribute("resId");
-		int resId = Integer.parseInt(strResid);
+		Integer iResId = (Integer)session.getAttribute("resId");
 		
+		
+		if(iResId==null) {
+			System.out.println("레스토랑ID 세션 받기 실패");
+		}
+		int resId = Integer.valueOf(iResId).intValue();
 		String atitle = (String)request.getParameter("atitle");
 		String acontent = (String)request.getParameter("acontent");
 		

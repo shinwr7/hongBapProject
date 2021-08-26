@@ -206,7 +206,7 @@ public class PatternServlet extends HttpServlet {
 		} else if(uri.contentEquals("/hongbapProject/resUpdate.do")) {
 				rsv = new ResUpdateService();
 				rsv.excute(request, response);
-				ui = "/hongbapProject/resDetail.do";
+				ui = "/hongbapProject/res/resDetail.do";
 				
 				
 		// res 컨트롤러 끝	
@@ -214,16 +214,25 @@ public class PatternServlet extends HttpServlet {
 		
 				
 				
-		} else if(uri.contentEquals("/hongbapProject/attachWrite.do")) {
+		} else if(uri.contentEquals("/hongbapProject/res/attachWrite.do")) {
 				asv = new AttachWriteService();
 				asv.execute(request, response);
-				ui = "/hongbapProject/resDetail.do";
+				
+				String strResId = (String)request.getParameter("resId");
+				
+				if(strResId==null) {
+					System.out.println("레스토랑ID 세션 받기 실패");
+				}
+				int resId = Integer.parseInt(strResId);
+				request.setAttribute("resId", resId);
+				
+				ui = "/res/resDetail.do?resId="+resId+"";
 				
 				
 		} else if(uri.contentEquals("/hongbapProject/attachDelete.do")) {
 				asv = new AttachDeleteService();
 				asv.execute(request, response);
-				ui = "/hongbapProject/resDetail.do";
+				ui = "/hongbapProject/res/resDetail.do";
 				
 				
 				
