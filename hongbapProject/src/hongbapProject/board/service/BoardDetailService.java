@@ -21,7 +21,7 @@ public class BoardDetailService implements IBoardService{
 			try {
 				// 서비스 내부에서 포워딩 시키면
 				// 리다이렉트가 아니기 때문에 실행됨
-				String ui = "/users/user_login.jsp";
+				String ui = "/user/userLogin.jsp";
 				RequestDispatcher dp =
 						request.getRequestDispatcher(ui);
 				dp.forward(request, response);

@@ -21,7 +21,8 @@ public class ResInfoService implements IResService {
 			session = request.getSession();
 			
 			
-			String strid = request.getParameter("resId");
+			String strid = (String)request.getParameter("resId");
+			System.out.println("strid값 : "+strid);
 			int resId = Integer.parseInt(strid);
 		
 			ResDAO dao = ResDAO.getInstance();
@@ -39,7 +40,7 @@ public class ResInfoService implements IResService {
 			request.setAttribute("menu", menu);
 			
 			// resId 세션 발급(후에 이것으로 레스토랑 삭제, 레스토랑 수정, 메뉴 조회 가능)
-			session.setAttribute("resid", resId);
+			session.setAttribute("resId", resId);
 			
 			
 		} catch (Exception e) {

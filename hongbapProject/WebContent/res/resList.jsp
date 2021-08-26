@@ -64,7 +64,7 @@ h1 {
 			<c:forEach var="res" items="${ResList}">
 				<tr>
 					<td>${res.resId }</td>
-					<td><a href="/hongbapProject/resDetail.do?resId=${res.resId}">${res.resName}</a></td>
+					<td><a href="/hongbapProject/resDetail.do?page=1&resId=${res.resId}">${res.resName}</a></td>
 					<td>${res.resCategory }</td>
 				</tr>
 			</c:forEach>
