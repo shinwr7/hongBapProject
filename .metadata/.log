@@ -6749,6 +6749,7 @@ java.lang.RuntimeException
 	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
 	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
 	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:175)
+<<<<<<< HEAD
 !SESSION 2021-08-26 18:53:46.257 -----------------------------------------------
 eclipse.buildId=4.15.0.I20200305-0155
 java.version=1.8.0_292
@@ -7136,3 +7137,21 @@ org.xml.sax.SAXParseException; lineNumber: 12; columnNumber: 2; 요소 콘텐츠
 
 !ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2021-08-26 18:57:00.345
 !MESSAGE No repository found at http://dl.bintray.com/testng-team/testng-p2-release/.
+=======
+
+!ENTRY org.eclipse.jdt.core 4 4 2021-08-26 20:18:28.447
+!MESSAGE Background Indexer Crash Recovery
+!STACK 0
+java.lang.NegativeArraySizeException
+	at org.eclipse.jdt.internal.compiler.util.HashtableOfObject.<init>(HashtableOfObject.java:41)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.readCategoryTable(DiskIndex.java:683)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategory(DiskIndex.java:486)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategories(DiskIndex.java:478)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeWith(DiskIndex.java:580)
+	at org.eclipse.jdt.internal.core.index.Index.save(Index.java:203)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveIndex(IndexManager.java:990)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveIndexes(IndexManager.java:1032)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.notifyIdle(IndexManager.java:711)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.run(JobManager.java:384)
+	at java.lang.Thread.run(Thread.java:748)
+>>>>>>> swr
