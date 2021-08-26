@@ -6,6 +6,21 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 <meta charset="UTF-8">
 <title>Hong Bop Login</title>
+<style>
+
+.imgA{float: left;
+	object-fit: cover;
+	width: 10%;
+	margin: 10px;}
+	
+h1 { margin : 15px}	
+
+.br{color:#A0522D;}
+.wordR{color:red;}
+.wordG{color:green;}
+
+
+</style>
 	
 </head>
 <body>
@@ -15,19 +30,22 @@
 <form action="http://localhost:8181/hongbapProject/login.do" method="post">
 
 <div class="row">
-<h1 class="text-center text-primary">로그인</h1>
+<div class="col-md-12">
+<img class="imgA" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuLNT1HhvwBWW7uliRR4GQ6rNIz-j3xMWcDeCvYsAxQ2hZYLUEit9LyxI8WxBentF-Gvg&usqp=CAU">
+<h1>로그인</h1>
+</div>
 </div>
 
 <hr/>
 
 <div class="row">
-<p class="text-center text-primary">환영합니다. "<strong>로그인</strong>"을 해주세요!</p>
+<p class="text-center ">환영합니다. "<strong>로그인</strong>"을 해주세요!</p>
 </div>
 
 <div class="row">
 <div class="input-group">
 <div class="input-group-prepend">
-<span class="input-group-text text-primary">아이디</span>
+<span class="input-group-text">아이디</span>
 </div>
 <input type = "text" class="form-control" name="UserId" placeholder ="ID">
 </div>
@@ -38,7 +56,7 @@
 <div class="row">
 <div class="input-group">
 <div class="input-group-prepend">
-<span class="input-group-text text-primary">비밀번호</span>
+<span class="input-group-text">비밀번호</span>
 </div>
 <input type = "password" class="form-control" name="UserPw" placeholder ="PW">
 </div>
@@ -47,11 +65,9 @@
 <br>
 
 <div class="row">
-<div class="col-md-1">
-<input type ="submit" value="로그인" class = "btn btn-primary">
-</div>
-<div class="col-md-2">
-<a href="http://localhost:8181/hongbapProject/user/userJoin.jsp" class = "btn btn-primary">회원가입</a>
+<div class="co-md-1">
+<input type ="submit" value="로그인" class = "btn btn-success">
+<a href="http://localhost:8181/hongbapProject/user/userJoin.jsp" class = "btn btn-danger">회원가입</a>
 </div>
 </div>
 
@@ -64,8 +80,8 @@
 </div>
 
 <div class="row">
-<h6 class="text-primary text-center">홈페이지 : <strong>www.hongbap.com</strong></h6>
-<h6 class="text-primary text-center">만든이 : <strong>신우람 조훈현 서성현</strong></h6>
+<h6 class="text-primary text-center"><span class="br">홈페이지</span> : <strong>www.hongbap.com</strong></h6>
+<h6 class="text-primary text-center"><span class=:br">만든이</span> : <strong><span class="wordR">신우람</span> <span class="wordG">조훈현</span> 서성현</strong></h6>
 </div>
 
 
