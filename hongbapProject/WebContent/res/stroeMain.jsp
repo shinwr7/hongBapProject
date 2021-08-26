@@ -192,7 +192,7 @@ span {
 			<a
 				href="http://localhost:8181/hongbapProject/hongbapMain/hongbapMain.jsp"><button
 					type="button" class="btn btn-warning buttonMain">메인화면으로 가기</button></a>
-			<a href="http://localhost:8181/hongbapProject/board/boardWrite.jsp"><button
+			<a href="/hongbapProject/boardWrite.do"><button
 					type="button" class="btn btn-warning buttonMain">요청글쓰기창</button></a> <a
 				href="http://localhost:8181/hongbapProject/board/boardSelect.do?page=1"><button
 					type="button" class="btn btn-warning buttonMain">요청게시판</button></a> <a

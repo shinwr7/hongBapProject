@@ -90,6 +90,9 @@
             </div>
         <a href="http://localhost:8181/hongbapProject/logout.do" class="btn btn-danger btn-lg" role="button">logOut</a>
         <a href="http://localhost:8181/hongbapProject/userinfo.do" class="btn btn-success btn-lg" role="button">회원정보</a>
+        <br/>
+        <a href="http://localhost:8181/hongbapProject/board/boardSelect.do?page=1"><button
+					type="button" class="btn btn-warning buttonMain">요청게시판</button></a>
     </div>
     <hr/>
 		

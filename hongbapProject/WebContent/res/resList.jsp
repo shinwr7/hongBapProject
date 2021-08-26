@@ -106,7 +106,7 @@ h1 {
 	<div class="row">&nbsp;</div>
 		
 		<div class="button">
-			<a href="http://localhost:8181/hongbapProject/board/boardWrite.jsp"><button
+			<a href="/hongbapProject/boardWrite.do"><button
 					type="button" class="btn btn-danger">요청하기</button></a> <a
 				href="/hongbapProject/logout.do"><button type="button"
 					class="btn btn-success">로그아웃</button></a> <a
