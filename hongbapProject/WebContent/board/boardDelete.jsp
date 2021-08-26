@@ -11,7 +11,10 @@
         text-align: center;
     }
     h2{text-align: center; border-radius: 15px;  height: 35px; margin: 15px; background-color: #FACC2E; background-size: 450px;}
-    .icon{  background-image: url("img/배경제거구름2.png");}
+    	.br{color:#A0522D;}
+	.wordR{color:red;}
+	.wordG{color:green;}
+    .icon{  background-image: url("https://img.icons8.com/color/452/cloud.png");}
     .imgH{position: relative;}
 </style>
 <script>

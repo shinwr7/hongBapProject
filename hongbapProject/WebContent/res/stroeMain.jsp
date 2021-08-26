@@ -28,6 +28,9 @@
 	padding: 10px;
 	margin: 10px;
 }
+	.br{color:#A0522D;}
+	.wordR{color:red;}
+	.wordG{color:green;}
 
 .resName {
 	font: small-caps bold 24px/1 sans-serif;
@@ -123,6 +126,16 @@ span {
 					style="color: white;">위로올리기</button></a>
 		</p>
 
+		
+		<footer>
+		<div class="rwo">
+		<hr>
+		</div>
+		<div class="row">
+		<h6 class="text-primary text-center"><span class="br"><b>홈페이지</b> :</span> <strong>www.hongbap.com</strong></h6>
+		<h6 class="text-primary text-center"><span class="br"><b>만든이</b> :</span> <strong><span class="wordR">신우람</span> <span class="wordG">조훈현</span> 서성현</strong></h6>
+		</div>
+		</footer>
 
 	</div>
 </body>

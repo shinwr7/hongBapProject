@@ -15,14 +15,14 @@
 	.imgA{ object-fit:contain; width: 150px; height:150px;}
 	.snd{color: red;}
 	.br{color:#A0522D;}
+	.wordR{color:red;}
+	.wordG{color:green;}
 	.word{text-align: center;}
 	.gre{position:relative;left:7px; width:98%; height:35px; border-radius: 14px; background-color: #8B5927; margin:1px;} 
 	.bro{position:relative;left:7px; width:98%; height:35px; border-radius: 14px; background-color:#228B22; margin:1px;}
 	.buttonGo{font: small-caps bold 24px/1 sans-serif;
 			border:0; outline:0; margin:6px 0 5px 0; border-radius: 18px; width: 950px; height:50px; background-color: #FACC2E;}
 	.redW{color: brown;}
-	.wordR{color:red;}
-	.wordG{color:green;}
 	.button{border:0; outline:0;margin: 3px 0 3px 23px; font: small-caps bold 20px/1; }
 	.buttonR{border:0; outline:0;border-radius:8px; background-color:red; color:white; width:450px; height:30px;}
 	.buttonG{border:0; outline:0;border-radius:8px; background-color:green; color:white; width:450px;height:30px;}
