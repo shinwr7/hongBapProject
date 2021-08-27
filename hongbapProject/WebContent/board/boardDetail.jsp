@@ -61,7 +61,7 @@
     <hr class="hr">
     <footer>
       <div class="button">
-        <a href="/hongbapProject/boardDetail.do"><button type="submit" class="btn btn-danger buttonReq" >뒤로가기</button></a>
+        <button onclick="history.back()" class="btn btn-danger buttonReq" >뒤로가기</button>
 		<a href="http://localhost:8181/hongbapProject/board/boardSelect.do?page=1"><button
                 type="button" class="btn btn-dark">삭제하기</button></a>
         <a href="/hongbapProject/boardUpdate.do"><button type="reset" class="btn btn-success buttonReset" >수정하기</button></a>

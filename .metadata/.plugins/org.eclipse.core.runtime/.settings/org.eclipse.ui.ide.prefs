@@ -4,6 +4,10 @@
 PROBLEMS_FILTERS_MIGRATE=true
 SAVE_ALL_BEFORE_BUILD=true
 eclipse.preferences.version=1
+<<<<<<< HEAD
 platformState=1623723353010
+=======
+platformState=1623723169020
+>>>>>>> 505549e38e9e97c3654b60bf84a3ce506e4c5db4
 quickStart=false
 tipsAndTricks=true
