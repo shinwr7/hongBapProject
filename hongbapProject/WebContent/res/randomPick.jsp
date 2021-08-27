@@ -24,8 +24,8 @@
 			border:0; outline:0; margin:6px 0 5px 0; border-radius: 18px; width: 950px; height:50px; background-color: #FACC2E;}
 	.redW{color: brown;}
 	.button{border:0; outline:0;margin: 3px 0 3px 23px; font: small-caps bold 20px/1; }
-	.buttonR{border:0; outline:0;border-radius:8px; background-color:red; color:white; width:450px; height:30px;}
-	.buttonG{border:0; outline:0;border-radius:8px; background-color:green; color:white; width:450px;height:30px;}
+	.buttonR{border:0; outline:0;border-radius:8px; background-color:red; color:white; width:49%; height:30px;}
+	.buttonG{border:0; outline:0;border-radius:8px; background-color:green; color:white; width:49%;height:30px;}
  	.randomimg{position:relative;left:7px; border-radius: 35px; height: 250px; width:99%; height:125px; background-image: url("https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTAxMTBfMjY1%2FMDAxNjEwMjE0OTcwNTEx.XK7MST1z9whArzIlYg4KnDn7-_puGiN3Kz1NAaPY6XAg.l3sitVfjvAJjV8gtIW3wZJ93LrzsdHhMX5LMUNoudasg.JPEG.ra4754%2FScreenshot%25A3%25DF20210110%25A3%25AD024340%25A3%25DFKakaoTalk.jpg&type=a340");}
 </style>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
@@ -62,14 +62,21 @@
 			</div>	
 		</div>
 		
-		<p class="button">
-			<a href="http://localhost:8181/hongbapProject/randompick.do"><button type="button" class="buttonR">다른 거 뽑기</button></a>
-			<a href="http://localhost:8181/hongbapProject/hongbapMain/hongbapMain.jsp"><button type="button" class="buttonG">메인화면으로 가기</button></a>
-		</p>
 		<div class="row">
-				<a href="http://localhost:8181/hongbapProject/res/resDetail.do?resId=${randomResult.resId}&page=1"><button type="button" class="buttonGo"> ${randomResult.resName} 으로 이동~!</button></a>
+		<div class="col-md-12">
+		<a href="http://localhost:8181/hongbapProject/randompick.do"><button type="button" class="buttonR ">다른 거 뽑기</button></a>
+		<a href="http://localhost:8181/hongbapProject/hongbapMain/hongbapMain.jsp"><button type="button" class="buttonG ">메인화면으로 가기</button></a>
+		</div>
+		</div>
+		
+		<div class="row">
+				<a href="http://localhost:8181/hongbapProject/res/resDetail.do?resId=${randomResult.resId}&page=1"><button type="button" class="buttonGo col-md-12"> ${randomResult.resName} 으로 이동~!</button></a>
 		</div>
 		<div class="row" style="font-size:50%;">&nbsp;</div>
+		
+		
+		
+		
 		<hr/>
 		
 		<footer>
