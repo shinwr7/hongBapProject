@@ -3,6 +3,7 @@ package hongbapProject.attach.model;
 import java.util.List;
 
 import hongbapProject.board.model.BoardVO;
+import hongbapProject.restaurant.model.ResVO;
 
 public class AttachDTO {
 		private int total;
@@ -37,6 +38,30 @@ public class AttachDTO {
 				this.totalPages +=1; 
 			}
 		}
+		}
+		public int getTotal() {
+			return total; // 총 글 개수 리턴
+		}
+		
+		public boolean hasNoBoard() {
+			return total == 0; // 게시물 표기가 불가능할때 true 리턴
+		}
+		
+		public boolean hasBoard() {
+			return total > 0; // 게시물이 있을때 true 리턴
+		}
+		
+		public int getTotalPages() {
+			return totalPages; // 페이지의 총 개수 리턴
+		}
+		
+		
+		public int getStartPage() {
+			return startPage; // 해당 페이지 그룹의 시작번호 리턴
+		}
+		
+		public int getEndPage() {
+			return endPage; // 해당 페이지 그룹의 끝번호 리턴
 		}
 
 		@Override

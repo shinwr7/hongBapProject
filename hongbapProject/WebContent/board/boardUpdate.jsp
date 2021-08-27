@@ -35,6 +35,7 @@
   <input type="hidden" value="${board.bWriter }"name="bWriter">
   <div>
     <header>
+    <div class="row">&nbsp;</div>
       <div class="row">
 
         <div class="col-xs-12"  style="background-color: wheat; border-radius: 15px;">
