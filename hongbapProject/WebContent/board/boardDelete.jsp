@@ -16,11 +16,9 @@
 	.wordR{color:red;}
 	.wordG{color:green;}
     .homp{font-size: 35px; color: blue;}
-
     
   .pas { display: inline-block;  width: 480px; border:6px solid #FACC2E; border-radius: 15px; background-color: #FACC2E; margin: 5px 0 5px 0; padding: 10px; }
     
-  .icon{  background-image: url("img/배경제거구름2.png");}
     .input{border: 6px solid brown;border-radius: 10px; width: 460px; margin: 3px 0 3px 3px;}
     .but{border-radius: 10px;  width: 230px; height: 40px; margin:0 3px 0 0 ; border: 4px solid green; background-color:white ;}
     .res{border-radius: 10px;  width: 230px; height: 40px; margin:0 3px 0 0 ; border: 4px solid red; background-color:white ;}
@@ -32,18 +30,16 @@
 <meta charset="UTF-8">
 <title></title>
 </head>
-<body>
+<body style="background-image:url(../img/cloud.png); background-repeat: cover;">
     <div class="container">
         <form action="http://localhost:8181/hongbapProject/board/boardDelete.do?bId=${bId}" method="post">
         <div class="row">&nbsp;</div>
-        <div class="icon ">
             <div class="row">&nbsp;</div>
             <div class="row">&nbsp;</div>
             <div class="row">&nbsp;</div>
-        </div>
         <div class="row">
             <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuLNT1HhvwBWW7uliRR4GQ6rNIz-j3xMWcDeCvYsAxQ2hZYLUEit9LyxI8WxBentF-Gvg&usqp=CAU"
+            src="../img/rainbow.png"
             class="imgH">
         </div>
             <div class="row">

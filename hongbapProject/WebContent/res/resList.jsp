@@ -14,10 +14,11 @@
 	margin: 0;
 }
 
-h1 {
-	margin: 15px;
-	font: small-caps bold 30px/1 sans-serif;
-}
+.imgA{ width:100px; margin: 0; height: 55px;}
+h1 {font:italic small-caps bold 60px/1 sans-serif; line-height: 60px;}	
+.headheight{ margin: 0 0 15px 0;}
+.clouda{margin: 0 0 0 5px; width: 99%; height: 55px; background-repeat: repeat; background-position: top ; background-size: 160px; background-image: url("../img/cloud.png");}
+
 	.br{color:#A0522D;}
 	.wordR{color:red;}
 	.wordG{color:green;}
@@ -31,10 +32,6 @@ h1 {
 
 
 
-.button {
-	top: 270px;
-	left: 130px;
-}
 </style>
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
@@ -44,15 +41,19 @@ h1 {
 </head>
 <body>
 	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<img
-					src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuLNT1HhvwBWW7uliRR4GQ6rNIz-j3xMWcDeCvYsAxQ2hZYLUEit9LyxI8WxBentF-Gvg&usqp=CAU"
-					class="imgH">
-					<div class="row" style="font-size: 50%;">&nbsp;</div>
-				<h1>${resCategory }게시판목록</h1>
-			</div>
-		</div>
+		<div class="row">&nbsp;</div>
+
+<div class="row clouda">
+<div class="col-md-2">
+<img class="imgA" src="../img/rainbow.png">
+</div>
+<div class ="col-md-10" >
+<h1>Food List</h1>
+</div>
+</div>
+
+<hr class="headheight" />
+<div class="row" >&nbsp;</div>
 		<table class="table table-striped">
 			<thead>
 				<tr>
@@ -104,14 +105,15 @@ h1 {
 	<%-- 페이징 버튼 부분 끝 --%>
 	<br />
 	<div class="row">&nbsp;</div>
+	<div class="row">&nbsp;</div>
 		
-		<div class="button">
+		<div>
 			<a href="/hongbapProject/boardWrite.do"><button
-					type="button" class="btn btn-danger">요청하기</button></a> <a
-				href="/hongbapProject/logout.do"><button type="button"
-					class="btn btn-success">로그아웃</button></a> <a
-				href="http://localhost:8181/hongbapProject/hongbapMain/hongbapMain.jsp"><button
-					type="button" class="btn btn-warning buttonMain">메인화면으로
+					type="button" class="btn btn-danger">요청하기</button></a>
+					 <a	href="/hongbapProject/logout.do"><button type="button"
+					class="btn btn-success">로그아웃</button></a>
+					 <a	href="http://localhost:8181/hongbapProject/hongbapMain/hongbapMain.jsp"><button
+					type="button" class="btn btn-warning" style="color:white;">메인화면으로
 					가기</button></a>
 		</div>
 <hr/>

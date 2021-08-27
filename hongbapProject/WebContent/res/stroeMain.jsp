@@ -32,16 +32,15 @@
 	text-align: center;
 }
 ul{display: inline-table; vertical-align: middle;}
-	.homeT{height: 140px;}
- .resName {
-	font: bold 30px/1 sans-serif;
-	float: left; line-height:160px ;
+.money{font:  small-caps bold 22px/1 sans-serif;}
+.homeT{height: 100px; display:inline-block; margin:0;}
+.resName { margin:0; padding:0;
+	font: small-caps bold 30px/1 sans-serif;
+	float: inherit;
 	}
-hr{color: rgb(103, 208, 250);}
-
-.imgH{ width: 145px; height: 145px; object-fit: contain;
-		float: right;  
-		}
+hr{color: rgb(103, 208, 250);margin:0;}
+.buttonMain{color:white;}
+.imgH{ width: 130px; height: 55px; magin:0; padding:0;}
 		
 	.br{color:#A0522D;}	
     .wordR{color:red;}
@@ -67,17 +66,18 @@ hr{color: rgb(103, 208, 250);}
 		<div class="tab-content">
 			<div id="home_p" class="container tab-pane active">
 				<div class="row homeT">
-					<div class="col-md-5">
+				<div class="col-md-5">
 					<img 
-						src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuLNT1HhvwBWW7uliRR4GQ6rNIz-j3xMWcDeCvYsAxQ2hZYLUEit9LyxI8WxBentF-Gvg&usqp=CAU"
+						src="../img/rainbow.png"
 						class="imgH">
-					</div>
-					<div class="col-md-5">
+						</div>
+				<div class="col-md-5">
 					<p class="resName">${res.resName }</p>
+						</div>
 				</div>
-				</div><hr/>
-				<img width="300px" height="300px" src="캐러샐효과!">
-				<ul>
+				<hr/>
+				<img class="round" style="margin:0;" width="300px" height="300px" src="캐러샐효과!">
+				<ul style="margin:0;">
 					<li><span>전화번호</span> : ${res.resPnum}</li>
 					<li><span>주소</span> : ${res.resAddr}</li>
 					<li><span>영업시간</span> : ${res.resTime}</li>
@@ -90,30 +90,27 @@ hr{color: rgb(103, 208, 250);}
 
 			<div id="menu1_p" class="container tab-pane fade">
 					<div class="row homeT">
-						<div class="col-md-5">
 						<img 
-							src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuLNT1HhvwBWW7uliRR4GQ6rNIz-j3xMWcDeCvYsAxQ2hZYLUEit9LyxI8WxBentF-Gvg&usqp=CAU"
+							src="../img/rainbow.png"
 							class="imgH">
-						</div>
-						<div class="col-md-5">
 				<p class="resName">Best Menu</p>
 				</div>
-				</div>
-				<hr />
+				<hr style="margin:0;"/>
 				<div>
 					<div class="row">
-				<h5>${menu.menuName }</h5>
-						<div class="col-md-4 offset-md-2" style="float: right;">
-						<img width="300px" height="300px"
-							src="https://d1cua0vf0mkpiy.cloudfront.net/images/menu/normal/d8809d14-c01a-4291-b51d-8f5f450e4d58.png">
+				<h5 style="margin:0;">${menu.menuName }</h5>
+						<div class="col-md-4" style="float: right;">
+						<img width="300px" height="300px" class="rounded-circle"
+							src="음식이미지">
 						</div>
-						<div class="col-md-4">
+						<div class="col-md-4 offset-md-2">
 							<ul style="float: left;"> 
 								<div class="row">&nbsp;</div>
+							<li class="money">${menu.menuBook }</li>
 								<div class="row">&nbsp;</div>
 								<div class="row">&nbsp;</div>
-							<li>${menu.menuBook }</li>
-							<li>${menu.menuPrice }</li>
+							<div class="row">&nbsp;</div>
+							<li class="money">${menu.menuPrice } [Won] </li>
 						</ul>
 					</div>
 				</div>
@@ -122,16 +119,12 @@ hr{color: rgb(103, 208, 250);}
 
 			<div id="menu2_p" class="container tab-pane fade">
 						<div class="row homeT">
-						<div class="col-md-5">
 						<img 
-							src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuLNT1HhvwBWW7uliRR4GQ6rNIz-j3xMWcDeCvYsAxQ2hZYLUEit9LyxI8WxBentF-Gvg&usqp=CAU"
+							src="../img/rainbow.png"
 							class="imgH">
-						</div>
-						<div class="col-md-5">
-				<p class="resName">Comment</p>
+				<p class="resName">C om M en T</p>
 				</div>
-				</div>
-				
+				<hr/>
 				<table class="table table-striped resBoard">
 			<thead>
 				<tr>
@@ -152,6 +145,7 @@ hr{color: rgb(103, 208, 250);}
 					<td>${attach.awriter }</td>
 					
 				</tr>
+				</div>
 			</c:forEach>
 			
 			<form action ="http://localhost:8181/hongbapProject/res/attachWrite.do?resId=${resId }" method ="post">

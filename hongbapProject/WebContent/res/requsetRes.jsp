@@ -8,13 +8,10 @@
             *{padding: 0; margin: 0;}
             .a{font: small-caps bold 22px/1 sans-serif;}
 
-
-.imgA{float: left;
-	object-fit: cover;
-	width: 10%;
-	margin: 10px;}
-	
-h1 { margin : 15px}	
+.imgA{ width:100px; margin: 0; height: 55px;}
+h1 {font:italic small-caps bold 60px/1 sans-serif; line-height: 60px;}	
+.headheight{ margin: 0 0 15px 0;}
+.clouda{margin: 0 0 0 5px; width: 99%; height: 55px; background-repeat: repeat; background-position: top ; background-size: 160px; background-image: url("../img/cloud.png");}
 
 .br{color:#A0522D;}
 .wordR{color:red;}
@@ -31,14 +28,19 @@ h1 { margin : 15px}
 <div class="container">
 
     <form action="/hongbapProject/resInsert.do" method="post">
-		
-            <div class="row">
-            <div class="col-md-12">
-            <img class="imgA" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuLNT1HhvwBWW7uliRR4GQ6rNIz-j3xMWcDeCvYsAxQ2hZYLUEit9LyxI8WxBentF-Gvg&usqp=CAU">
-            <h1>관리자용 식당 추가 페이지</h1>
-            </div>
-            </div>
-            <hr/>
+				<div class="row">&nbsp;</div>
+
+<div class="row clouda">
+<div class="col-md-2">
+<img class="imgA" src="../img/rainbow.png">
+</div>
+<div class ="col-md-10" >
+<h1>Master Add Store</h1>
+</div>
+</div>
+
+<hr class="headheight" />
+<div class="row" >&nbsp;</div>
             
             <div class="row">
                 <div class="input-group">
@@ -129,7 +131,7 @@ h1 { margin : 15px}
     
 
 	<div class="row">
-	  <input type = "submit" name = "제출" class="btn btn-warning">
+	  <input style="color:white;" type = "submit" name = "제출" class="btn btn-warning">
 	  <input type = "reset" name = "초기화" class="btn btn-danger">
 	  <a href="http://localhost:8181/hongbapProject/hongbapMain/hongbapMain.jsp" class="btn btn-success">메인화면으로 가기</a>  
    </div>

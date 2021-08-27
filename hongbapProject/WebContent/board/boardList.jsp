@@ -15,10 +15,11 @@
         margin: 0;
     }
     
-    h1 {
-        
-        font: small-caps bold 30px/1 sans-serif;
-    }
+  .imgA{ width:100px; margin: 0; height: 55px;}
+h1 {font:italic small-caps bold 60px/1 sans-serif; line-height: 60px;}	
+.headheight{ margin: 0 0 15px 0;}
+.clouda{margin: 0 0 0 5px; width: 99%; height: 55px; background-repeat: repeat; background-position: top ; background-size: 160px; background-image: url("../img/cloud.png");}
+
     	.br{color:#A0522D;}
 	.wordR{color:red;}
 	.wordG{color:green;}
@@ -48,15 +49,19 @@
 </head>
 <body>
 	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<img 
-					src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuLNT1HhvwBWW7uliRR4GQ6rNIz-j3xMWcDeCvYsAxQ2hZYLUEit9LyxI8WxBentF-Gvg&usqp=CAU"
-					class="imgH">
-                    <div class="row" style="font-size: 25%;">&nbsp;</div>
-				<h1>요청게시판목록</h1>
-			</div>
-		</div>
+			<div class="row">&nbsp;</div>
+
+<div class="row clouda">
+<div class="col-md-2">
+<img class="imgA" src="../img/rainbow.png">
+</div>
+<div class ="col-md-10" >
+<h1>요청 게시판</h1>
+</div>
+</div>
+
+<hr class="headheight" />
+<div class="row" >&nbsp;</div>
 		<table class="table table-striped">
 			<thead>
 				<tr>
@@ -118,8 +123,7 @@
 	         <a href="/hongbapProject/logout.do"><button type="button"
 					class="btn btn-success">로그아웃</button></a> <a
 				href="http://localhost:8181/hongbapProject/hongbapMain/hongbapMain.jsp"><button
-					type="button" class="btn btn-warning buttonMain">메인화면으로
-					가기</button></a>
+					type="button" class="btn btn-warning"style="color:white;">메인화면으로 가기</button></a>
 		</div>
 <hr/>
 		

@@ -17,7 +17,6 @@
     .table{ border: 3px solid black; border-radius: 30px 30px 15px 15px; padding: 12px;
             background-color: black;}
     .foodca{font: small-caps bold 24px/1 sans-serif; color: white; padding: 10; margin: 10px;}
-   	.buttonMain{color: white;}
      .button{ margin: 0 0 0 15px;}
 	</style>
 <meta charset="UTF-8">
@@ -63,7 +62,7 @@
         <button type="reset" class="btn btn-success buttonReset" >글다시쓰기</button>
 		<a href="http://localhost:8181/hongbapProject/board/boardSelect.do?page=1"><button
                 type="button" class="btn btn-primary">요청게시판</button></a>
-        <a href="http://localhost:8181/hongbapProject/hongbapMain/hongbapMain.jsp"><button type="button" class="btn btn-warning buttonMain" >메인화면으로 가기</button></a>
+        <a href="http://localhost:8181/hongbapProject/hongbapMain/hongbapMain.jsp"><button type="button" class="btn btn-warning" style="color:white;" >메인화면으로 가기</button></a>
 
       </div>
       <hr/>
