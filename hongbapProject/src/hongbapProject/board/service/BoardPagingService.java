@@ -46,6 +46,8 @@ public class BoardPagingService implements IBoardService{
 				
 				
 				
+				
+				
 				// 포워딩하기위해 적재하기
 				request.setAttribute("boardList", boardList);
 				request.setAttribute("pageDTO", pageDTO);

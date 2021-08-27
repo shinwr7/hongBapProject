@@ -43,6 +43,7 @@ span {
 <title>${res.resName }</title>
 </head>
 <body>
+
 	<div class="container">
 		<!-- Nav pills -->
 		<ul class="nav nav-tabs nav-justified" role="tablist">
@@ -96,6 +97,79 @@ span {
 			<div id="menu2_p" class="container tab-pane fade">
 				<br>
 				<h3>미정</h3>
+				
+				<table class="table table-striped resBoard">
+			<thead>
+				<tr>
+					<th>no</th>
+					<th>댓글</th>
+					<th>평점</th>
+					<th>글쓴이</th>
+				</tr>
+			</thead>
+			<c:forEach var="attach" items="${attachList}">
+				<tr>
+					<td>${attach.aid }</td>
+
+					<td>${attach.acontent}</td>
+
+					<td>${attach.assessment }</td>
+					
+					<td>${attach.awriter }</td>
+					
+				</tr>
+			</c:forEach>
+			
+			<form action ="http://localhost:8181/hongbapProject/res/attachWrite.do?resId=${resId }" method ="post">
+				<table>
+				<tr>
+					<td><textarea name="acontent"></textarea></td>
+						<td>
+						<select  name = "assessment">
+				        <option value="5">5</option>
+				        <option value="4">4</option>
+				        <option value="3">3</option>
+				        <option value="2">2</option>
+				        <option value="1">1</option>
+			    		</select>
+				        </td>
+				</tr>
+				</table>
+				
+				<input type="submit" value="댓글쓰기">
+				<input type="reset" value="리셋">
+			</form>
+			
+		</table>
+				
+		<c:if test="${pageDTO.hasBoard()}">
+		<%-- 표현할 글이 있다면 부트스트랩 페이징처리적용. --%>
+		<ul class="pagination justify-content-center">
+			<%-- 뒤로가기 버튼을 표시할지 말지 결정하는 부분 --%>
+			<c:if test="${pageDTO.startPage>10 }">
+				<%-- 1보다 크기만 해도 상관은없지만 직관적으로 표현하기위해 뒤로가기 링크를 10이상 으로 해놧음--%>
+				<li class="page-item"><a class="page-link"
+					href="http://localhost:8181/hongbapProject/res/resDetail.do?page=${pageDTO.startPage-10 }">«</a></li>
+			</c:if>
+
+			<%--페이지 번호 10개 묶음을 깔아주는 부분 --%>
+			<c:forEach var="pNo" begin="${pageDTO.startPage}"
+				end="${pageDTO.endPage}">
+				<li class="page-item"><a class="page-link"
+					href="http://localhost:8181/hongbapProject/res/resDetail.do?resId=${resId }&page=${pNo}">${pNo}</a></li>
+			</c:forEach>
+
+			<%-- 다음으로 가기 버튼을 표시할지 말지 결정하는 부분 --%>
+			<c:if test="${pageDTO.endPage<pageDTO.totalPages }">
+				<li class="page-item"><a class="page-link"
+					href="http://localhost:8181/hongbapProject/res/resDetail.do?page=${pageDTO.startPage+10 }">»</a></li>
+			</c:if>
+
+		</ul>
+		<%--페이징네이션 종료 --%>
+		</c:if>
+
+
 
 			</div>
 		</div>
@@ -118,7 +192,7 @@ span {
 			<a
 				href="http://localhost:8181/hongbapProject/hongbapMain/hongbapMain.jsp"><button
 					type="button" class="btn btn-warning buttonMain">메인화면으로 가기</button></a>
-			<a href="http://localhost:8181/hongbapProject/board/boardWrite.jsp"><button
+			<a href="/hongbapProject/boardWrite.do"><button
 					type="button" class="btn btn-warning buttonMain">요청글쓰기창</button></a> <a
 				href="http://localhost:8181/hongbapProject/board/boardSelect.do?page=1"><button
 					type="button" class="btn btn-warning buttonMain">요청게시판</button></a> <a
