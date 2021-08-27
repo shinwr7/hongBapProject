@@ -309,7 +309,7 @@ public int getResCount(String resCategory) {
 		return countNum;
 	} // count end
 
-public int insertRes () {
+public int insertRes (ResVO res) {
 	Connection con = null;
 	PreparedStatement pstmt = null;
 	int resultCode = 0;
@@ -319,6 +319,13 @@ public int insertRes () {
 				+ "VALUES(?, ?, ?, ?, ?, ?, ?)";
 		
 		pstmt=con.prepareStatement(sql);
+		pstmt.setString(1, res.getResName());
+		pstmt.setString(2, res.getResAddr());
+		pstmt.setString(3, res.getResPnum());
+		pstmt.setString(4, res.getResTime());
+		pstmt.setString(5, res.getResHoliday());
+		pstmt.setString(6, res.getResHomepage());
+		pstmt.setString(7, res.getResCategory());
 		pstmt.executeUpdate();
 		
 		resultCode=1;

@@ -113,7 +113,7 @@
 	<div class="row">&nbsp;</div>
 		
 		<div class="button">
-			<a href="/hongbapProject/res/boardWrite.do"><button
+			<a href="/hongbapProject/board/userRequestRes.jsp"><button
 					type="button" class="btn btn-danger">요청하기</button></a>
 	         <a href="/hongbapProject/logout.do"><button type="button"
 					class="btn btn-success">로그아웃</button></a> <a

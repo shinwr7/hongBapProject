@@ -25,9 +25,9 @@ public class BoardWriteService implements IBoardService {
 			e.printStackTrace();
 		}
 		
-		String bTitle = request.getParameter("title");
-		String bContent = request.getParameter("content");
-		String userNick = (String)session.getAttribute("userNick");
+		String bTitle = request.getParameter("btitle");
+		String bContent = request.getParameter("bcontent");
+		String userNick = (String)session.getAttribute("bwriter");
 		BoardVO board = new BoardVO();
 		board.setbTitle(bTitle);
 		board.setbWriter(userNick);
