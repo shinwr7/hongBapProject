@@ -25,25 +25,27 @@
 	crossorigin="anonymous">
 <style>
 * {
-	padding: 10px;
-	margin: 10px;
+	padding: 5px;
+	margin: 5px;
+	text-align: center;
 }
-	.br{color:#A0522D;}
-	.wordR{color:red;}
-	.wordG{color:green;}
-
-.resName {
-	font: small-caps bold 24px/1 sans-serif;
-}
-
+ul{display: inline-table; vertical-align: middle;}
+	.homeT{height: 140px;}
+ .resName {
+	font: bold 30px/1 sans-serif;
+	float: left; line-height:160px ;
+	}
+hr{color: rgb(103, 208, 250);}
 span {
 	font: small-caps bold 19px/1 sans-serif;
 }
+.imgH{ width: 145px; height: 145px; object-fit: contain;
+		float: right;  
+		}
 </style>
 <title>${res.resName }</title>
 </head>
 <body>
-
 	<div class="container">
 		<!-- Nav pills -->
 		<ul class="nav nav-tabs nav-justified" role="tablist">
@@ -58,40 +60,58 @@ span {
 		<!--내용물들-->
 		<div class="tab-content">
 			<div id="home_p" class="container tab-pane active">
-				<br>
-				<h1 id="resName">${resResult.resName }</h1>
+				<div class="row homeT">
+					<div class="col-md-5">
+					<img 
+						src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuLNT1HhvwBWW7uliRR4GQ6rNIz-j3xMWcDeCvYsAxQ2hZYLUEit9LyxI8WxBentF-Gvg&usqp=CAU"
+						class="imgH">
+					</div>
+					<div class="col-md-5">
+					<p class="resName">${res.resName }</p>
+				</div>
+				</div><hr/>
 				<img width="300px" height="300px" src="캐러샐효과!">
 				<ul>
-					<li><span>전화번호</span> : ${resResult.resPnum}</li>
-					<li><span>주소</span> : ${resResult.resAddr}</li>
-					<li><span>영업시간</span> : ${resResult.resTime}</li>
-					<li><span>휴무일</span> : ${resResult.resHoliday}</li>
+					<li><span>전화번호</span> : ${res.resPnum}</li>
+					<li><span>주소</span> : ${res.resAddr}</li>
+					<li><span>영업시간</span> : ${res.resTime}</li>
+					<li><span>휴무일</span> : ${res.resHoliday}</li>
 					<li><button type="button" class="btn btn-link"
-							data-toggle="modal" data-target="${resResult.resHomepage }">
+							data-toggle="modal" data-target="${res.resHomepage }">
 							홈페이지</button></li>
 				</ul>
 			</div>
 
 			<div id="menu1_p" class="container tab-pane fade">
-				<br>
-				<h3>Best Menu</h3>
+					<div class="row homeT">
+						<div class="col-md-5">
+						<img 
+							src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuLNT1HhvwBWW7uliRR4GQ6rNIz-j3xMWcDeCvYsAxQ2hZYLUEit9LyxI8WxBentF-Gvg&usqp=CAU"
+							class="imgH">
+						</div>
+						<div class="col-md-5">
+				<p class="resName">Best Menu</p>
+				</div>
+				</div>
 				<hr />
-
+				<div>
+					<div class="row">
 				<h5>${menu.menuName }</h5>
-				<div class="row row1">
-					<div class="col-md-3">
+						<div class="col-md-4 offset-md-2" style="float: right;">
 						<img width="300px" height="300px"
 							src="https://d1cua0vf0mkpiy.cloudfront.net/images/menu/normal/d8809d14-c01a-4291-b51d-8f5f450e4d58.png">
-					</div>
-					<div class="col-md-7">
-						<ul>
+						</div>
+						<div class="col-md-4">
+							<ul style="float: left;"> 
+								<div class="row">&nbsp;</div>
+								<div class="row">&nbsp;</div>
+								<div class="row">&nbsp;</div>
 							<li>${menu.menuBook }</li>
 							<li>${menu.menuPrice }</li>
 						</ul>
-
 					</div>
 				</div>
-
+				</div>
 			</div>
 
 			<div id="menu2_p" class="container tab-pane fade">
