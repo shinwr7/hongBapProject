@@ -27,7 +27,7 @@
 <body>
 	<div class="container">
 	
-  <form action="/hongbapProject/boardUpdate.do" method="post">
+  <form action="/hongbapProject/boardUpdateOk.do" method="post">
   
   <!-- hidden 태그를 이용해 나머지 요소들도 다 첨부해 주세요 -->
   <input type="hidden" value="${board.bId }"name="bId">
@@ -74,9 +74,7 @@
 		</div>
 				
     </footer>
-  </div>
   </form>
   </div>
-  
 </body>
 </html>

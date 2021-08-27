@@ -50,11 +50,11 @@
     </div><br/>
       <div class="row">
         <p class="foodca"> 글본문</p>
-        <textarea style="background-color: red; font-weight: bold; font-size: 20px; color: white;" cols="100" class="form-control" rows="7"  name="bContent"  required ></textarea>
+        <textarea style="background-color: red; font-weight: bold; font-size: 20px; color: white;" cols="100" class="form-control" rows="7"  readonly >${board.bContent }</textarea>
       </div>
       <div class="row" >
         <div class="foodca"> 글쓴이</div>
-        <div><input type="text" style="background-color:ivory" class="form-control"value="${nick_session }" required></div>
+        <div><input type="text" style="background-color:ivory" class="form-control"value="${board.bWriter}" readonly></div>
       </div>
     
   </div>
@@ -62,9 +62,9 @@
     <footer>
       <div class="button">
         <button onclick="history.back()" class="btn btn-danger buttonReq" >뒤로가기</button>
-		<a href="http://localhost:8181/hongbapProject/board/boardSelect.do?page=1"><button
+		<a href="http://localhost:8181/hongbapProject/board/boardDelete.do?bId=${board.bId}"><button
                 type="button" class="btn btn-dark">삭제하기</button></a>
-        <a href="/hongbapProject/boardUpdate.do"><button type="reset" class="btn btn-success buttonReset" >수정하기</button></a>
+        <a href="http://localhost:8181/hongbapProject/boardUpdate.do?bId=${board.bId}"><button type="button" class="btn btn-success buttonReset" >수정하기</button></a>
 		<a href="http://localhost:8181/hongbapProject/board/boardSelect.do?page=1"><button
                 type="button" class="btn btn-primary">요청게시판</button></a>
         <a href="http://localhost:8181/hongbapProject/hongbapMain/hongbapMain.jsp"><button type="button" class="btn btn-warning buttonMain" >메인화면으로 가기</button></a>

@@ -6,14 +6,10 @@
 <fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
 <fullyQualifiedTypeName name="com.mysql.cj.Session"/>
 <fullyQualifiedTypeName name="hongbapProject.board.model.BoardDAO"/>
-<fullyQualifiedTypeName name="hongbapProject.board.model.BoardVO"/>
 <fullyQualifiedTypeName name="java.security.Timestamp"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
-<fullyQualifiedTypeName name="java.sql.Timestamp"/>
 <fullyQualifiedTypeName name="hongbapProject.board.service.BoardPagingService"/>
-<fullyQualifiedTypeName name="hongbapProject.board.service.BoardDetailService"/>
 <fullyQualifiedTypeName name="hongbapProject.board.service.BoardDeleteService"/>
-<fullyQualifiedTypeName name="hongbapProject.board.service.BoardUpdateService"/>
 <fullyQualifiedTypeName name="hongbapProject.restaurant.service.ResInfoService"/>
 <fullyQualifiedTypeName name="com.sun.corba.se.pept.transport.Connection"/>
 <fullyQualifiedTypeName name="hongbapProject.menu.service.IMenuService"/>
@@ -34,11 +30,15 @@
 <fullyQualifiedTypeName name="hongbapProject.attach.model.AttachVO"/>
 <fullyQualifiedTypeName name="java.sql.Connection"/>
 <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
-<fullyQualifiedTypeName name="java.lang.Exception"/>
 <fullyQualifiedTypeName name="hongbapProject.attach.service.IAttachService"/>
 <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
 <fullyQualifiedTypeName name="hongbapProject.attach.model.AttachDAO"/>
 <fullyQualifiedTypeName name="hongbapProject.attach.service.AttachDeleteService"/>
 <fullyQualifiedTypeName name="hongbapProject.restaurant.service.ResInsertService"/>
 <fullyQualifiedTypeName name="hongbapProject.restaurant.model.ResVO"/>
+<fullyQualifiedTypeName name="java.lang.Exception"/>
+<fullyQualifiedTypeName name="hongbapProject.board.model.BoardVO"/>
+<fullyQualifiedTypeName name="hongbapProject.board.service.BoardDetailService"/>
+<fullyQualifiedTypeName name="hongbapProject.board.service.BoardUpdateService"/>
+<fullyQualifiedTypeName name="java.sql.Timestamp"/>
 </qualifiedTypeNameHistroy>

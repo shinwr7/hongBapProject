@@ -31,23 +31,30 @@ public class BoardUpdateService implements IBoardService{
 		try {
 			request.setCharacterEncoding("utf-8");
 			response.setCharacterEncoding("utf-8");
-			String nick=(String)session.getAttribute("nick_session");
+			
+			
+			String bid = (String)request.getParameter("bId");
+			String bwriter = (String)request.getParameter("bWriter");
+			String btitle = (String)request.getParameter("bTitle");
+			String bcontent = (String)request.getParameter("bContent");
 			
 			
 			BoardDAO dao = BoardDAO.getInstance();
 			
+	
+			
+			
+			
+			
 			BoardVO board = new BoardVO();
-			String bid = request.getParameter("bid");
-			String btitle = request.getParameter("btitle");
-			String bcontent = request.getParameter("bcontent");
-			String bhit = request.getParameter("bhit");
-			String bwriter = nick;
+		
 			Timestamp bdate = new Timestamp(System.currentTimeMillis());
+			
 			
 			board.setbId(Integer.parseInt(bid));
 			board.setbTitle(btitle);
 			board.setbContent(bcontent);
-			board.setbHit(Integer.parseInt(bhit));
+			board.setbHit(0);
 			board.setbWriter(bwriter);
 			board.setbDate(bdate);
 			

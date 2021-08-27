@@ -15,8 +15,9 @@ public class BoardDetailService implements IBoardService{
 		
 		HttpSession session = null;
 		session = request.getSession();
-		String idSession = (String)session.getAttribute("i_s");
 		
+		String idSession = (String)session.getAttribute("id_session");
+		System.out.println("idSession 값 : " + idSession);
 		if(idSession== null) {
 			try {
 				// 서비스 내부에서 포워딩 시키면
@@ -30,8 +31,8 @@ public class BoardDetailService implements IBoardService{
 			}
 		}
 		//url 에 묻어온 글 번호를  getParameter 를 이용해 얻습니다. 
-		String bId = request.getParameter("bid"); 
-							
+		String bId = request.getParameter("bId"); 
+		System.out.println("bId 값 : "+ bId);
 		// DAO 를 생성합니다
 		BoardDAO dao = BoardDAO.getInstance();
 		
@@ -42,7 +43,9 @@ public class BoardDetailService implements IBoardService{
 		BoardVO board = dao.getBoardDetail(bId);
 		// 포워딩을 위해 setAttribute()로 데이터를 실어줍니다.
 		request.setAttribute("board", board);
+		session.setAttribute("bId", bId);
 		
+		System.out.println("board 값 : "+ board);
 		
 	}
 }

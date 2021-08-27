@@ -22,12 +22,15 @@ public class BoardDeleteService implements IBoardService{
 			e.printStackTrace();
 		}
 		
-		String idSession = request.getParameter("id_session");
+		String idSession = (String)session.getAttribute("id_session");
+		String pwSession = (String)session.getAttribute("pw_session");
+		String bid = (String)request.getParameter("bId");
+		String UserPw = (String)request.getParameter("UserPw");
+		System.out.println("UserPw 값: "+UserPw);
+		System.out.println("보드 딜리트 서비스의 파라미터로 받아온 bId 값 :" + bid);
 		
-		String bid = request.getParameter("bid");
 		
-		
-		if(idSession==null) {
+		if(idSession==null&&bid==null) {
 			try {
 				String ui = "/user/userLogin.jsp";
 				RequestDispatcher dp =
@@ -37,29 +40,54 @@ public class BoardDeleteService implements IBoardService{
 				e.printStackTrace();
 			}
 			
-		}
-		
-		try {
-			
-			BoardDAO dao = BoardDAO.getInstance();
-			
-			
-			int resultCode =dao.boardDelete(bid);
-			
-			if(resultCode == 1 ) {
-				System.out.println("글삭제 정상 작동");
-			} else {
-				System.out.println("글삭제 실패");
+		}else if(UserPw==null){
+			try {
+				String ui = "/board/boardDelete.jsp?bId="+bid;
+				RequestDispatcher dp =
+						request.getRequestDispatcher(ui);
+				request.setAttribute("bId", bid);
+				dp.forward(request, response);
+				
+			} catch(Exception e) {
+				e.printStackTrace();
 			}
+		}
+		else if(pwSession!=null&&pwSession.equals(UserPw)) {
+					
+					
+					
+					try {
+						
+						BoardDAO dao = BoardDAO.getInstance();
+						
+						
+						int resultCode =dao.boardDelete(bid);
+						
+						if(resultCode == 1 ) {
+							System.out.println("글삭제 정상 작동");
+						} else {
+							System.out.println("글삭제 실패");
+						}
+						
+						
+					} catch (Exception e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}	
+					
+					
+				}else {
+					try {
+						String ui1 = "/user/userLogin.jsp";
+						RequestDispatcher dp1 =
+								request.getRequestDispatcher(ui1);
+						dp1.forward(request, response);
+					} catch(Exception e) {
+						e.printStackTrace();
+					}
+				}
+				
 			
-			
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}	
-		
-		
 	}
-
 	}
 

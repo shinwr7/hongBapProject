@@ -248,26 +248,34 @@ public class PatternServlet extends HttpServlet {
 
 			bsv = new BoardWriteService();
 			bsv.execute(request, response);
-			ui = "hongbapProject/boardSelect.do";
+			ui = "/board/boardSelect.do";
 
 					
 			
 		} else if(uri.equals("/hongbapProject/boardUpdate.do")) {
 			
+			System.out.println("boardUpdate.do 들어왔니?");
+			bsv = new BoardDetailService();
+			bsv.execute(request, response);
+			ui = "/board/boardUpdate.jsp";
+			
+		} else if(uri.equals("/hongbapProject/boardUpdateOk.do")) {
+			System.out.println("boardUpdateOk 들어갔니?");
 			
 			bsv = new BoardUpdateService();
 			bsv.execute(request, response);
+			
 			ui = "/boardDetail.do";
 			
-		} else if(uri.equals("/hongbapProject/boardDelete.do")) {
+		} else if(uri.equals("/hongbapProject/board/boardDelete.do")) {
 			
 			bsv = new BoardDeleteService();
 			bsv.execute(request, response);
-			ui="/boardSelect.do";
+			ui="/board/boardSelect.do";
 			
 			
 		} else if(uri.equals("/hongbapProject/boardDetail.do")) {
-			
+			System.out.println("디테일 컨트롤러 진입");
 			bsv = new BoardDetailService();
 			bsv.execute(request, response);
 			ui = "/board/boardDetail.jsp";

@@ -81,27 +81,27 @@
 		
 
 	<%-- 페이징 버튼 만들기 --%>
-	<c:if test="${BoardDTO.hasBoard()}">
+	<c:if test="${pageDTO.hasBoard()}">
 		<%-- 표현할 글이 있다면 부트스트랩 페이징처리적용. --%>
 		<ul class="pagination justify-content-center">
 			<%-- 뒤로가기 버튼을 표시할지 말지 결정하는 부분 --%>
-			<c:if test="${BoardDTO.startPage>10 }">
+			<c:if test="${pageDTO.startPage>10 }">
 				<%-- 1보다 크기만 해도 상관은없지만 직관적으로 표현하기위해 뒤로가기 링크를 10이상 으로 해놧음--%>
 				<li class="page-item"><a class="page-link"
-					href="http://localhost:8181/hongbapProject/hongbapMain/board/boardList.do?page=${BoardDTO.startPage-10 }">«</a></li>
+					href="http://localhost:8181/hongbapProject/board/boardSelect.do?page=${pageDTO.startPage-10 }">«</a></li>
 			</c:if>
 
 			<%--페이지 번호 10개 묶음을 깔아주는 부분 --%>
-			<c:forEach var="pNo" begin="${BoardDTO.startPage}"
-				end="${BoardDTO.endPage}">
+			<c:forEach var="pNo" begin="${pageDTO.startPage}"
+				end="${pageDTO.endPage}">
 				<li class="page-item"><a class="page-link"
-					href="http://localhost:8181/hongbapProject/hongbapMain/board/boardList.do?page=${pNo}">${pNo}</a></li>
+					href="http://localhost:8181/hongbapProject/board/boardSelect.do?page=${pNo}">${pNo}</a></li>
 			</c:forEach>
 
 			<%-- 다음으로 가기 버튼을 표시할지 말지 결정하는 부분 --%>
-			<c:if test="${BoardDTO.endPage<BoardDTO.totalPages }">
+			<c:if test="${pageDTO.endPage<pageDTO.totalPages }">
 				<li class="page-item"><a class="page-link"
-					href="http://localhost:8181/hongbapProject/board/boardList.do?page=${BoardDTO.startPage+10 }">»</a></li>
+					href="http://localhost:8181/hongbapProject/board/boardSelect.do?page=${pageDTO.startPage+10 }">»</a></li>
 			</c:if>
 
 		</ul>

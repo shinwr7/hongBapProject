@@ -31,16 +31,16 @@
 </script>
 <meta charset="UTF-8">
 <title></title>
-
 </head>
 <body>
     <div class="container">
-        <form action="http://localhost:8181/hongbapProject/boardDelete.do" method="post">
+        <form action="http://localhost:8181/hongbapProject/board/boardDelete.do?bId=${bId}" method="post">
         <div class="row">&nbsp;</div>
         <div class="icon ">
             <div class="row">&nbsp;</div>
             <div class="row">&nbsp;</div>
             <div class="row">&nbsp;</div>
+        </div>
         <div class="row">
             <img
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuLNT1HhvwBWW7uliRR4GQ6rNIz-j3xMWcDeCvYsAxQ2hZYLUEit9LyxI8WxBentF-Gvg&usqp=CAU"
@@ -72,9 +72,7 @@
             <h3 ><span class="br"><b>만든이</b> :</span> <strong><span class="wordR">신우람</span> <span class="wordG">조훈현</span> 서성현</strong></h3>
             </div>
             
-        </footer>
-      </div>
-    </form>
-    </div>
+       </div>
+     
     </body>
     </html>
