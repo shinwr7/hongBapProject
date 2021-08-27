@@ -123,27 +123,7 @@ h1 { margin : 15px}
                 
                 <br/>
                 
-                <div class="row">
-                <div class="input-group input-group-sm">
-                    <div class="input-group-prepend">
-                          <span class="input-group-text ">메뉴이름</span>
-                      </div>
-                      <input type="text" class="form-control" name="menuName" placeholder="메뉴이름">
-                </div>
-                </div>
                 
-                <br/> 
-                
-                <div class="row">
-                <div class="input-group input-group-sm">
-                    <div class="input-group-prepend">
-                          <span class="input-group-text ">메뉴가격</span>
-                      </div>
-                      <input type="text" class="form-control" name="menuPrice" placeholder="메뉴가격">
-                </div>
-                </div>
-                
-                <br/>
                 
            
     

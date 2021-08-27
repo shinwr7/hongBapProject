@@ -23,6 +23,8 @@
 	rel="stylesheet"
 	integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
 	crossorigin="anonymous">
+	
+
 <style>
 * {
 	padding: 5px;
@@ -44,6 +46,8 @@ hr{color: rgb(103, 208, 250);}
 	.br{color:#A0522D;}	
     .wordR{color:red;}
 	.wordG{color:green;}
+	
+	
 </style>
 <title>${res.resName }</title>
 </head>
@@ -56,7 +60,7 @@ hr{color: rgb(103, 208, 250);}
 			<li class="nav-item"><a class="nav-link" data-toggle="pill"
 				href="#menu1_p">추천메뉴~!</a></li>
 			<li class="nav-item"><a class="nav-link" data-toggle="pill"
-				href="#menu2_p">미정</a></li>
+				href="#menu2_p">댓글</a></li>
 		</ul>
 
 		<!--내용물들-->
@@ -117,8 +121,16 @@ hr{color: rgb(103, 208, 250);}
 			</div>
 
 			<div id="menu2_p" class="container tab-pane fade">
-				<br>
-				<h3>미정</h3>
+						<div class="row homeT">
+						<div class="col-md-5">
+						<img 
+							src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuLNT1HhvwBWW7uliRR4GQ6rNIz-j3xMWcDeCvYsAxQ2hZYLUEit9LyxI8WxBentF-Gvg&usqp=CAU"
+							class="imgH">
+						</div>
+						<div class="col-md-5">
+				<p class="resName">Comment</p>
+				</div>
+				</div>
 				
 				<table class="table table-striped resBoard">
 			<thead>
@@ -145,9 +157,11 @@ hr{color: rgb(103, 208, 250);}
 			<form action ="http://localhost:8181/hongbapProject/res/attachWrite.do?resId=${resId }" method ="post">
 				<table>
 				<tr>
-					<td><textarea name="acontent"></textarea></td>
+				
+					<td style="width:100%; height:100%;" ><textarea style="width:100%; height:100%;" ></textarea></td>
+					
 						<td>
-						<select  name = "assessment">
+						<select name = "assessment">
 				        <option value="5">5</option>
 				        <option value="4">4</option>
 				        <option value="3">3</option>
@@ -158,8 +172,8 @@ hr{color: rgb(103, 208, 250);}
 				</tr>
 				</table>
 				
-				<input type="submit" value="댓글쓰기">
-				<input type="reset" value="리셋">
+				<input type="submit" value="댓글쓰기" class="text-primary">
+				<input type="reset" value="초기화" class="text-primary">
 			</form>
 			
 		</table>
@@ -214,8 +228,6 @@ hr{color: rgb(103, 208, 250);}
 		
 		    
 		    <button onclick="history.back()" class="btn btn-danger buttonReq" >뒤로가기</button>
-		    <a href="#"><button type="button" class="btn btn-dark"
-					style="color: white;">위로올리기</button></a>
 			<a href="/hongbapProject/boardWrite.do"><button
 					type="button" class="btn btn-success buttonMain">요청글쓰기창</button></a>
 			<a href="http://localhost:8181/hongbapProject/board/boardSelect.do?page=1"><button

@@ -1,5 +1,9 @@
 #Tomcat publish data
+<<<<<<< HEAD
 #Fri Aug 27 19:56:57 KST 2021
+=======
+#Fri Aug 27 18:19:57 KST 2021
+>>>>>>> 748789038a3305a416b80f8277bdf732774f6579
 org.eclipse.jst.jee.server\:hongbapProject=C\:\\apache-tomcat-9.0.50\\wtpwebapps\\hongbapProject
 >>>>>>>=505549e38e9e97c3654b60bf84a3ce506e4c5db4
 =\=\=\=\=\=\=

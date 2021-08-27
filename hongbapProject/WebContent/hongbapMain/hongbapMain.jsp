@@ -110,8 +110,16 @@
 
     <c:if test = "${id_session eq 'abc'}">
 	<a href="http://localhost:8181/hongbapProject/board/boardSelect.do?page=1"><button 
-	                type="button" class="btn btn-primary">관리자용 요청게시판</button></a>
+	                type="button" class="btn btn-primary">관리자용 식당추가</button></a>
 	</c:if>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+	
+
+=======
+>>>>>>> 182d89f3aac770dc8ec06d3198a0088d5a9560ea
+>>>>>>> 748789038a3305a416b80f8277bdf732774f6579
 		</footer>
 
 	

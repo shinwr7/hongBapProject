@@ -9,14 +9,13 @@
 
 <title>Hong Bop</title>
 <style>
+*{margin: 0; padding:0; }
 
-.imgA{float: left;
-	object-fit: cover;
-	width: 10%;
-	margin: 10px;}
-	
-h1 { margin : 15px}	
-
+.imgA{ width:130px; margin: 0; height: 55px;}
+.A{font-weight: bold;}
+.clouda{margin: 0 0 0 5px; width: 99%; height: 55px; background-repeat: repeat; background-position: top ; background-size: 160px; background-image: url("../img/cloud.png");}
+h1 {top: 6px; left:0; font:italic small-caps bold 60px/1 sans-serif; line-height: 60px;}	
+.headheight{ margin: 0 0 15px 0;}
 .br{color:#A0522D;}
 .wordR{color:red;}
 .wordG{color:green;}
@@ -27,32 +26,32 @@ h1 { margin : 15px}
 <body>
 
 <div class="container">
+<div class="row">&nbsp;</div>
 
-<div class="row">
-<div class="col-md-12">
-<img class="imgA" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuLNT1HhvwBWW7uliRR4GQ6rNIz-j3xMWcDeCvYsAxQ2hZYLUEit9LyxI8WxBentF-Gvg&usqp=CAU">
-<h1>회원가입</h1>
+<div class="row clouda">
+<div class="col-md-2">
+<img class="imgA" src="../img/rainbow.png">
+</div>
+<div class ="col-md-10" >
+<h1>User Join</h1>
 </div>
 </div>
-
-<hr/>
+<hr class="headheight" />
 
 	<form action="http://localhost:8181/hongbapProject/join.do" method="post"> 
-
-<div class="row">
-<p class="text-center ">환영합니다. "<strong>HongBap</strong>"입니다!</p>
-</div>
+<div class="row">&nbsp;</div>
+<div class="row">&nbsp;</div>
 
 <div class="row">
 <div class="input-group">
 <div class="input-group-prepend">
-<span class="input-group-text ">아이디</span>
+<span class="input-group-text ">&nbsp;&nbsp;아이디&nbsp;</span>
 </div>
 <input type = "text" class="form-control" name="UserId" placeholder ="ID">
 </div>
 </div>
 
-<br> 
+<div class="row" style="line-height: 50%;" >&nbsp;</div>
 
 <div class="row">
 <div class="input-group">
@@ -63,34 +62,34 @@ h1 { margin : 15px}
 </div>
 </div>
 
-<br>
+<div class="row" style="line-height: 50%;" >&nbsp;</div>
 
 <div class="row">
 <div class="input-group">
 <div class="input-group-prepend">
-<span class="input-group-text ">이름</span>
+<span class="input-group-text ">&nbsp;&nbsp;이름&nbsp;&nbsp;&nbsp;</span>
 </div>
 <input type = "text" class="form-control" name="UserName" placeholder ="Name">
 </div>
 </div>
 
-<br>
+<div class="row" style="line-height: 50%;" >&nbsp;</div>
 
 <div class="row">
 <div class="input-group">
 <div class="input-group-prepend">
-<span class="input-group-text ">닉네임</span>
+<span class="input-group-text ">&nbsp;닉네임&nbsp;&nbsp;</span>
 </div>
 <input type = "text" class="form-control" name="UserNick" placeholder ="NickName">
 </div>
 </div>
 
-<br>
+<div class="row" style="line-height: 50%;" >&nbsp;</div>
 
 <div class="row">
 <div class="input-group">
 <div class="input-group-prepend">
-<span class="input-group-text">이메일</span>
+<span class="input-group-text">&nbsp;이메일&nbsp;&nbsp;</span>
 </div>
 <input type = "email" class="form-control" name="UserEmail" placeholder ="Email">
 <div class="input-group-append">
@@ -99,7 +98,7 @@ h1 { margin : 15px}
 </div>
 </div>
 
-<br>
+<div class="row" style="line-height: 50%;" >&nbsp;</div>
 
 <div class="row">
 <div class="input-group">
@@ -110,35 +109,40 @@ h1 { margin : 15px}
 </div>
 </div>
 
-<br>
+
+
 
 <div class="row">
-<div class="col-md-1">
+<p class="text-center ">환영합니다. "<strong>HongBap</strong>"입니다!</p>
+</div>
+<div class="row">
+
 <input type = "submit" value = "회원가입" class = "btn btn-success">
-</div>
-<div class="col-md-1">
 <input type = "reset" value = "초기화" class = "btn btn-danger">
-</div>
+
 </div>
 				
 	
 
-<hr/>
 
 <footer>
 
 <div class="row">
-<img width="200px" height="400px" src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20160308_32%2Fkg9243_1457446931650764qL_JPEG%2Fresource%252812%2529.jpg&type=sc960_832">
+<img style="object-fit:contain;" src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20160308_32%2Fkg9243_1457446931650764qL_JPEG%2Fresource%252812%2529.jpg&type=sc960_832">
 </div>
 
+<hr>
 <div class="row">
 <h6 class="text-primary text-center"><span class="br">홈페이지</span> : <strong>www.hongbap.com</strong></h6>
 <h6 class="text-primary text-center"><span class="br">만든이</span> : <strong><span class="wordR">신우람</span> <span class="wordG">조훈현</span> 서성현</strong></h6>
 </div>
+<div class="row">&nbsp;</div>
 
-</footer>	
-	 
-	 </form>
+</footer>		
+		
+	</form>
+	
 </div>
+
 </body>
 </html>
