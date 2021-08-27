@@ -112,8 +112,11 @@
 	<a href="http://localhost:8181/hongbapProject/board/boardSelect.do?page=1"><button 
 	                type="button" class="btn btn-primary">관리자용 식당추가</button></a>
 	</c:if>
+<<<<<<< HEAD
 	
 
+=======
+>>>>>>> 182d89f3aac770dc8ec06d3198a0088d5a9560ea
 		</footer>
 
 	
