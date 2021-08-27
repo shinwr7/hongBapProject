@@ -36,20 +36,21 @@ public class AttachWriteService implements IAttachService{
 		}
 		int resId = Integer.valueOf(iResId).intValue();
 		
-		String awriter = nick+"("+resId+")";
-		String atitle = (String)request.getParameter("atitle");
+		String awriter = nick;
+		String acheck =  nick+"("+resId+")";
 		String acontent = (String)request.getParameter("acontent");
 		
 		String strAssessment = (String)request.getParameter("assessment");
 		int assessment = Integer.parseInt(strAssessment);
 		
 		AttachVO attach = new AttachVO () ;
-		attach.setAtitle(atitle);
+		attach.setAcheck(acheck);
 		attach.setAcontent(acontent);
 		attach.setResId(resId);
 		attach.setAssessment(assessment);
 		attach.setAwriter(awriter);
 		
+		System.out.println("nick 세션 불러온 값(awriter): "+ awriter);
 		AttachDAO dao = AttachDAO.getInstance();
 		int resultCode = dao.attachWrite(attach);
 		

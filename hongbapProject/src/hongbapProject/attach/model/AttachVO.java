@@ -2,7 +2,7 @@ package hongbapProject.attach.model;
 
 public class AttachVO {
 	private int aid ;
-	private String atitle;
+	private String acheck;
 	private String acontent;
 	private int assessment;
 	private int resId;
@@ -11,6 +11,16 @@ public class AttachVO {
 	
 	
 	
+	public String getAcheck() {
+		return acheck;
+	}
+
+
+	public void setAcheck(String acheck) {
+		this.acheck = acheck;
+	}
+
+
 	public String getAwriter() {
 		return awriter;
 	}
@@ -23,7 +33,7 @@ public class AttachVO {
 
 	@Override
 	public String toString() {
-		return "AttachVO [aid=" + aid + ", atitle=" + atitle + ", acontent=" + acontent + ", assessment=" + assessment
+		return "AttachVO [aid=" + aid + ", acheck=" + acheck + ", acontent=" + acontent + ", assessment=" + assessment
 				+ ", resId=" + resId + ", awriter=" + awriter + "]";
 	}
 	
@@ -34,12 +44,7 @@ public class AttachVO {
 	public void setAid(int aid) {
 		this.aid = aid;
 	}
-	public String getAtitle() {
-		return atitle;
-	}
-	public void setAtitle(String atitle) {
-		this.atitle = atitle;
-	}
+	
 	public String getAcontent() {
 		return acontent;
 	}

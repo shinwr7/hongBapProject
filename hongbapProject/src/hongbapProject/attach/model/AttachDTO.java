@@ -37,8 +37,24 @@ public class AttachDTO {
 				// 마지막에 페이지를 하나 더 추가해야함
 				this.totalPages +=1; 
 			}
+			// 현재 보고 있는 페이지 그룹의 시작 번호 구하기.
+			int modVal = this.currentPage % 10;
+			this.startPage = this.currentPage / 10 * 10 + 1;
+			if(modVal == 0) {
+				this.startPage -= 10;
+			}
+			
+			// 해당페이지 그룹의 끝 번호 구하기
+			endPage = startPage + (10 - 1);
+			// 단 위에서 구한 명목상의 마지막 번호가
+			// totalPages를 초과하는 경우는
+			// totalPages로 대신 대입한다.
+			if(endPage > totalPages) {
+				endPage = totalPages;
+			}
 		}
 		}
+		
 		public int getTotal() {
 			return total; // 총 글 개수 리턴
 		}

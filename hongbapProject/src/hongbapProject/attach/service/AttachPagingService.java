@@ -54,7 +54,7 @@ public class AttachPagingService implements IAttachService{
 				// DTO의 역할은 페이지 하단에 링크만들 정보를 계산하는 것.
 				
 				// 전체 행 개수 가져오기
-				int countAttach = dao.getCountAttach();
+				int countAttach = dao.getCountAttach(resId);
 				
 				// 해당 식당의 평점 평균값 가져오기
 				double avgPoint = dao.getAvgAssessment(resId);

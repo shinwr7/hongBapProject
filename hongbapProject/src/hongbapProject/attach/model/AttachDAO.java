@@ -38,7 +38,7 @@ public class AttachDAO {
 		
 		int resultCode = 0;
 		
-		String sql = "INSERT INTO resAttach (atitle, acontent, assessment, resId, awriter) VALUES ("
+		String sql = "INSERT INTO resAttach (acheck, acontent, assessment, resId, awriter) VALUES ("
 				+ "?, ?, ?, ?, ?)";
 		
 		
@@ -49,7 +49,7 @@ public class AttachDAO {
 			con = ds.getConnection();
 			pstmt = con.prepareStatement(sql);
 			
-			pstmt.setString(1, attach.getAtitle());
+			pstmt.setString(1, attach.getAcheck());
 			pstmt.setString(2, attach.getAcontent());
 			pstmt.setInt(3, attach.getAssessment());
 			pstmt.setInt(4, attach.getResId());
@@ -97,7 +97,7 @@ public class AttachDAO {
 			
 			while (rs.next()) {
 				int aid = rs.getInt("aid");
-				String atitle = rs.getString("atitle");
+				String acheck = rs.getString("acheck");
 				String acontent = rs.getString("acontent");
 				int assessment = rs.getInt("assessment");
 				int resid = rs.getInt("resId");
@@ -105,7 +105,7 @@ public class AttachDAO {
 				
 				AttachVO attach = new AttachVO();
 				attach.setAid(aid);
-				attach.setAtitle(atitle);
+				attach.setAcheck(acheck);
 				attach.setAcontent(acontent);
 				attach.setAssessment(assessment);
 				attach.setResId(resid);
@@ -133,18 +133,19 @@ public class AttachDAO {
 			
 		}//attachList 끝
 
-	public int getCountAttach() {
+	public int getCountAttach(int resId) {
 		Connection con = null;
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
 		
 		int countAttach = 0 ;
 		
-		String sql = "SELECT COUNT(*) FROM resAttach";
+		String sql = "SELECT COUNT(*) FROM resAttach where resId=?";
 		
 		try {
 			con = ds.getConnection();
 			pstmt=con.prepareStatement(sql);
+			pstmt.setInt(1, resId);
 			rs=pstmt.executeQuery();
 			
 			if(rs.next()) {
@@ -213,17 +214,17 @@ public class AttachDAO {
 	}  // getAvgAssessment 종료
 
 	
-	public int attachDelete (int resId) {
+	public int attachDelete (String awriter) {
 		Connection con = null;
 		PreparedStatement pstmt = null;
 		
-		String sql = "DELETE FROM resAttach WHERE resId = ?";
+		String sql = "DELETE FROM resAttach WHERE awriter = ?";
 		
 		int resultCode = 0;
 		try {
 			con = ds.getConnection();
 			pstmt =con.prepareStatement(sql);
-			pstmt.setInt(1, resId);
+			pstmt.setString(1, awriter);
 			
 			pstmt.executeUpdate();
 			resultCode =1;
