@@ -107,16 +107,13 @@
 		<h6 class="text-primary text-center"><span class="br"><b>만든이</b> :</span> <strong><span class="wordR">신우람</span> <span class="wordG">조훈현</span> 서성현</strong></h6>
 		</div>
 		
-<<<<<<< HEAD
-    <a href="http://localhost:8181/hongbapProject/res/requsetRes.jsp"><button
-                type="button" class="btn btn-primary">관리자용 요청게시판</button></a>
-=======
+
     <c:if test = "${id_session eq 'abc'}">
 	<a href="http://localhost:8181/hongbapProject/board/boardSelect.do?page=1"><button 
-	                type="button" class="btn btn-primary">관리자용 요청게시판</button></a>
+	                type="button" class="btn btn-primary">관리자용 식당추가</button></a>
 	</c:if>
 	
->>>>>>> 471dadcab9a2861196756f0ffc510cf57dc5056d
+
 		</footer>
 
 	

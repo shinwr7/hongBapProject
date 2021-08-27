@@ -113,32 +113,33 @@ h1 { margin : 15px}
 <br>
 
 <div class="row">
-<div class="col-md-1">
+
 <input type = "submit" value = "회원가입" class = "btn btn-success">
-</div>
-<div class="col-md-1">
 <input type = "reset" value = "초기화" class = "btn btn-danger">
-</div>
+
 </div>
 				
 	
 
-<hr/>
 
 <footer>
 
 <div class="row">
-<img width="200px" height="400px" src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20160308_32%2Fkg9243_1457446931650764qL_JPEG%2Fresource%252812%2529.jpg&type=sc960_832">
+<img style="object-fit:contain;" src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20160308_32%2Fkg9243_1457446931650764qL_JPEG%2Fresource%252812%2529.jpg&type=sc960_832">
 </div>
 
+<hr>
 <div class="row">
 <h6 class="text-primary text-center"><span class="br">홈페이지</span> : <strong>www.hongbap.com</strong></h6>
 <h6 class="text-primary text-center"><span class="br">만든이</span> : <strong><span class="wordR">신우람</span> <span class="wordG">조훈현</span> 서성현</strong></h6>
 </div>
 
-</footer>	
-	 
-	 </form>
+
+</footer>		
+		
+	</form>
+	
 </div>
+
 </body>
 </html>
