@@ -120,7 +120,7 @@ h1 {top: 6px; left:0; font:italic small-caps bold 60px/1 sans-serif; line-height
 <footer>
 
 <div class="row">
-<img src="https://i.pinimg.com/originals/0d/36/81/0d368135094ffce1b9a7fe5d1215d8e6.png">
+<img sytle="object-fit:contain;" src="https://i.pinimg.com/originals/0d/36/81/0d368135094ffce1b9a7fe5d1215d8e6.png">
 </div>
 <hr/>
 <div class="row" style="line-height: 50%;" >&nbsp;</div>
