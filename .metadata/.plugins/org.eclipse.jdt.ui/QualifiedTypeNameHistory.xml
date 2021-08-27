@@ -19,7 +19,6 @@
 <fullyQualifiedTypeName name="hongbapProject.menu.service.IMenuService"/>
 <fullyQualifiedTypeName name="hongbapProject.restaurant.service.ResDeleteService"/>
 <fullyQualifiedTypeName name="hongbapProject.restaurant.service.IResService"/>
-<fullyQualifiedTypeName name="hongbapProject.restaurant.model.ResVO"/>
 <fullyQualifiedTypeName name="hongbapProject.restaurant.service.ResUpdateService"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
@@ -40,4 +39,6 @@
 <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
 <fullyQualifiedTypeName name="hongbapProject.attach.model.AttachDAO"/>
 <fullyQualifiedTypeName name="hongbapProject.attach.service.AttachDeleteService"/>
+<fullyQualifiedTypeName name="hongbapProject.restaurant.service.ResInsertService"/>
+<fullyQualifiedTypeName name="hongbapProject.restaurant.model.ResVO"/>
 </qualifiedTypeNameHistroy>

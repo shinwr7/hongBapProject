@@ -38,11 +38,11 @@
   <div class="table" >
         <div class="row">
         <div class="foodca col-md-2" > 글제목</div>
-        <div class="col-md-9"><input type="text"  style="background-color:ivory" class="form-control" name ="bTitle"  required placeholder="{가게이름} 을 추천합니다~! 로 작성해주세요"></div>
+        <div class="col-md-9"><input type="text"  style="background-color:ivory" class="form-control" name ="btitle"  required placeholder="{가게이름} 을 추천합니다~! 로 작성해주세요"></div>
       </div><br/>
       <div>
         <p class="foodca"> 글본문</p>
-        <textarea cols="100" class="form-control" rows="7" name="bContent" required placeholder="추천 하고자 하시는 가게의 정보 및 이유를 작성해주세요 검토후 추후 업데이트에 반영하겠습니다.">
+        <textarea cols="100" class="form-control" rows="7" name="bcontent" required placeholder="추천 하고자 하시는 가게의 정보 및 이유를 작성해주세요 검토후 추후 업데이트에 반영하겠습니다.">
 가게이름 :
 가게위치 :
 가게주소 : 
@@ -52,7 +52,7 @@
       </div>
       <div class="row" >
         <div class="foodca"> 글쓴이</div>
-        <div><input type="text" style="background-color:ivory" class="form-control" name="bWriter"value="${nick_session }" required></div>
+        <div><input type="text" style="background-color:ivory" class="form-control" name="bwriter" value="${nick_session}" readonly></div>
       </div>
     
   </div>

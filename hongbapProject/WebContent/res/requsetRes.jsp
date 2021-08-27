@@ -30,7 +30,7 @@ h1 { margin : 15px}
 
 <div class="container">
 
-    <form action="가게추가.do" method="post">
+    <form action="/hongbapProject/resInsert.do" method="post">
 		
             <div class="row">
             <div class="col-md-12">

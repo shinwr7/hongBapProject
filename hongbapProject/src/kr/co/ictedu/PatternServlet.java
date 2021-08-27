@@ -29,6 +29,7 @@ import hongbapProject.restaurant.service.IResService;
 import hongbapProject.restaurant.service.ResByCategoryService;
 import hongbapProject.restaurant.service.ResDeleteService;
 import hongbapProject.restaurant.service.ResInfoService;
+import hongbapProject.restaurant.service.ResInsertService;
 import hongbapProject.restaurant.service.ResRandomService;
 import hongbapProject.restaurant.service.ResUpdateService;
 import kr.co.ictedu.service.IUserService;
@@ -207,6 +208,11 @@ public class PatternServlet extends HttpServlet {
 				rsv = new ResUpdateService();
 				rsv.excute(request, response);
 				ui = "/hongbapProject/res/resDetail.do";
+		
+		} else if(uri.contentEquals("/hongbapProject/resInsert.do")) {
+				rsv = new ResInsertService();
+				rsv.excute(request, response);
+				ui="/hongbapMain/hongbapMain.jsp";
 				
 				
 		// res 컨트롤러 끝	
