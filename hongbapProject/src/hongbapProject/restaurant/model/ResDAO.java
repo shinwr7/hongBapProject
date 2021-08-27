@@ -268,21 +268,21 @@ public class ResDAO {
 				return resListbyCategory;
 			}//getAllResByCategory
 	
-public int getResCount() {
+public int getResCount(String resCategory) {
 			
 			Connection con = null;
 			PreparedStatement pstmt = null;
 			ResultSet rs = null;
 			
 			int countNum = 0;
-			String sql = "SELECT COUNT(*) FROM restaurant";
+			String sql = "SELECT COUNT(*) FROM restaurant WHERE resCategory=?";
 					
 			try {
 				
 	            con = ds.getConnection();
 				
 				pstmt = con.prepareStatement(sql);
-				
+				pstmt.setString(1,resCategory);
 				rs = pstmt.executeQuery();
 				
 				if(rs.next()) {
