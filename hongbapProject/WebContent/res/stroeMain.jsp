@@ -36,12 +36,14 @@ ul{display: inline-table; vertical-align: middle;}
 	float: left; line-height:160px ;
 	}
 hr{color: rgb(103, 208, 250);}
-span {
-	font: small-caps bold 19px/1 sans-serif;
-}
+
 .imgH{ width: 145px; height: 145px; object-fit: contain;
 		float: right;  
 		}
+		
+	.br{color:#A0522D;}	
+    .wordR{color:red;}
+	.wordG{color:green;}
 </style>
 <title>${res.resName }</title>
 </head>
@@ -209,26 +211,36 @@ span {
 
 		<br>
 		<p style="text-align: center;">
-			<a
-				href="http://localhost:8181/hongbapProject/hongbapMain/hongbapMain.jsp"><button
-					type="button" class="btn btn-warning buttonMain">메인화면으로 가기</button></a>
-			<a href="/hongbapProject/boardWrite.do"><button
-					type="button" class="btn btn-warning buttonMain">요청글쓰기창</button></a> <a
-				href="http://localhost:8181/hongbapProject/board/boardSelect.do?page=1"><button
-					type="button" class="btn btn-warning buttonMain">요청게시판</button></a> <a
-				href="#"><button type="button" class="btn btn-success"
+		
+		    
+		    <button onclick="history.back()" class="btn btn-danger buttonReq" >뒤로가기</button>
+		    <a href="#"><button type="button" class="btn btn-dark"
 					style="color: white;">위로올리기</button></a>
+			<a href="/hongbapProject/boardWrite.do"><button
+					type="button" class="btn btn-success buttonMain">요청글쓰기창</button></a>
+			<a href="http://localhost:8181/hongbapProject/board/boardSelect.do?page=1"><button
+					type="button" class="btn btn-primary buttonMain">요청게시판</button></a>
+			<a href="http://localhost:8181/hongbapProject/hongbapMain/hongbapMain.jsp"><button
+			        type="button" class="btn btn-warning buttonMain">메인화면으로 가기</button></a>
 		</p>
 
 		
 		<footer>
+		
 		<div class="rwo">
 		<hr>
 		</div>
+		
 		<div class="row">
 		<h6 class="text-primary text-center"><span class="br"><b>홈페이지</b> :</span> <strong>www.hongbap.com</strong></h6>
 		<h6 class="text-primary text-center"><span class="br"><b>만든이</b> :</span> <strong><span class="wordR">신우람</span> <span class="wordG">조훈현</span> 서성현</strong></h6>
 		</div>
+		
+		 <c:if test = "${id_session eq 'abc'}">
+		<a href="#"><button 
+		                type="button" class="btn btn-primary">메뉴버튼</button></a>
+		</c:if>
+		
 		</footer>
 
 	</div>
