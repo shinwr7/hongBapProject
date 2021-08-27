@@ -9,8 +9,8 @@
 <style>
     *{padding: 0%; margin: 0; text-align: center; }
 	h1,h2{ margin:0; text-indent: 35px; font: small-caps bold 24px/1 sans-serif; text-align: center; float: left;}
-    .random{width: 180px; padding: 25px;
-               text-align: justify;}
+    .random{width: 240px;  
+               }
     .randomTable{ background-image:url();
         			}
                     .br{color:#A0522D;}
@@ -90,11 +90,15 @@
             </div>
         <a href="http://localhost:8181/hongbapProject/logout.do" class="btn btn-danger btn-lg" role="button">logOut</a>
         <a href="http://localhost:8181/hongbapProject/userinfo.do" class="btn btn-success btn-lg" role="button">회원정보</a>
-        <br/>
-        <a href="http://localhost:8181/hongbapProject/board/boardSelect.do?page=1"><button
-					type="button" class="btn btn-warning buttonMain">요청게시판</button></a>
     </div>
-    <hr/>
+    <div class="row">
+        <div >
+    <a href="http://localhost:8181/hongbapProject/board/boardSelect.do?page=1"><button
+                type="button" class="btn btn-warning btn-lg random">요청게시판</button></a>
+            </div>
+            
+        </div>
+        <hr/>
 		
 		<footer>
 		
@@ -103,6 +107,8 @@
 		<h6 class="text-primary text-center"><span class="br"><b>만든이</b> :</span> <strong><span class="wordR">신우람</span> <span class="wordG">조훈현</span> 서성현</strong></h6>
 		</div>
 		
+    <a href="http://localhost:8181/hongbapProject/board/boardSelect.do?page=1"><button
+                type="button" class="btn btn-primary">관리자용 요청게시판</button></a>
 		</footer>
 
 	

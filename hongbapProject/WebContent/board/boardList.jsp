@@ -113,9 +113,9 @@
 	<div class="row">&nbsp;</div>
 		
 		<div class="button">
-			<a href="/hongbapProject/res/attachWrite.do"><button
-					type="button" class="btn btn-danger">요청하기</button></a> <a
-				href="/hongbapProject/logout.do"><button type="button"
+			<a href="/hongbapProject/res/boardWrite.do"><button
+					type="button" class="btn btn-danger">요청하기</button></a>
+	         <a href="/hongbapProject/logout.do"><button type="button"
 					class="btn btn-success">로그아웃</button></a> <a
 				href="http://localhost:8181/hongbapProject/hongbapMain/hongbapMain.jsp"><button
 					type="button" class="btn btn-warning buttonMain">메인화면으로
