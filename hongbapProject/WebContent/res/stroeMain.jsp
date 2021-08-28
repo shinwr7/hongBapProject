@@ -7,6 +7,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <link href="../css/bootstrap.min.css" rel="stylesheet">
 <link href="../css/kfonts2.css" rel="stylesheet">
 <script
@@ -23,7 +24,7 @@
 	rel="stylesheet"
 	integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
 	crossorigin="anonymous">
-	
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
 
 <style>
 * {
@@ -40,14 +41,34 @@ ul{display: inline-table; vertical-align: middle;}
 	}
 hr{color: rgb(103, 208, 250);margin:0;}
 .buttonMain{color:white;}
-.imgH{ width: 130px; height: 55px; magin:0; padding:0;}
+.imgH{ width: 130px; height: 55px; margin:0; padding:0;}
 		
 	.br{color:#A0522D;}	
     .wordR{color:red;}
 	.wordG{color:green;}
 	
 	
-</style>
+	</style>
+<!-- home_p 슬라이드 스크립영역-->
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="../js/bootstrap.min.js"></script>
+	<script>
+		$('.carousel').carousel()
+		</script>
+	<script>
+		function theFnc(){
+			window.open("../res/stroeMainPop.jsp","naver","width=600px,height=600px",
+			"left=200px,top=20px,scrollbars=yes, toolbar=no,location=no");
+    }
+
+    window.onload=function(){
+        var myBtn=document.getElementById("btn1");
+        myBtn.onclick = theFnc; 
+	}
+
+	</script>
 <title>${res.resName }</title>
 </head>
 <body>
@@ -76,21 +97,50 @@ hr{color: rgb(103, 208, 250);margin:0;}
 						</div>
 				</div>
 				<hr/>
-				<img class="round" style="margin:0;" width="300px" height="300px" src="캐러샐효과!">
-				<ul style="margin:0;">
-					<li><span>전화번호</span> : ${res.resPnum}</li>
-					<li><span>주소</span> : ${res.resAddr}</li>
-					<li><span>영업시간</span> : ${res.resTime}</li>
-					<li><span>휴무일</span> : ${res.resHoliday}</li>
-					<li><button type="button" class="btn btn-link"
-							data-toggle="modal" data-target="${res.resHomepage }">
-							홈페이지</button></li>
-				</ul>
-			</div>
 
-			<div id="menu1_p" class="container tab-pane fade">
-					<div class="row homeT">
-						<img 
+				<div id="carousel-example-generic" class="carousel slide">
+					<!-- Indicators -->
+					<ol class="carousel-indicators">
+					  <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+					  <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+					  <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+					</ol>
+						 <!-- Carousel items -->
+					 <div class="carousel-inner">
+						<div class="carousel-item active">
+						   <img src="../img/nobug1.jpg" alt="First slide">
+						</div>
+						<div class="carousel-item">
+						   <img src="../img/nobug2.jpg" alt="Second slide">
+						</div>
+						<div class="carousel-item">
+						   <button id="btn1"><img width="80%" height="80%" src="../img/nobug3.png" alt="Third slide"></button> 
+						</div>
+					 </div>
+					<!-- Controls -->
+					  <a class="carousel-control-prev" href="#carousel-example-generic" data-slide="prev">
+						<span class="carousel-control-prev-icon"></span>
+					  </a>
+					  <a class="carousel-control-next" href="#carousel-example-generic" data-slide="next">
+						<span class="carousel-control-next-icon"></span>
+					  </a>
+				  </div>
+		  
+		  
+		  <ul style="margin:0;">
+			<li><span>전화번호</span> : ${res.resPnum}</li>
+			<li><span>주소</span> : ${res.resAddr}</li>
+			<li><span>영업시간</span> : ${res.resTime}</li>
+			<li><span>휴무일</span> : ${res.resHoliday}</li>
+			<li><button type="button" class="btn btn-link"
+				data-toggle="modal" data-target="${res.resHomepage }">
+				홈페이지</button></li>
+			</ul>
+		</div>
+		
+		<div id="menu1_p" class="container tab-pane fade">
+			<div class="row homeT">
+				<img 
 							src="../img/rainbow.png"
 							class="imgH">
 				<p class="resName">Best Menu</p>
@@ -101,7 +151,7 @@ hr{color: rgb(103, 208, 250);margin:0;}
 				<h5 style="margin:0;">${menu.menuName }</h5>
 						<div class="col-md-4" style="float: right;">
 						<img width="300px" height="300px" class="rounded-circle"
-							src="음식이미지">
+							src="../img/bestBug.jpg">
 						</div>
 						<div class="col-md-4 offset-md-2">
 							<ul style="float: left;"> 
@@ -115,7 +165,7 @@ hr{color: rgb(103, 208, 250);margin:0;}
 					</div>
 				</div>
 				</div>
-			</div>
+		 	</div>
 
 			<div id="menu2_p" class="container tab-pane fade">
 						<div class="row homeT">

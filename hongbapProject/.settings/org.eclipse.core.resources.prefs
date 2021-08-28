@@ -1,4 +1,5 @@
 eclipse.preferences.version=1
+encoding//WebContent/res/stroeMainPop.jsp=UTF-8
 encoding//src/hongbapProject/board/model/BoardDAO.java=UTF-8
 encoding//src/hongbapProject/user/model/UserDAO.java=UTF-8
 encoding//src/kr/co/ictedu/PatternServlet.java=UTF-8
