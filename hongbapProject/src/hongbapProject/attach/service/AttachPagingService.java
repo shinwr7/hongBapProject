@@ -82,6 +82,6 @@ public class AttachPagingService implements IAttachService{
 				// 포워딩하기위해 적재하기
 				request.setAttribute("attachList", attachList);
 				request.setAttribute("pageDTO", pageDTO);
-				request.setAttribute("avgPoint", avgPoint);
+				request.setAttribute("avgPoint", avgPoint); 
 			}
 		}
