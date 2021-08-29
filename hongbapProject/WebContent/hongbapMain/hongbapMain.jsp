@@ -50,7 +50,7 @@
                 </div>
                 <div class="col-md-4">
                     <h2>한식</h2>
-                    <div class="img b"><a href ="http://localhost:8181/hongbapProject/hongbapMain/resList.do?resCategory=한식&page=1"><img class="rounded-circle img-fluid" src="https://d1cua0vf0mkpiy.cloudfront.net/images/menu/normal/e11a37d7-3389-4cc5-a752-615df17fb9b0.png"></a></div>
+                    <div class="img b"><a href ="http://localhost:8181/hongbapProject/hongbapMain/resList.do?resCategory=한식&page=1"><img class="rounded-circle img-fluid" style="width:70%; height:60%;" src="../img/k.jpg"></a></div>
                 </div>
                 <div class="col-md-4">
                     <h2 >양식</h2>
