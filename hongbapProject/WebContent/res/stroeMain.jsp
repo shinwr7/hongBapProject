@@ -59,7 +59,7 @@ hr{color: rgb(103, 208, 250);margin:0;}
 		</script>
 	<script>
 		function theFnc(){
-			window.open("../res/stroeMainPop.jsp","naver","width=600px,height=600px",
+			window.open("../res/stroeMainPop.jsp","naver","width=400px,height=400px",
 			"left=200px,top=20px,scrollbars=yes, toolbar=no,location=no");
     }
 
@@ -93,11 +93,12 @@ hr{color: rgb(103, 208, 250);margin:0;}
 						class="imgH">
 						</div>
 				<div class="col-md-5">
-					<p class="resName">${res.resName }</p>
+					<p class="resName">${res.resName }  [[ 평점 : &{avgPoint} ]]</p>
 						</div>
 				</div>
 				<hr/>
 
+						 <c:if test = "${resResult.resName eq '버거짱'}">
 				<div id="carousel-example-generic" class="carousel slide">
 					<!-- Indicators -->
 					<ol class="carousel-indicators">
@@ -114,26 +115,26 @@ hr{color: rgb(103, 208, 250);margin:0;}
 						   <img src="../img/nobug2.jpg" alt="Second slide">
 						</div>
 						<div class="carousel-item">
-						   <button id="btn1"><img width="80%" height="80%" src="../img/nobug3.png" alt="Third slide"></button> 
+						   <button id="btn1"><img width="50%" height="50%" src="../img/nobug3.png" alt="Third slide"></button> 
 						</div>
 					 </div>
 					<!-- Controls -->
 					  <a class="carousel-control-prev" href="#carousel-example-generic" data-slide="prev">
-						<span class="carousel-control-prev-icon"></span>
+						<span class="carousel-control-prev-icon"><b><<</b></span>
 					  </a>
 					  <a class="carousel-control-next" href="#carousel-example-generic" data-slide="next">
-						<span class="carousel-control-next-icon"></span>
+						<span class="carousel-control-next-icon"><b>>>
 					  </a>
 				  </div>
-		  
+</c:if>		  
 		  
 		  <ul style="margin:0;">
-			<li><span>전화번호</span> : ${res.resPnum}</li>
-			<li><span>주소</span> : ${res.resAddr}</li>
-			<li><span>영업시간</span> : ${res.resTime}</li>
-			<li><span>휴무일</span> : ${res.resHoliday}</li>
+			<li><span>전화번호</span> : ${resResult.resPnum}</li>
+			<li><span>주소</span> : ${resResult.resAddr}</li>
+			<li><span>영업시간</span> : ${resResult.resTime}</li>
+			<li><span>휴무일</span> : ${resResult.resHoliday}</li>
 			<li><button type="button" class="btn btn-link"
-				data-toggle="modal" data-target="${res.resHomepage }">
+				data-toggle="modal" data-target="${resResult.resHomepage }">
 				홈페이지</button></li>
 			</ul>
 		</div>
@@ -150,8 +151,10 @@ hr{color: rgb(103, 208, 250);margin:0;}
 					<div class="row">
 				<h5 style="margin:0;">${menu.menuName }</h5>
 						<div class="col-md-4" style="float: right;">
+						 <c:if test = "${resResult.resName eq '버거짱'}">
 						<img width="300px" height="300px" class="rounded-circle"
 							src="../img/bestBug.jpg">
+							</c:if>
 						</div>
 						<div class="col-md-4 offset-md-2">
 							<ul style="float: left;"> 
