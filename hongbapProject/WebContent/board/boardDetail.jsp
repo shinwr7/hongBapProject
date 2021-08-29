@@ -25,7 +25,7 @@
 <meta charset="UTF-8">
 <title></title>
 </head>
-<body>
+<body style="background-image:url(../img/cloud.png); background-repeat: cover;">
   <div class ="container">
     <form action="/hongbapProject/boardWrite.do" method="post">
       

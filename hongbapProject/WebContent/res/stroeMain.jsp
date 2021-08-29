@@ -84,6 +84,7 @@ hr {
 }
 </style>
 <!-- home_p 슬라이드 스크립영역-->
+<<<<<<< HEAD
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
@@ -97,6 +98,24 @@ hr {
 		window.open("../res/stroeMainPop.jsp", "naver",
 				"width=600px,height=600px",
 				"left=200px,top=20px,scrollbars=yes, toolbar=no,location=no");
+=======
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="../js/bootstrap.min.js"></script>
+	<script>
+		$('.carousel').carousel()
+		</script>
+	<script>
+		function theFnc(){
+			window.open("../res/stroeMainPop.jsp","naver","width=400px,height=400px",
+			"left=200px,top=20px,scrollbars=yes, toolbar=no,location=no");
+    }
+
+    window.onload=function(){
+        var myBtn=document.getElementById("btn1");
+        myBtn.onclick = theFnc; 
+>>>>>>> origin/master
 	}
 
 	window.onload = function() {
@@ -122,6 +141,7 @@ hr {
 		<div class="tab-content">
 			<div id="home_p" class="container tab-pane active">
 				<div class="row homeT">
+<<<<<<< HEAD
 					<div class="col-md-5">
 						<img src="../img/rainbow.png" class="imgH">
 					</div>
@@ -186,6 +206,66 @@ hr {
 				<div class="row homeT">
 					<img src="../img/rainbow.png" class="imgH">
 					<p class="resName">Best Menu</p>
+=======
+				<div class="col-md-5">
+					<img 
+						src="../img/rainbow.png"
+						class="imgH">
+						</div>
+				<div class="col-md-5">
+					<p class="resName">${res.resName }  [[ 평점 : ${avgPoint} ]]</p>
+						</div>
+				</div>
+				<hr/>
+
+						 <c:if test = "${resResult.resName eq '버거짱'}">
+				<div id="carousel-example-generic" class="carousel slide">
+					<!-- Indicators -->
+					<ol class="carousel-indicators">
+					  <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+					  <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+					  <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+					</ol>
+						 <!-- Carousel items -->
+					 <div class="carousel-inner">
+						<div class="carousel-item active">
+						   <img src="../img/nobug1.jpg" alt="First slide">
+						</div>
+						<div class="carousel-item">
+						   <img src="../img/nobug2.jpg" alt="Second slide">
+						</div>
+						<div class="carousel-item">
+						   <button id="btn1"><img width="50%" height="50%" src="../img/nobug3.png" alt="Third slide"></button> 
+						</div>
+					 </div>
+					<!-- Controls -->
+					  <a class="carousel-control-prev" href="#carousel-example-generic" data-slide="prev">
+						<span class="carousel-control-prev-icon"><b><<</b></span>
+					  </a>
+					  <a class="carousel-control-next" href="#carousel-example-generic" data-slide="next">
+						<span class="carousel-control-next-icon"><b>>>
+					  </a>
+				  </div>
+</c:if>		  
+		  
+		  <ul style="margin:0;">
+			<li><span>전화번호</span> : ${resResult.resPnum}</li>
+			<li><span>주소</span> : ${resResult.resAddr}</li>
+			<li><span>영업시간</span> : ${resResult.resTime}</li>
+			<li><span>휴무일</span> : ${resResult.resHoliday}</li>
+			<li><button type="button" class="btn btn-link"
+				data-toggle="modal" data-target="${resResult.resHomepage }">
+				홈페이지</button></li>
+			</ul>
+		</div>
+		
+		<div id="menu1_p" class="container tab-pane fade">
+			<div class="row homeT">
+				<img 
+							src="../img/rainbow.png"
+							class="imgH">
+				<p class="resName">Best Menu</p>
+>>>>>>> origin/master
 				</div>
 				<hr style="margin: 0;" />
 				<div>
@@ -193,8 +273,15 @@ hr {
 						<h5 style="margin: 0;">${menu.menuName }</h5>
 						<c:if test = "${resResult.resName eq '버거짱'}">
 						<div class="col-md-4" style="float: right;">
+<<<<<<< HEAD
 							<img width="300px" height="300px" class="rounded-circle"
 								src="../img/bestBug.png">
+=======
+						 <c:if test = "${resResult.resName eq '버거짱'}">
+						<img width="300px" height="300px" class="rounded-circle"
+							src="../img/bestBug.jpg">
+							</c:if>
+>>>>>>> origin/master
 						</div>
 						</c:if>
 						
