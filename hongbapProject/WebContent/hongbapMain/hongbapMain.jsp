@@ -46,15 +46,15 @@
             <div class="row">
                 <div class="col-md-4">
                     <h2>중식</h2>
-                    <div class="img a"><a href ="http://localhost:8181/hongbapProject/hongbapMain/resList.do?resCategory=중식&page=1"><img class="rounded-circle img-fluid" src="https://d1cua0vf0mkpiy.cloudfront.net/images/menu/normal/e11a37d7-3389-4cc5-a752-615df17fb9b0.png" class="rounded-circle"></a></div>
+                    <div class="img a"><a href ="http://localhost:8181/hongbapProject/hongbapMain/resList.do?resCategory=중식&page=1"><img class="rounded-circle img-fluid" src="../img/chh.png" ></a></div>
                 </div>
                 <div class="col-md-4">
                     <h2>한식</h2>
-                    <div class="img b"><a href ="http://localhost:8181/hongbapProject/hongbapMain/resList.do?resCategory=한식&page=1"><img class="rounded-circle img-fluid" style="width:70%; height:60%;" src="../img/k.jpg"></a></div>
+                    <div class="img b"><a href ="http://localhost:8181/hongbapProject/hongbapMain/resList.do?resCategory=한식&page=1"><img class="rounded-circle img-fluid" src="../img/kk.png"></a></div>
                 </div>
                 <div class="col-md-4">
                     <h2 >양식</h2>
-                    <div class="img c"><a href ="http://localhost:8181/hongbapProject/hongbapMain/resList.do?resCategory=양식&page=1"><img class="rounded-circle img-fluid" src="https://d1cua0vf0mkpiy.cloudfront.net/images/menu/normal/e11a37d7-3389-4cc5-a752-615df17fb9b0.png"></a></div>
+                    <div class="img c"><a href ="http://localhost:8181/hongbapProject/hongbapMain/resList.do?resCategory=양식&page=1"><img class="rounded-circle img-fluid" src="../img/u.png"></a></div>
                 </div>
             </div>
             <br/>
@@ -64,11 +64,11 @@
             <div class="row">
                     <div class="col-md-4">
                         <h2>일식</h2>
-                        <div class="img"><a href ="http://localhost:8181/hongbapProject/hongbapMain/resList.do?resCategory=일식&page=1"><img class="rounded-circle img-fluid" src="https://d1cua0vf0mkpiy.cloudfront.net/images/menu/normal/e11a37d7-3389-4cc5-a752-615df17fb9b0.png"></a></div>
+                        <div class="img"><a href ="http://localhost:8181/hongbapProject/hongbapMain/resList.do?resCategory=일식&page=1"><img class="rounded-circle img-fluid" src="../img/jaa.png"></a></div>
                         </div>
                         <div class="col-md-4">
                             <h2>분식</h2>
-                            <div class="img"><a href ="http://localhost:8181/hongbapProject/hongbapMain/resList.do?resCategory=분식&page=1"><img class="rounded-circle img-fluid" src="https://d1cua0vf0mkpiy.cloudfront.net/images/menu/normal/e11a37d7-3389-4cc5-a752-615df17fb9b0.png"></a></div>
+                            <div class="img"><a href ="http://localhost:8181/hongbapProject/hongbapMain/resList.do?resCategory=분식&page=1"><img class="rounded-circle img-fluid" src="../img/b.jpg"></a></div>
                             </div>
                             <div class="col-md-4">
                     <h2 >Fast Food</h2>
