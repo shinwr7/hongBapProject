@@ -93,7 +93,7 @@ hr{color: rgb(103, 208, 250);margin:0;}
 						class="imgH">
 						</div>
 				<div class="col-md-5">
-					<p class="resName">${res.resName }  [[ 평점 : &{avgPoint} ]]</p>
+					<p class="resName">${res.resName }  [[ 평점 : ${avgPoint} ]]</p>
 						</div>
 				</div>
 				<hr/>
