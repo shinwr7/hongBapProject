@@ -234,7 +234,10 @@ hr {
 							<td>${attach.assessment }</td>
 
 							<td>${attach.awriter }</td>
-
+					
+						<c:if test ="${nick_session eq attach.awriter}">
+							<td><a href="http://localhost:8181/hongbapProject/attachDelete.do?resId=${resId }"><button type="button" class="btn btn-primary">댓글삭제</button></a></td>
+						</c:if>
 						</tr>
 						</div>
 					</c:forEach>
@@ -246,7 +249,7 @@ hr {
 							<tr>
 
 								<td style="width: 100%; height: 100%;"><textarea
-										style="width: 100%; height: 100%;"></textarea></td>
+										style="width: 100%; height: 100%;" name="acontent" placeholder="평가 갯수가 20개 이상이고, 평점이 5점 미만인 식당은 삭제됩니다."></textarea></td>
 
 								<td><select name="assessment">
 										<option value="5">5</option>
@@ -344,7 +347,7 @@ hr {
 				<a href="http://localhost:8181/hongbapProject/res/requestResMenu.jsp"><button type="button" class="btn btn-primary">메뉴추가</button></a>
 			</c:if>
 			<c:if test="${id_session eq 'shinwr7'}">
-				<a href="http://localhost:8181/hongbapProject/resDelete.do"><button type="button" class="btn btn-primary">식당삭제</button></a>
+				<a href="http://localhost:8181/hongbapProject/resDelete.do?resId=${resId }"><button type="button" class="btn btn-primary">식당삭제</button></a>
 			</c:if>
 			</div>
 			

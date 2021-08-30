@@ -205,7 +205,8 @@ public class PatternServlet extends HttpServlet {
 		} else if(uri.contentEquals("/hongbapProject/resDelete.do")) {
 				rsv = new ResDeleteService();
 				rsv.excute(request, response);
-				ui= "/hongbapProject/hongbapMain/resList.do";
+				String resCategory=(String)session.getAttribute("resCategory");
+				ui= "/hongbapMain/resList.do?resCategory="+resCategory;
 		
 		} else if(uri.contentEquals("/hongbapProject/resUpdate.do")) {
 				rsv = new ResUpdateService();
@@ -252,7 +253,9 @@ public class PatternServlet extends HttpServlet {
 		} else if(uri.contentEquals("/hongbapProject/attachDelete.do")) {
 				asv = new AttachDeleteService();
 				asv.execute(request, response);
-				ui = "/hongbapProject/res/resDetail.do";
+				int resId = (Integer)session.getAttribute("resId");
+				ui = "/res/resDetail.do?resId="+resId+"";
+				
 				
 				
 				

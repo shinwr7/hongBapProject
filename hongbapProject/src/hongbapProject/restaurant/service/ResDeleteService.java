@@ -27,8 +27,8 @@ public class ResDeleteService implements IResService{
 		HttpSession session = null;
 		session=request.getSession();
 		
-		String StrresId=(String)session.getAttribute("resId");
-		int resId = Integer.parseInt(StrresId);
+		Integer IntresId=(Integer)session.getAttribute("resId");
+		int resId = IntresId.intValue();
 		 
 		// menu 테이블과 restaurant 테이블이 외래키로 연결되어있기 때문에
 		// menu 테이블 행부터 삭제 해야함
@@ -44,7 +44,7 @@ public class ResDeleteService implements IResService{
 		
 		// restaurant 테이블과 참조 관계인 resAttacht 테이블도 삭제해야함 
 		AttachDAO adao = AttachDAO.getInstance();
-		int aDeleteResult = adao.attachDeleteAll();
+		int aDeleteResult = adao.attachDeleteAll(resId);
 		
 		if(aDeleteResult == 1) {
 			System.out.println("식당 평가 삭제 완료");
@@ -58,8 +58,8 @@ public class ResDeleteService implements IResService{
 		int rDeleteResult = rdao.resDelete(resId);
 		if(rDeleteResult == 1) {
 			System.out.println("레스토랑 삭제 완료");
-		// 레스토랑 행 삭제되면 발급된 레스토랑 Id 세션 삭제
 			session.removeAttribute("resId");
+		// 레스토랑 행 삭제되면 발급된 레스토랑 Id 세션 삭제
 		}else {
 			System.out.println("레스토랑 삭제 실패");
 		}
