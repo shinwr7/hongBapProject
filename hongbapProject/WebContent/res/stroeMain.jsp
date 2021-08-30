@@ -126,7 +126,7 @@ hr {
 		<div class="tab-content">
 			<div id="home_p" class="container tab-pane active">
 				<div class="row homeT">
-				<div class="col-md-5">
+				<div class="col-md-12">
 					<img 
 						src="../img/rainbow.png"
 						class="imgH">
