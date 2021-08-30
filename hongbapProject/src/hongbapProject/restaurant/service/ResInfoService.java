@@ -35,7 +35,7 @@ public class ResInfoService implements IResService {
 			menu = mdao.getMenu(resId);
 			resResult = dao.getResInfo(resId);
 			
-			
+			System.out.println("menu 정보 : "+ menu);
 			request.setAttribute("resResult", resResult);
 			request.setAttribute("menu", menu);
 			

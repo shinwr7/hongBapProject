@@ -12,7 +12,6 @@
 <fullyQualifiedTypeName name="hongbapProject.board.service.BoardDeleteService"/>
 <fullyQualifiedTypeName name="hongbapProject.restaurant.service.ResInfoService"/>
 <fullyQualifiedTypeName name="com.sun.corba.se.pept.transport.Connection"/>
-<fullyQualifiedTypeName name="hongbapProject.menu.service.IMenuService"/>
 <fullyQualifiedTypeName name="hongbapProject.restaurant.service.ResDeleteService"/>
 <fullyQualifiedTypeName name="hongbapProject.restaurant.service.IResService"/>
 <fullyQualifiedTypeName name="hongbapProject.restaurant.service.ResUpdateService"/>
@@ -32,7 +31,6 @@
 <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
 <fullyQualifiedTypeName name="hongbapProject.attach.service.IAttachService"/>
 <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
-<fullyQualifiedTypeName name="hongbapProject.attach.model.AttachDAO"/>
 <fullyQualifiedTypeName name="hongbapProject.attach.service.AttachDeleteService"/>
 <fullyQualifiedTypeName name="hongbapProject.restaurant.service.ResInsertService"/>
 <fullyQualifiedTypeName name="hongbapProject.restaurant.model.ResVO"/>
@@ -41,4 +39,7 @@
 <fullyQualifiedTypeName name="hongbapProject.board.service.BoardDetailService"/>
 <fullyQualifiedTypeName name="hongbapProject.board.service.BoardUpdateService"/>
 <fullyQualifiedTypeName name="java.sql.Timestamp"/>
+<fullyQualifiedTypeName name="hongbapProject.menu.service.MenuInsertService"/>
+<fullyQualifiedTypeName name="hongbapProject.menu.service.IMenuService"/>
+<fullyQualifiedTypeName name="hongbapProject.attach.model.AttachDAO"/>
 </qualifiedTypeNameHistroy>

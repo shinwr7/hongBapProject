@@ -25,6 +25,8 @@ import hongbapProject.board.service.BoardPagingService;
 import hongbapProject.board.service.BoardUpdateService;
 import hongbapProject.board.service.BoardWriteService;
 import hongbapProject.board.service.IBoardService;
+import hongbapProject.menu.service.IMenuService;
+import hongbapProject.menu.service.MenuInsertService;
 import hongbapProject.restaurant.service.IResService;
 import hongbapProject.restaurant.service.ResByCategoryService;
 import hongbapProject.restaurant.service.ResDeleteService;
@@ -98,6 +100,7 @@ public class PatternServlet extends HttpServlet {
 		IResService rsv = null;
 		IBoardService bsv = null;
 		IAttachService asv = null;
+		IMenuService msv = null;
 		
 		// 占쎈퉸占쎈뼣 嚥≪뮇彛낉옙�뱽 占쎈뼄占쎈뻬占쎈립 占쎈츟占쎈퓠 占쎄퐜占쎈선揶쏉옙 .jsp 占쎈솁占쎌뵬 筌뤿굞臾�/野껋럥以� 筌욑옙占쎌젟
 		String ui = null;
@@ -189,7 +192,7 @@ public class PatternServlet extends HttpServlet {
 				rsv.excute(request, response);
 				ui = "/res/randomPick.jsp";
 				
-			//野껊슣�뻻占쎈솇
+		
 		} else if(uri.equals("/hongbapProject/res/resDetail.do")) {
 				rsv = new ResInfoService();
 				rsv.excute(request, response);
@@ -218,7 +221,18 @@ public class PatternServlet extends HttpServlet {
 		// res 컨트롤러 끝	
 		
 		
+		}else if(uri.contentEquals("/hongbapProject/menuInsert.do")) {
+				msv = new MenuInsertService();
+				msv.execute(request, response);
+				String strResId = (String)request.getParameter("resId");
 				
+				if(strResId==null) {
+					System.out.println("레스토랑ID(GET)받기 실패");
+				}
+				int resId = Integer.parseInt(strResId);
+				request.setAttribute("resId", resId);
+				
+				ui = "/res/resDetail.do?resId="+resId+"";
 				
 		} else if(uri.contentEquals("/hongbapProject/res/attachWrite.do")) {
 				asv = new AttachWriteService();
