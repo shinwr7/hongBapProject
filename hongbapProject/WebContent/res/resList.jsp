@@ -109,7 +109,7 @@ h1 {font:italic small-caps bold 60px/1 sans-serif; line-height: 60px;}
 		
 		<div>
 			<a href="/hongbapProject/boardWrite.do"><button
-					type="button" class="btn btn-danger">요청하기</button></a>
+					type="button" class="btn btn-danger">요청게시판이동</button></a>
 					 <a	href="/hongbapProject/logout.do"><button type="button"
 					class="btn btn-success">로그아웃</button></a>
 					 <a	href="http://localhost:8181/hongbapProject/hongbapMain/hongbapMain.jsp"><button
