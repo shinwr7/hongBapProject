@@ -131,7 +131,7 @@ hr {
 						src="../img/rainbow.png"
 						class="imgH">
 						</div>
-				<div class="col-md-5">
+				<div class="col-md-12">
 					<p class="resName">${resResult.resName }  [[ 평점 : ${avgPoint} ]]</p>
 						</div>
 				</div>
@@ -338,11 +338,16 @@ hr {
 						class="wordR">신우람</span> <span class="wordG">조훈현</span> 서성현</strong>
 				</h6>
 			</div>
-
+			
+			<div class="row">
 			<c:if test="${id_session eq 'shinwr7'}">
 				<a href="http://localhost:8181/hongbapProject/res/requestResMenu.jsp"><button type="button" class="btn btn-primary">메뉴추가</button></a>
 			</c:if>
-
+			<c:if test="${id_session eq 'shinwr7'}">
+				<a href="http://localhost:8181/hongbapProject/resDelete.do"><button type="button" class="btn btn-primary">식당삭제</button></a>
+			</c:if>
+			</div>
+			
 		</footer>
 
 	</div>
