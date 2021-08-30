@@ -29,7 +29,7 @@ h1 {font:italic small-caps bold 60px/1 sans-serif; line-height: 60px;}
 
 <div class="container">
 
-    <form action="가게추가.do" method="post">
+    <form action="http://localhost:8181/hongbapProject/menuInsert.do?resId=${resId}" method="post">
 		
          				<div class="row">&nbsp;</div>
 
@@ -60,7 +60,7 @@ h1 {font:italic small-caps bold 60px/1 sans-serif; line-height: 60px;}
                     <div class="input-group-prepend">
                           <span class="input-group-text ">메뉴설명</span>
                       </div>
-                      <input type="text" class="form-control" name="menuPrice" placeholder="메뉴설명">
+                      <input type="text" class="form-control" name="menuBook" placeholder="메뉴설명">
                 </div>
                 </div>
                 

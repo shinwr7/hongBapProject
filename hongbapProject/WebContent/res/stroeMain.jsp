@@ -132,7 +132,7 @@ hr {
 						class="imgH">
 						</div>
 				<div class="col-md-5">
-					<p class="resName">${res.resName }  [[ 평점 : ${avgPoint} ]]</p>
+					<p class="resName">${resResult.resName }  [[ 평점 : ${avgPoint} ]]</p>
 						</div>
 				</div>
 				<hr/>
@@ -339,8 +339,8 @@ hr {
 				</h6>
 			</div>
 
-			<c:if test="${id_session eq 'abc'}">
-				<a href="#"><button type="button" class="btn btn-primary">메뉴버튼</button></a>
+			<c:if test="${id_session eq 'shinwr7'}">
+				<a href="http://localhost:8181/hongbapProject/res/requestResMenu.jsp"><button type="button" class="btn btn-primary">메뉴추가</button></a>
 			</c:if>
 
 		</footer>
