@@ -126,7 +126,7 @@ hr {
 		<div class="tab-content">
 			<div id="home_p" class="container tab-pane active">
 				<div class="row homeT">
-				<div class="col-md-5">
+				<div class="col-md-12">
 					<img 
 						src="../img/rainbow.png"
 						class="imgH">
@@ -159,10 +159,10 @@ hr {
 					 </div>
 					<!-- Controls -->
 					  <a class="carousel-control-prev" href="#carousel-example-generic" data-slide="prev">
-						<span class="carousel-control-prev-icon"><b><<</b></span>
+						<span class="carousel-control-prev-icon" style="color : black;"><b><<</b></span>
 					  </a>
 					  <a class="carousel-control-next" href="#carousel-example-generic" data-slide="next">
-						<span class="carousel-control-next-icon"><b>>>
+						<span class="carousel-control-next-icon" style="color : black;"><b>>></b></span>
 					  </a>
 				  </div>
 </c:if>		  
@@ -236,7 +236,7 @@ hr {
 							<td>${attach.awriter }</td>
 					
 						<c:if test ="${nick_session eq attach.awriter}">
-							<td><a href="http://localhost:8181/hongbapProject/attachDelete.do?resId=${resId }"><button type="button" class="btn btn-primary">댓글삭제</button></a></td>
+							<td><a href="http://localhost:8181/hongbapProject/res/attachDelete.do?resId=${resId }"><button type="button" class="btn btn-primary">댓글삭제</button></a></td>
 						</c:if>
 						</tr>
 						</div>
@@ -249,7 +249,7 @@ hr {
 							<tr>
 
 								<td style="width: 100%; height: 100%;"><textarea
-										style="width: 100%; height: 100%;" name="acontent" placeholder="평가 갯수가 20개 이상이고, 평점이 5점 미만인 식당은 삭제됩니다."></textarea></td>
+										style="width: 100%; height: 100%;" name="acontent" placeholder="평가 갯수가 20개 이상이고, 평점이 3점 미만인 식당은 삭제됩니다."></textarea></td>
 
 								<td><select name="assessment">
 										<option value="5">5</option>

@@ -64,11 +64,11 @@ h1 {font:italic small-caps bold 60px/1 sans-serif; line-height: 60px;}
 			</thead>
 			<c:forEach var="res" items="${ResList}">
 				<tr>
-					<td>${resResult.resId }</td>
+					<td>${res.resId }</td>
 
 					<td><a href="http://localhost:8181/hongbapProject/res/resDetail.do?resId=${res.resId}">${res.resName}</a></td>
 
-					<td>${resResult.resCategory }</td>
+					<td>${res.resCategory }</td>
 				</tr>
 			</c:forEach>
 		</table>
