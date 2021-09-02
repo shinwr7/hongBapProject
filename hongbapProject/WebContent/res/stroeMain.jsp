@@ -54,6 +54,7 @@ ul {
 	font: small-caps bold 30px/1 sans-serif;
 	float: inherit;
 }
+b{ boarder: 3px black;}
 
 hr {
 	color: rgb(103, 208, 250);
@@ -137,7 +138,6 @@ hr {
 				</div>
 				<hr/>
 
-						 <c:if test = "${resResult.resName eq '버거짱'}">
 				<div id="carousel-example-generic" class="carousel slide">
 					<!-- Indicators -->
 					<ol class="carousel-indicators">
@@ -162,10 +162,9 @@ hr {
 						<span class="carousel-control-prev-icon"><b><<</b></span>
 					  </a>
 					  <a class="carousel-control-next" href="#carousel-example-generic" data-slide="next">
-						<span class="carousel-control-next-icon"><b>>>
+						<span class="carousel-control-next-icon">>asdfasdfasdfsd></span>
 					  </a>
 				  </div>
-</c:if>		  
 		  
 		  <ul style="margin:0;">
 			<li><span>전화번호</span> : ${resResult.resPnum}</li>
