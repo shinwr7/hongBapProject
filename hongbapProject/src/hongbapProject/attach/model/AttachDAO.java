@@ -247,17 +247,17 @@ public class AttachDAO {
 		return resultCode;
 	} // attachDelete 끝
 	
-	public int attachDeleteAll () {
+	public int attachDeleteAll (int resId) {
 		Connection con = null;
 		PreparedStatement pstmt = null;
 		
-		String sql = "DELETE FROM resAttach";
+		String sql = "DELETE FROM resAttach WHERE resId=?";
 		
 		int resultCode = 0;
 		try {
 			con = ds.getConnection();
 			pstmt =con.prepareStatement(sql);
-			
+			pstmt.setInt(1, resId);
 			pstmt.executeUpdate();
 			resultCode =1;
 			

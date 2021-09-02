@@ -23,7 +23,6 @@
 <fullyQualifiedTypeName name="com.sun.org.apache.bcel.internal.generic.NEWARRAY"/>
 <fullyQualifiedTypeName name="hongbapProject.attach.service.AttachWriteService"/>
 <fullyQualifiedTypeName name="hongbapProject.restaurant.model.ResDAO"/>
-<fullyQualifiedTypeName name="hongbapProject.menu.model.MenuDAO"/>
 <fullyQualifiedTypeName name="hongbapProject.attach.service.AttachPagingService"/>
 <fullyQualifiedTypeName name="hongbapProject.menu.model.MenuVO"/>
 <fullyQualifiedTypeName name="hongbapProject.attach.model.AttachVO"/>
@@ -40,6 +39,7 @@
 <fullyQualifiedTypeName name="hongbapProject.board.service.BoardUpdateService"/>
 <fullyQualifiedTypeName name="java.sql.Timestamp"/>
 <fullyQualifiedTypeName name="hongbapProject.menu.service.MenuInsertService"/>
-<fullyQualifiedTypeName name="hongbapProject.menu.service.IMenuService"/>
 <fullyQualifiedTypeName name="hongbapProject.attach.model.AttachDAO"/>
+<fullyQualifiedTypeName name="hongbapProject.menu.service.IMenuService"/>
+<fullyQualifiedTypeName name="hongbapProject.menu.model.MenuDAO"/>
 </qualifiedTypeNameHistroy>

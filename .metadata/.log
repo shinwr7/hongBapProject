@@ -12041,7 +12041,11 @@ org.xml.sax.SAXParseException; lineNumber: 5; columnNumber: 2; 요소 콘텐츠�
 	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
 	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
 	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:175)
+<<<<<<< HEAD
+!SESSION 2021-08-30 16:39:22.983 -----------------------------------------------
+=======
 !SESSION 2021-08-30 16:09:00.339 -----------------------------------------------
+>>>>>>> 03916ebc9d00f6704d54090de56bfcd692f8dcd3
 eclipse.buildId=4.15.0.I20200305-0155
 java.version=1.8.0_292
 java.vendor=ojdkbuild
@@ -12049,15 +12053,25 @@ BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
 Framework arguments:  -product org.eclipse.epp.package.jee.product
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
 
+<<<<<<< HEAD
+!ENTRY org.eclipse.jface 2 0 2021-08-30 16:40:37.876
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-08-30 16:40:37.876
+=======
 !ENTRY org.eclipse.jface 2 0 2021-08-30 16:09:07.560
 !MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
 !SUBENTRY 1 org.eclipse.jface 2 0 2021-08-30 16:09:07.560
+>>>>>>> 03916ebc9d00f6704d54090de56bfcd692f8dcd3
 !MESSAGE A conflict occurred for CTRL+SHIFT+T:
 Binding(CTRL+SHIFT+T,
 	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
 		Open a type in a Java editor,
 		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+<<<<<<< HEAD
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@66851aa5,
+=======
 		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@32f54c2a,
+>>>>>>> 03916ebc9d00f6704d54090de56bfcd692f8dcd3
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.contexts.window,,,system)
@@ -12065,12 +12079,20 @@ Binding(CTRL+SHIFT+T,
 	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
 		,
 		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+<<<<<<< HEAD
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@49654a35,
+=======
 		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4603c412,
+>>>>>>> 03916ebc9d00f6704d54090de56bfcd692f8dcd3
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.contexts.window,,,system)
 
+<<<<<<< HEAD
+!ENTRY org.eclipse.ui 4 4 2021-08-30 16:40:41.619
+=======
 !ENTRY org.eclipse.ui 4 4 2021-08-30 16:09:12.922
+>>>>>>> 03916ebc9d00f6704d54090de56bfcd692f8dcd3
 !MESSAGE Unable to create part
 !STACK 1
 org.eclipse.ui.PartInitException: Cannot determine URI for '/hongbapProject/WebContent/res/stroeMain.jsp'.
@@ -12214,7 +12236,11 @@ Caused by: org.eclipse.core.runtime.CoreException: Cannot determine URI for '/ho
 	at org.eclipse.ui.internal.WorkbenchWindow.run(WorkbenchWindow.java:2320)
 	at org.eclipse.ui.texteditor.AbstractTextEditor.internalInit(AbstractTextEditor.java:3196)
 	... 125 more
+<<<<<<< HEAD
+!SUBENTRY 1 org.eclipse.core.filebuffers 4 0 2021-08-30 16:40:41.620
+=======
 !SUBENTRY 1 org.eclipse.core.filebuffers 4 0 2021-08-30 16:09:12.923
+>>>>>>> 03916ebc9d00f6704d54090de56bfcd692f8dcd3
 !MESSAGE Cannot determine URI for '/hongbapProject/WebContent/res/stroeMain.jsp'.
 !STACK 1
 org.eclipse.core.runtime.CoreException: Cannot determine URI for '/hongbapProject/WebContent/res/stroeMain.jsp'.
@@ -12355,23 +12381,40 @@ org.eclipse.core.runtime.CoreException: Cannot determine URI for '/hongbapProjec
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+<<<<<<< HEAD
+!SUBENTRY 2 org.eclipse.core.filebuffers 4 0 2021-08-30 16:40:41.622
+!MESSAGE Cannot determine URI for '/hongbapProject/WebContent/res/stroeMain.jsp'.
+
+!ENTRY org.eclipse.egit.ui 2 0 2021-08-30 16:40:43.018
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\ict03-14'. If this is
+=======
 !SUBENTRY 2 org.eclipse.core.filebuffers 4 0 2021-08-30 16:09:12.924
 !MESSAGE Cannot determine URI for '/hongbapProject/WebContent/res/stroeMain.jsp'.
 
 !ENTRY org.eclipse.egit.ui 2 0 2021-08-30 16:09:14.287
 !MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
 user global configuration and to define the default location to store repositories: 'C:\Users\ict03-06'. If this is
+>>>>>>> 03916ebc9d00f6704d54090de56bfcd692f8dcd3
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
 
+<<<<<<< HEAD
+!ENTRY org.eclipse.jface 2 0 2021-08-30 16:40:58.876
+=======
 !ENTRY org.eclipse.jface 2 0 2021-08-30 16:09:58.635
+>>>>>>> 03916ebc9d00f6704d54090de56bfcd692f8dcd3
 !MESSAGE Ignored reentrant call while viewer is busy. This is only logged once per viewer instance, but similar calls will still be ignored.
 !STACK 0
 java.lang.RuntimeException
 	at org.eclipse.jface.viewers.ColumnViewer.checkBusy(ColumnViewer.java:764)
 	at org.eclipse.jface.viewers.ColumnViewer.update(ColumnViewer.java:543)
+<<<<<<< HEAD
+	at org.eclipse.ui.navigator.CommonViewer.update(CommonViewer.java:515)
+=======
 	at org.eclipse.ui.navigator.CommonViewer.update(CommonViewer.java:512)
+>>>>>>> 03916ebc9d00f6704d54090de56bfcd692f8dcd3
 	at org.eclipse.jface.viewers.StructuredViewer.update(StructuredViewer.java:1976)
 	at org.eclipse.ui.internal.navigator.resources.nested.NestedProjectsLabelProvider.lambda$2(NestedProjectsLabelProvider.java:87)
 	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:670)
@@ -12384,7 +12427,11 @@ java.lang.RuntimeException
 	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
 	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:175)
 
+<<<<<<< HEAD
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2021-08-30 16:41:49.795
+=======
 !ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2021-08-30 16:10:26.980
+>>>>>>> 03916ebc9d00f6704d54090de56bfcd692f8dcd3
 !MESSAGE Connection to http://jope.ow2.org/update/jope/site.xml failed on jope.ow2.org. Retry attempt 0 started
 !STACK 0
 java.net.UnknownHostException: jope.ow2.org
@@ -12410,7 +12457,11 @@ java.net.UnknownHostException: jope.ow2.org
 	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
 
+<<<<<<< HEAD
+!ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2021-08-30 16:41:50.006
+=======
 !ENTRY org.eclipse.equinox.p2.transport.ecf 2 0 2021-08-30 16:10:27.192
+>>>>>>> 03916ebc9d00f6704d54090de56bfcd692f8dcd3
 !MESSAGE Connection to http://jope.ow2.org/update/jope/p2.index failed on jope.ow2.org. Retry attempt 0 started
 !STACK 0
 java.net.UnknownHostException: jope.ow2.org
@@ -12432,7 +12483,12 @@ java.net.UnknownHostException: jope.ow2.org
 	at org.eclipse.ecf.provider.filetransfer.httpclient45.HttpClientRetrieveFileTransfer$1.performFileTransfer(HttpClientRetrieveFileTransfer.java:988)
 	at org.eclipse.ecf.filetransfer.FileTransferJob.run(FileTransferJob.java:74)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+<<<<<<< HEAD
 !SESSION 2021-08-31 09:29:14.049 -----------------------------------------------
+=======
+<<<<<<< HEAD
+!SESSION 2021-08-30 18:15:05.144 -----------------------------------------------
+>>>>>>> 0594c48be36fe2153f16e2ae37942cba6fc5a1ea
 eclipse.buildId=4.15.0.I20200305-0155
 java.version=1.8.0_292
 java.vendor=ojdkbuild
@@ -12440,15 +12496,25 @@ BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
 Framework arguments:  -product org.eclipse.epp.package.jee.product
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
 
+<<<<<<< HEAD
 !ENTRY org.eclipse.jface 2 0 2021-08-31 09:29:26.327
 !MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
 !SUBENTRY 1 org.eclipse.jface 2 0 2021-08-31 09:29:26.327
+=======
+!ENTRY org.eclipse.jface 2 0 2021-08-30 18:15:11.561
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-08-30 18:15:11.561
+>>>>>>> 0594c48be36fe2153f16e2ae37942cba6fc5a1ea
 !MESSAGE A conflict occurred for CTRL+SHIFT+T:
 Binding(CTRL+SHIFT+T,
 	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
 		Open a type in a Java editor,
 		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+<<<<<<< HEAD
 		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7e741d6b,
+=======
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@377cbdae,
+>>>>>>> 0594c48be36fe2153f16e2ae37942cba6fc5a1ea
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.contexts.window,,,system)
@@ -12456,11 +12522,16 @@ Binding(CTRL+SHIFT+T,
 	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
 		,
 		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+<<<<<<< HEAD
 		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@56351c02,
+=======
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@37a939bc,
+>>>>>>> 0594c48be36fe2153f16e2ae37942cba6fc5a1ea
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.contexts.window,,,system)
 
+<<<<<<< HEAD
 !ENTRY org.eclipse.ui 4 4 2021-08-31 09:29:32.701
 !MESSAGE Unable to create part
 !STACK 1
@@ -12752,11 +12823,133 @@ org.eclipse.core.runtime.CoreException: Cannot determine URI for '/hongbapProjec
 !ENTRY org.eclipse.egit.ui 2 0 2021-08-31 09:29:34.096
 !MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
 user global configuration and to define the default location to store repositories: 'C:\Users\ict03-06'. If this is
+=======
+!ENTRY org.eclipse.egit.ui 2 0 2021-08-30 18:15:18.270
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\ict03-14'. If this is
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
 
+!ENTRY org.eclipse.wst.server.core 4 0 2021-08-30 18:37:38.828
+!MESSAGE Server Tomcat v9.0 Server at localhost failed to start.
+
+!ENTRY org.eclipse.wst.server.core 4 0 2021-08-30 18:37:52.095
+!MESSAGE Server Tomcat v9.0 Server at localhost failed to start.
+
+!ENTRY org.eclipse.ui.navigator 4 0 2021-08-30 18:38:09.017
+!MESSAGE Cannot find navigator content extension (using triggerPoints) for object "<null>" parent path: "P/Servers".  Check that you have an expression for this object in a navigatorContent triggerPoints or enablement.
+
+!ENTRY org.eclipse.ui.navigator 4 0 2021-08-30 18:38:09.027
+!MESSAGE Cannot find navigator content extension (using triggerPoints) for object "<null>" parent path: "P/Servers".  Check that you have an expression for this object in a navigatorContent triggerPoints or enablement.
+
+!ENTRY org.eclipse.wst.server.core 4 0 2021-08-30 18:39:48.819
+!MESSAGE Server Tomcat v9.0 Server at localhost failed to start.
+
+!ENTRY org.eclipse.wst.server.core 4 0 2021-08-30 18:40:24.428
+!MESSAGE Server Tomcat v9.0 Server at localhost failed to start.
+
+!ENTRY org.eclipse.jface 2 0 2021-08-30 19:01:26.820
+!MESSAGE Ignored reentrant call while viewer is busy. This is only logged once per viewer instance, but similar calls will still be ignored.
+!STACK 0
+java.lang.RuntimeException
+	at org.eclipse.jface.viewers.ColumnViewer.checkBusy(ColumnViewer.java:764)
+	at org.eclipse.jface.viewers.ColumnViewer.update(ColumnViewer.java:543)
+	at org.eclipse.ui.navigator.CommonViewer.update(CommonViewer.java:512)
+	at org.eclipse.jface.viewers.StructuredViewer.update(StructuredViewer.java:1976)
+	at org.eclipse.ui.internal.navigator.resources.nested.NestedProjectsLabelProvider.lambda$2(NestedProjectsLabelProvider.java:87)
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:670)
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:646)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1609)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1596)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:175)
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2021-08-30 19:10:18.277
+!MESSAGE No repository found at http://dl.bintray.com/testng-team/testng-p2-release/.
+!SESSION 2021-08-30 20:31:53.564 -----------------------------------------------
+eclipse.buildId=4.15.0.I20200305-0155
+java.version=1.8.0_292
+java.vendor=ojdkbuild
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.jface 2 0 2021-08-30 20:31:58.893
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-08-30 20:31:58.893
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@32430075,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1a45e29f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2021-08-30 20:32:06.349
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\ict03-14'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2021-08-31 09:34:10.815 -----------------------------------------------
+eclipse.buildId=4.15.0.I20200305-0155
+java.version=1.8.0_292
+java.vendor=ojdkbuild
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.jface 2 0 2021-08-31 09:34:20.905
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-08-31 09:34:20.905
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7b4c793b,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@51a69e8f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2021-08-31 09:34:30.574
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\ict03-14'. If this is
+>>>>>>> 0594c48be36fe2153f16e2ae37942cba6fc5a1ea
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+<<<<<<< HEAD
 !ENTRY org.eclipse.jface 2 0 2021-08-31 09:30:50.210
+=======
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2021-08-31 10:17:44.037
+!MESSAGE No repository found at http://dl.bintray.com/testng-team/testng-p2-release/.
+
+!ENTRY org.eclipse.jface 2 0 2021-08-31 13:17:19.042
+>>>>>>> 0594c48be36fe2153f16e2ae37942cba6fc5a1ea
 !MESSAGE Ignored reentrant call while viewer is busy. This is only logged once per viewer instance, but similar calls will still be ignored.
 !STACK 0
 java.lang.RuntimeException
@@ -12774,7 +12967,11 @@ java.lang.RuntimeException
 	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
 	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
 	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:175)
+<<<<<<< HEAD
 !SESSION 2021-08-31 14:22:56.111 -----------------------------------------------
+=======
+!SESSION 2021-08-31 18:14:34.063 -----------------------------------------------
+>>>>>>> 0594c48be36fe2153f16e2ae37942cba6fc5a1ea
 eclipse.buildId=4.15.0.I20200305-0155
 java.version=1.8.0_292
 java.vendor=ojdkbuild
@@ -12782,15 +12979,25 @@ BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
 Framework arguments:  -product org.eclipse.epp.package.jee.product
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
 
+<<<<<<< HEAD
 !ENTRY org.eclipse.jface 2 0 2021-08-31 14:23:01.448
 !MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
 !SUBENTRY 1 org.eclipse.jface 2 0 2021-08-31 14:23:01.448
+=======
+!ENTRY org.eclipse.jface 2 0 2021-08-31 18:14:38.982
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-08-31 18:14:38.982
+>>>>>>> 0594c48be36fe2153f16e2ae37942cba6fc5a1ea
 !MESSAGE A conflict occurred for CTRL+SHIFT+T:
 Binding(CTRL+SHIFT+T,
 	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
 		Open a type in a Java editor,
 		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+<<<<<<< HEAD
 		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@646c872a,
+=======
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@10466c55,
+>>>>>>> 0594c48be36fe2153f16e2ae37942cba6fc5a1ea
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.contexts.window,,,system)
@@ -12798,14 +13005,29 @@ Binding(CTRL+SHIFT+T,
 	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
 		,
 		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+<<<<<<< HEAD
 		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1d9bd4d6,
+=======
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2a5ed225,
+>>>>>>> 0594c48be36fe2153f16e2ae37942cba6fc5a1ea
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.contexts.window,,,system)
 
+<<<<<<< HEAD
 !ENTRY org.eclipse.egit.ui 2 0 2021-08-31 14:23:07.409
 !MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
 user global configuration and to define the default location to store repositories: 'C:\Users\ict03-06'. If this is
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+=======
+!ENTRY org.eclipse.egit.ui 2 0 2021-08-31 18:14:45.092
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\ict03-14'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+=======
+>>>>>>> 03916ebc9d00f6704d54090de56bfcd692f8dcd3
+>>>>>>> 0594c48be36fe2153f16e2ae37942cba6fc5a1ea
