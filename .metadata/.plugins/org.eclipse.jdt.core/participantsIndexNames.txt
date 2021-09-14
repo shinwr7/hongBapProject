@@ -1,3 +1,8 @@
 INDEX VERSION 1.131
+<<<<<<< HEAD
+=======
+C:\work\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2419608241.index
+\hongbapProject\src
+>>>>>>> master
 C:\work\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1698580056.index
 \hongbapProject\src
